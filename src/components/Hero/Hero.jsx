@@ -6,11 +6,11 @@ export default function Hero() {
 		<Section className="hero">
 			<h1>Test</h1>
 			<div>
-			<ButtonOrLink isLink={true} href="https://www.example.com">
-				Go to Example.com
+			<ButtonOrLink isLink={true} href="/contact">
+				Nous Contacter
 			</ButtonOrLink>
-			<ButtonOrLink btnClassName={'reverse'} isLink={true} href="https://www.example.com">
-				Go to Example.com
+			<ButtonOrLink btnClassName={'reverse'} isLink={true} href="/services">
+				Nos services et tarifs
 			</ButtonOrLink>
 			</div>
 		</Section>
