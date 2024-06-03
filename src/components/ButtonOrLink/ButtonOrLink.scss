@@ -1,0 +1,8 @@
+@import "../../utils/variables.scss";
+
+.btn {
+    cursor: pointer;
+    background: $gradient;
+    color: $background;
+    margin: 15px;
+}
