@@ -1,5 +1,5 @@
-import Section from './component/Section/Section';
-import Header from './layout/Header/Header';
+import Section from './components/Section/Section';
+
 export default function App() {
 	return (
 		<div className="App">
