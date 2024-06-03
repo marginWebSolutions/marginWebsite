@@ -1,13 +1,18 @@
-import Section from './components/Section/Section';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './layout/Header/Header';
+import Home from './pages/Home/Home';
 
 export default function App() {
 	return (
-		<div className="App">
-			<Header />
-			<Section className="test">
-				<h1>Test</h1>
-			</Section>
-		</div>
+		<BrowserRouter>
+			<div className="App">
+				<Header />
+				<main>
+					<Routes>
+						<Route path="/" element={<Home />} />
+					</Routes>
+				</main>
+			</div>
+		</BrowserRouter>
 	);
 }
