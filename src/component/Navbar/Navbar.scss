@@ -1,0 +1,17 @@
+@import '../../utils/variables.scss';
+
+.navbar {
+	&__list {
+		display: flex;
+		gap: 20px;
+
+		&--item {
+			text-transform: uppercase;
+			color: $text;
+		}
+	}
+
+	&__link {
+		color: $text;
+	}
+}
