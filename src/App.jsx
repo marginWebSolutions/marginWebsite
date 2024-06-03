@@ -1,4 +1,5 @@
 import Section from './components/Section/Section';
+import Header from './layout/Header/Header';
 
 export default function App() {
 	return (
