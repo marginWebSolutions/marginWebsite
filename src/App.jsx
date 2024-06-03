@@ -1,4 +1,4 @@
-import Section from './component/Section/Section';
+import Section from './components/Section/Section';
 
 export default function App() {
 	return (
