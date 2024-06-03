@@ -1,7 +1,9 @@
 @import '../../utils/variables.scss';
 
 .navbar__link {
+	font-family: $title-font;
 	color: $text;
+	font-size: clamp(0.875rem, 1rem, 1.125rem);
 }
 
 .current {

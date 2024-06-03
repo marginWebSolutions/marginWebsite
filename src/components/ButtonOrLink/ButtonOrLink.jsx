@@ -1,21 +1,31 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import './ButtonOrLink.scss';
 
-const ButtonOrLink = ({ isLink, href, type, btnClassName, children, ...props }) => {
-    if (isLink) {
-        return (
-            <a className={`btn btn__${btnClassName}`} href={href} {...props}>
-                {children}
-            </a>
-        );
-    } else {
-        return (
-            <button className={`btn btn__${btnClassName}`} type={type} {...props}>
-                {children}
-            </button>
-        );
-    }
+const ButtonOrLink = ({
+	isLink,
+	href,
+	type,
+	btnClassName,
+	children,
+	...props
+}) => {
+	if (isLink) {
+		return (
+			<a className={`btn btn__${btnClassName}`} href={href} {...props}>
+				{children}
+			</a>
+		);
+	} else {
+		return (
+			<button
+				className={`btn btn__${btnClassName}`}
+				type={type}
+				{...props}
+			>
+				{children}
+			</button>
+		);
+	}
 };
 
 ButtonOrLink.propTypes = {
@@ -35,11 +45,12 @@ ButtonOrLink.defaultProps = {
 
 export default ButtonOrLink;
 
-
 // exemple pour appeler un bouton ou l'autre
-{/* <form>
+{
+	/* <form>
       <ButtonOrLink type="submit">Submit Form</ButtonOrLink>
     </form>
     <ButtonOrLink isLink={true} href="https://www.example.com">
       Go to Example.com
-    </ButtonOrLink> */}
+    </ButtonOrLink> */
+}
