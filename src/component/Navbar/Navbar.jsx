@@ -5,10 +5,10 @@ export default function Navbar() {
 	return (
 		<nav className="navbar">
 			<ul className="navbar__list">
-				<NavbarItem text="Accueil" href="/" />
-				<NavbarItem text="Qui Sommes-Nous ?" href="/about" />
-				<NavbarItem text="Services et Tarifs" href="/pricing" />
-				<NavbarItem text="Nos Réalisations" href="/projects" />
+				<NavbarItem itemText="Accueil" href="/" />
+				<NavbarItem itemText="Qui Sommes-Nous ?" href="/about" />
+				<NavbarItem itemText="Services et Tarifs" href="/pricing" />
+				<NavbarItem itemText="Nos Réalisations" href="/projects" />
 			</ul>
 		</nav>
 	);
