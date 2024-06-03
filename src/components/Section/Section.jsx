@@ -3,7 +3,7 @@ import './Section.scss';
 
 export default function Section({ className, children, ...props }) {
 	return (
-		<section className={`section section__${className}`} {...props}>
+		<section className={`section ${className}`} {...props}>
 			{children}
 		</section>
 	);
