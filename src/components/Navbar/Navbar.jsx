@@ -9,6 +9,12 @@ export default function Navbar() {
 				<NavbarItem itemText="Qui Sommes-Nous ?" href="/about" />
 				<NavbarItem itemText="Services et Tarifs" href="/pricing" />
 				<NavbarItem itemText="Nos Réalisations" href="/projects" />
+				<NavbarItem
+					itemText="Contact"
+					href="/contact"
+					className="btn btn__reverse"
+					data="Contact"
+				/>
 			</ul>
 		</nav>
 	);
