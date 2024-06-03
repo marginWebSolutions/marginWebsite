@@ -22,6 +22,7 @@ ButtonOrLink.propTypes = {
     isLink: PropTypes.bool,
     href: PropTypes.string,
     type: PropTypes.oneOf(['button', 'submit', 'reset']),
+    btnClassName: PropTypes.string,
     children: PropTypes.node.isRequired,
 };
 
@@ -29,6 +30,7 @@ ButtonOrLink.defaultProps = {
     isLink: false,
     href: '#',
     type: 'button',
+    btnClassName: 'default',
 };
 
 export default ButtonOrLink;

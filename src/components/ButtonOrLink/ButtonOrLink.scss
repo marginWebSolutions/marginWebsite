@@ -2,7 +2,17 @@
 
 .btn {
     cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
     background: $gradient;
-    color: $background;
-    margin: 15px;
-}
+    
+    &__default {
+        color: $background;
+    }
+    &__reverse {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }}
+    
