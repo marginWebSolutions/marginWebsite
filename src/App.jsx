@@ -1,18 +1,18 @@
-import ButtonOrLink from './components/ButtonOrLink/ButtonOrLink';
-import Section from './components/Section/Section';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './layout/Header/Header';
+import Home from './pages/Home/Home';
 
 export default function App() {
 	return (
-		<div className='App'>
-			<Section className="test">
-				<h1>Test</h1>
-				<ButtonOrLink isLink={true} href="https://www.example.com">
-					Go to Example.com
-				</ButtonOrLink>
-				<ButtonOrLink btnClassName={'reverse'} isLink={true} href="https://www.example.com">
-					Go to Example.com
-				</ButtonOrLink>
-			</Section>
-		</div>
+		<BrowserRouter>
+			<div className="App">
+				<Header />
+				<main>
+					<Routes>
+						<Route path="/" element={<Home />} />
+					</Routes>
+				</main>
+			</div>
+		</BrowserRouter>
 	);
 }
