@@ -6,6 +6,8 @@
     border-radius: 5px;
     text-transform: uppercase;
     background: $gradient;
+    font-family: $title-font;
+    font-weight: 500;
     
     &__default {
         color: $background;
