@@ -1,5 +1,5 @@
-@import "../../utils/variables.scss";
-@import "../../utils/mixins.scss";
+@import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 .header {
 	height: 10vh;
@@ -8,7 +8,7 @@
 	justify-content: space-between;
 	align-items: center;
 	margin: auto;
-	
+
 	&__logo {
 		font-size: 25px;
 		font-family: $logo-font, sans-serif;
