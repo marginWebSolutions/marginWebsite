@@ -1,18 +1,66 @@
 @import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 .hero {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+
 	&__content {
 		width: 50%;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		gap: 40px;
+		flex: 1;
 		// align-items: flex-start;
 	}
+
+	&__logo {
+		font-size: 80px;
+		font-family: $logo-font, sans-serif;
+
+		&--ma {
+			font-size: 105px;
+
+			&.m {
+				color: $primary;
+			}
+
+			&.a {
+				@include gradientColor;
+			}
+		}
+
+		&--container {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__logo--text {
+		font-size: 80px;
+		font-family: $title-font;
+		@include gradientColor;
+	}
+
 	&__title {
 		font-size: 24px;
 	}
 	&__btn-wrapper {
-		margin: 25px 0;
 		display: flex;
 		gap: 20px;
+	}
+
+	&__image {
+		object-fit: contain;
+		height: 100%;
+		width: 100%;
+
+		&--container {
+			display: flex;
+			flex: 1;
+			width: 40vw;
+		}
 	}
 }

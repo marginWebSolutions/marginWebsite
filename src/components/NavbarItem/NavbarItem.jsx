@@ -22,5 +22,5 @@ export default function NavbarItem({ itemText, href, className }) {
 NavbarItem.propTypes = {
 	itemText: PropTypes.string.isRequired,
 	href: PropTypes.string.isRequired,
-	className: PropTypes.string.isRequired,
+	className: PropTypes.string,
 };
