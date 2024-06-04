@@ -33,15 +33,15 @@ export default function Hero() {
 						</ButtonOrLink>
 					</div>
 				</div>
-				<div className="hero__image--container">
+				{/* <div className="hero__image--container">
 					<img
-						src="/margin_hero.png"
+						src="/9shots_so.png"
 						alt="Illustration de site internet sur différents écrans"
 						className="hero__image"
 					/>
-				</div>
+				</div> */}
 			</Section>
-			<div className="underline"></div>
+			{/* <div className="underline"></div> */}
 		</>
 	);
 }
