@@ -43,7 +43,7 @@ export default function Hero() {
 					</div>
 				</div>
 			</Section>
-			<div className="underline"></div>
+			{/* <div className="underline"></div> */}
 		</>
 	);
 }

@@ -1,18 +1,26 @@
 @import '../../utils/variables.scss';
 
-.hero {
+.presentation {
+	display: flex;
+	justify-content: center;
+
 	&__content {
-		width: 60%;
 		display: flex;
 		flex-direction: column;
-		// align-items: flex-start;
+		align-items: center;
+		gap: 40px;
+		width: 80%;
 	}
+
 	&__title {
-		font-size: 24px;
+		font-family: $title-font;
+		font-weight: 400;
+		font-size: 48px;
 	}
-	&__btn-wrapper {
-		margin: 25px 0;
-		display: flex;
-		gap: 20px;
+
+	&__text {
+		font-size: 24px;
+		line-height: 1.5;
+		text-align: center;
 	}
 }

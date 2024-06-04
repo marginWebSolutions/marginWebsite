@@ -6,9 +6,15 @@ export default function Navbar() {
 		<nav className="navbar">
 			<ul className="navbar__list">
 				<NavbarItem itemText="Accueil" href="/" />
-				<NavbarItem itemText="Qui Sommes-Nous ?" href="/about" />
-				<NavbarItem itemText="Services et Tarifs" href="/pricing" />
-				<NavbarItem itemText="Nos Réalisations" href="/projects" />
+				<NavbarItem itemText="Qui Sommes-Nous ?" href="/a-propos" />
+				<NavbarItem
+					itemText="Services et Tarifs"
+					href="/services-et-tarifs"
+				/>
+				<NavbarItem
+					itemText="Nos Réalisations"
+					href="/nos-realisations"
+				/>
 				<NavbarItem
 					itemText="Nous Contacter"
 					href="/contact"
