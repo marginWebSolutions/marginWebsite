@@ -10,7 +10,7 @@ export default function Navbar() {
 				<NavbarItem itemText="Services et Tarifs" href="/pricing" />
 				<NavbarItem itemText="Nos Réalisations" href="/projects" />
 				<NavbarItem
-					itemText="Contact"
+					itemText="Nous Contacter"
 					href="/contact"
 					className="btn btn__reverse"
 				/>
