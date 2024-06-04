@@ -1,7 +1,33 @@
+@import "../../utils/variables.scss";
+@import "../../utils/mixins.scss";
+
 .header {
-	height: 60px;
+	height: 100px;
 	display: flex;
+	width: 90%;
 	justify-content: space-between;
 	align-items: center;
-	padding: 40px 70px;
+	margin: auto;
+	
+	&__logo {
+		font-size: 25px;
+		font-family: $logo-font, sans-serif;
+
+		&--ma {
+			font-size: 33px;
+
+			&.m {
+				color: $primary;
+			}
+
+			&.a {
+				@include gradientColor;
+			}
+		}
+
+		&--container {
+			display: flex;
+			flex-direction: column;
+		}
+	}
 }
