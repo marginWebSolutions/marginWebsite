@@ -6,6 +6,7 @@ export default function Hero() {
 	return (
 		<>
 			<Section className="hero">
+				<div className="hero__container">
 					<div className="hero__content">
 						<div className="hero__logo--container">
 							<p className="hero__logo">
@@ -33,14 +34,14 @@ export default function Hero() {
 							</ButtonOrLink>
 						</div>
 					</div>
+					<div className="hero__image--container">
+						<img
+							src="/margin_hero.png"
+							alt="Illustration de site internet sur différents écrans"
+							className="hero__image"
+						/>
+					</div>
 				</div>
-				{/* <div className="hero__image--container">
-					<img
-						src="/9shots_so.png"
-						alt="Illustration de site internet sur différents écrans"
-						className="hero__image"
-					/>
-				</div> */}
 			</Section>
 			{/* <div className="underline"></div> */}
 		</>
