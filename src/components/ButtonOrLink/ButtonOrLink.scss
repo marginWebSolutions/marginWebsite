@@ -1,44 +1,41 @@
-@import "../../utils/variables.scss";
-
+@import '../../utils/variables.scss';
 
 .btn {
-    position: relative;
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background: $gradient;
-    font-size: 18px;
-    font-family: $text-font;
-    text-transform: uppercase;
-    z-index: 1;
-    overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	padding: 10px 15px;
+	border-radius: 5px;
+	background: $gradient;
+	font-size: 18px;
+	font-family: $text-font;
+	text-transform: uppercase;
+	z-index: 1;
+	overflow: hidden;
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        border-radius: 5px; // Mêmes dimensions que .btn
-        padding: 2px; // Espacement pour la bordure de 2px
-        background: $gradient; 
-        -webkit-mask: 
-            linear-gradient(#fff 0 0) content-box, 
-            linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor;
-        mask-composite: exclude; // Pour le support des autres navigateurs
-        z-index: -1;
-    }
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		border-radius: 5px; // Mêmes dimensions que .btn
+		padding: 2px; // Espacement pour la bordure de 2px
+		background: $gradient;
+		-webkit-mask: linear-gradient(#fff 0 0) content-box,
+			linear-gradient(#fff 0 0);
+		-webkit-mask-composite: xor;
+		mask-composite: exclude; // Pour le support des autres navigateurs
+		z-index: -1;
+	}
 
-    &__default {
-        color: $background;
-    }
+	&__default {
+		color: $background;
+	}
 
-    &__reverse {
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        
-    }
+	&__reverse {
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 }
