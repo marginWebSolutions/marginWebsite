@@ -13,7 +13,6 @@ export default function Navbar() {
 					itemText="Contact"
 					href="/contact"
 					className="btn btn__reverse"
-					data="Contact"
 				/>
 			</ul>
 		</nav>
