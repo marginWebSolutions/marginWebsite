@@ -6,6 +6,7 @@ export default function Hero() {
 	return (
 		<>
 			<Section className="hero">
+				<div className="hero__container">
 					<div className="hero__content">
 						<div className="hero__logo--container">
 							<p className="hero__logo">
@@ -40,6 +41,7 @@ export default function Hero() {
 							className="hero__image"
 						/>
 					</div>
+				</div>
 			</Section>
 			<div className="underline"></div>
 		</>
