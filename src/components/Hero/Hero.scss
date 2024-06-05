@@ -2,15 +2,12 @@
 @import '../../utils/mixins.scss';
 
 .hero {
-	background: url('../../../public/518shots_so.png') no-repeat;
+	background: url('./435shots_so.png') no-repeat;
 	background-size: cover;
 	padding: 0;
 	width: 100vw;
 	height: 100vh;
 	display: flex;
-	// position: relative;
-	// top: 0;
-	// left: 0;
 
 	&__container {
 		display: flex;
@@ -64,7 +61,7 @@
 
 	&__title {
 		font-size: 30px;
-		max-width: 80%;
+		max-width: 70%;
 	}
 	&__btn-wrapper {
 		display: flex;
