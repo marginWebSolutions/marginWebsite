@@ -3,6 +3,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 import ButtonOrLink from '../ButtonOrLink/ButtonOrLink';
+import './PricesCard.scss';
 
 export default function PricesCard({ title, text, price, features }) {
 	return (

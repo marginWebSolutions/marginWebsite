@@ -1,0 +1,25 @@
+.features {
+	padding: 80px 0;
+
+	&__table {
+		margin: 0 auto;
+		width: 75%;
+		text-align: left;
+	}
+
+	&__title {
+		padding: 5px 0 20px 0;
+		border: none;
+	}
+
+	&__item {
+		padding: 10px;
+		border-top: 1px solid #e0e0e0;
+		border-right: 1px solid #e0e0e0;
+	}
+}
+
+td {
+	border-right: 1px solid #e0e0e0;
+	text-align: center;
+}
