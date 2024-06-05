@@ -2,8 +2,8 @@
 @import '../../utils/mixins.scss';
 
 .hero {
-	background: url("../../../public/518shots_so.png") no-repeat;
-	background-size:cover;
+	background: url('../../../public/518shots_so.png') no-repeat;
+	background-size: cover;
 	padding: 0;
 	width: 100vw;
 	height: 90vh;
@@ -11,10 +11,12 @@
 	position: relative;
 	top: 0;
 	left: 0;
-	
+
 	&__container {
 		display: flex;
-		justify-content: center;
+		justify-content: start;
+		width: 75vw;
+		margin: auto;
 		// align-items: center;
 	}
 
@@ -67,17 +69,5 @@
 	&__btn-wrapper {
 		display: flex;
 		gap: 20px;
-	}
-
-	&__image {
-		object-fit: contain;
-		height: 100%;
-		width: 100%;
-		display: none;
-
-		&--container {
-			height: 40vh;
-			
-		}
 	}
 }
