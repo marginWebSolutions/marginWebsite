@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import BackToTop from './components/BackToTop/BackToTop';
 import Footer from './layout/Footer/Footer';
 import Header from './layout/Header/Header';
 import Home from './pages/Home/Home';
@@ -19,6 +20,7 @@ export default function App() {
 					</Routes>
 				</main>
 				<Footer />
+				<BackToTop />
 			</div>
 		</BrowserRouter>
 	);
