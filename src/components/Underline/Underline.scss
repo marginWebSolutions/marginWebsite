@@ -1,0 +1,9 @@
+@import '../../utils/variables.scss';
+
+.underline {
+	width: 80%;
+	height: 1px;
+	background: $text;
+	opacity: 0.25;
+	margin: auto;
+}

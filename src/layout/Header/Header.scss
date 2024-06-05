@@ -2,16 +2,24 @@
 @import '../../utils/mixins.scss';
 
 .header {
-	height: 10vh;
-	display: flex;
-	width: 75%;
-	justify-content: space-between;
-	align-items: center;
+	// height: 10vh;
+	width: 100%;
 	margin: auto;
-	position: sticky;
+	position: fixed;
+	top: 0;
+	left: 0;
 	background: transparent;
 	z-index: 1;
-	
+
+	&__container {
+		display: flex;
+		height: 10vh;
+		width: 75%;
+		justify-content: space-between;
+		align-items: center;
+		margin: auto;
+	}
+
 	&__logo {
 		font-size: 25px;
 		font-family: $logo-font, sans-serif;

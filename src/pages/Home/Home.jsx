@@ -1,16 +1,17 @@
 import Engagement from '../../components/Engagement/Engagement';
 import Hero from '../../components/Hero/Hero';
 import Presentation from '../../components/Presentation/Presentation';
+import Underline from '../../components/Underline/Underline';
 
 export default function Home() {
 	return (
 		<>
 			<Hero />
-			<div className="underline"></div>
+			<Underline />
 			<Presentation />
-			<div className="underline"></div>
+			<Underline />
 			<Engagement />
-			<div className="underline"></div>
+			<Underline />
 		</>
 	);
 }
