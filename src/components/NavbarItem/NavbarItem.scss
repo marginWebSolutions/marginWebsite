@@ -5,12 +5,18 @@
 	color: $text;
 	// font-size: clamp(0.875rem, 1rem, 1.125rem);
 	font-size: 18px;
+
+	&.current {
+		background: $gradient;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-weight: 700;
+	
+	}
+
+	&.btn__default {
+		font-weight: 600;
+	}
 }
 
-.current {
-	background: $gradient;
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-weight: 700;
-}

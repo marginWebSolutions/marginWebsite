@@ -36,13 +36,6 @@ ButtonOrLink.propTypes = {
 	children: PropTypes.node.isRequired,
 };
 
-// ButtonOrLink.defaultProps = {
-// 	isLink: false,
-// 	href: '#',
-// 	type: 'button',
-// 	btnClassName: 'default',
-// };
-
 export default ButtonOrLink;
 
 // exemple pour appeler un bouton ou l'autre
