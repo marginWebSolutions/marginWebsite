@@ -4,8 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 5vh;
-    height: 5vh;
+    width: 50px;
+    height: 50px;
     color: rgba($background, 1);
     font-size: 2rem;
     background: $gradient;
@@ -13,8 +13,8 @@
     border-radius: 50%;
     z-index: 1000;
     position: fixed;
-    bottom: 1.5vh;
-    right: 2.5vh;
+    bottom: 20px;
+    right: 20px;
     cursor: pointer;
     opacity: 0;
     transition: 0.5s opacity ease-in;
