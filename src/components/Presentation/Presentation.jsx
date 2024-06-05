@@ -1,5 +1,6 @@
 import Section from '../../components/Section/Section';
 import ButtonOrLink from '../ButtonOrLink/ButtonOrLink';
+import Column from '../Column/Column';
 import './Presentation.scss';
 
 export default function Presentation() {
@@ -20,6 +21,27 @@ export default function Presentation() {
 					compréhension de vos besoins, afin de vous proposer les
 					solutions web les plus adaptées.
 				</p>
+
+				<div className='presentation__columns'>
+					<Column
+						src={"./margin_hero.png"}
+						alt={"illustration"}
+						title={"Conseil et Expertise"}
+						text={"Accompagnement dans le choix des technologies adaptées à vos besoins, expertise sur la faisabilité des fonctionnalités souhaitées et conseils pour l’optimisation de votre présence en ligne."}
+					/>
+					<Column
+						src={"./margin_hero.png"}
+						alt={"illustration"}
+						title={"Développement Web"}
+						text={"Création de sites web dynamiques et modernes en utilisant des technologies telles que ReactJS et WordPress afin de créer des sites web performants et évolutifs, pour une expérience utilisateur fluide."}
+					/>
+					<Column
+						src={"./margin_hero.png"}
+						alt={"illustration"}
+						title={"Service de Proximité"}
+						text={"Nous sommes fiers de soutenir les entreprises locales à Nevers et Saint-Étienne. Que vous soyez une PME ou un artisan, nous sommes là pour vous aider à créer une présence en ligne efficace."}
+					/>
+				</div>
 
 				<ButtonOrLink
 					btnClassName={'reverse'}
