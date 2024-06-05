@@ -17,9 +17,9 @@ export default function Hero() {
 							<p className="hero__logo--text">Web Solutions</p>
 						</div>
 						<h1 className="hero__title">
-							Création et développement de sites Web professionnels à
-							destination des PME et des artisans à Nevers et
-							Saint-Etienne
+							Création et développement de sites Web
+							professionnels à destination des PME et des artisans
+							à Nevers et Saint-Etienne
 						</h1>
 						<div className="hero__btn-wrapper">
 							<ButtonOrLink isLink={true} href="/contact">
@@ -34,16 +34,8 @@ export default function Hero() {
 							</ButtonOrLink>
 						</div>
 					</div>
-					<div className="hero__image--container">
-						<img
-							src="/margin_hero.png"
-							alt="Illustration de site internet sur différents écrans"
-							className="hero__image"
-						/>
-					</div>
 				</div>
 			</Section>
-			{/* <div className="underline"></div> */}
 		</>
 	);
 }
