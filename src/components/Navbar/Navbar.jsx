@@ -1,7 +1,10 @@
 import NavbarItem from '../NavbarItem/NavbarItem';
+import { useLocation } from 'react-router-dom';
 import './Navbar.scss';
 
 export default function Navbar() {
+	const location = useLocation();
+
 	return (
 		<nav className="navbar">
 			<ul className="navbar__list">
@@ -18,7 +21,8 @@ export default function Navbar() {
 				<NavbarItem
 					itemText="Nous Contacter"
 					href="/contact"
-					className="btn btn__reverse"
+					className={`btn ${location.pathname === "/contact" ? 'btn__default' : 'btn__reverse'
+						}`}
 				/>
 			</ul>
 		</nav>
