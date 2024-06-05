@@ -6,9 +6,9 @@
     align-items: center;
     width: 5vh;
     height: 5vh;
-    color: rgba($background, 0.8);
+    color: rgba($background, 1);
     font-size: 2rem;
-    background: rgba($primary, 0.8);
+    background: $gradient;
     box-shadow: $shadow;
     border-radius: 50%;
     z-index: 1000;
@@ -20,7 +20,7 @@
     transition: 0.5s opacity ease-in;
 
     &.visible {
-      opacity: 1;
+      opacity: 0.8;
     }
 
     &.hidden {
