@@ -42,9 +42,12 @@ export default function ContactBlock() {
 									<h3 className="infos__item--title">
 										Phone
 									</h3>
-									<p className="infos__item--text">
+									<a
+										href="tel:+33606060606"
+										className="infos__item--text"
+									>
 										06 06 06 06 06
-									</p>
+									</a>
 								</div>
 							</div>
 						</div>
