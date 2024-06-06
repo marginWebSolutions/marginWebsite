@@ -1,5 +1,5 @@
-import NavbarItem from '../NavbarItem/NavbarItem';
 import { useLocation } from 'react-router-dom';
+import NavbarItem from '../NavbarItem/NavbarItem';
 import './Navbar.scss';
 
 export default function Navbar() {
@@ -14,15 +14,18 @@ export default function Navbar() {
 					itemText="Services et Tarifs"
 					href="/services-et-tarifs"
 				/>
-				<NavbarItem
+				{/* <NavbarItem
 					itemText="Nos Réalisations"
 					href="/nos-realisations"
-				/>
+				/> */}
 				<NavbarItem
 					itemText="Nous Contacter"
 					href="/contact"
-					className={`btn ${location.pathname === "/contact" ? 'btn__default' : 'btn__reverse'
-						}`}
+					className={`btn ${
+						location.pathname === '/contact'
+							? 'btn__default'
+							: 'btn__reverse'
+					}`}
 				/>
 			</ul>
 		</nav>

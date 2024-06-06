@@ -10,6 +10,7 @@ export default function App() {
 	return (
 		<BrowserRouter>
 			<div className="App">
+				<div className="overlay"></div>
 				<Header />
 				<main>
 					<Routes>

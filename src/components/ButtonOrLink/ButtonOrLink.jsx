@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import './ButtonOrLink.scss';
 
 const ButtonOrLink = ({
@@ -11,9 +12,14 @@ const ButtonOrLink = ({
 }) => {
 	if (isLink) {
 		return (
-			<a className={`btn btn__${btnClassName}`} href={href} {...props}>
+			<Link
+				className={`btn btn__${btnClassName}`}
+				to={href}
+				{...props}
+				reloadDocument={true}
+			>
 				{children}
-			</a>
+			</Link>
 		);
 	} else {
 		return (

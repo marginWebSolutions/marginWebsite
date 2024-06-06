@@ -18,31 +18,38 @@ export default function ContactBlock() {
 							<p className="infos__headings--text">
 								Nous sommes impatients de collaborer avec vous
 								et de vous aider à développer une présence en
-								ligne réussie. <br/>Contactez-nous dès aujourd’hui
-								pour discuter de votre projet !
+								ligne réussie. <br />
+								Contactez-nous dès aujourd’hui pour discuter de
+								votre projet !
 							</p>
 							<div className="infos__content">
 								<div className="infos__item">
 									<FontAwesomeIcon
 										icon={faEnvelope}
-										className="infos__item--icon"
+										className="infos__item--icon color-touch-svg"
 									/>
 									<h3 className="infos__item--title">
 										Email
 									</h3>
-									<a href='mailto:margin.webdev.com' className="infos__item--text">
+									<a
+										href="mailto:margin.webdev.com"
+										className="infos__item--text"
+									>
 										margin.webdev@gmail.com
 									</a>
 								</div>
 								<div className="infos__item">
 									<FontAwesomeIcon
 										icon={faPhone}
-										className="infos__item--icon"
+										className="infos__item--icon color-touch-svg"
 									/>
 									<h3 className="infos__item--title">
 										Téléphone
 									</h3>
-									<a href='tel:+33664148826' className="infos__item--text">
+									<a
+										href="tel:+33664148826"
+										className="infos__item--text"
+									>
 										06 64 14 88 26
 									</a>
 								</div>

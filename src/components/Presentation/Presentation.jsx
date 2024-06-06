@@ -11,15 +11,23 @@ export default function Presentation() {
 				<p className="presentation__text">
 					Margin, c’est l’histoire de deux amis passionnés par la
 					création et le développement de sites Internet, qui décident
-					de mettre leur savoir-faire au service des PME et des
-					artisans autour de chez eux.
-					<br /> Basés à Nevers et Saint-Étienne, nous offrons des
-					solutions digitales adaptées à vos besoins spécifiques, en
-					alliant design, fonctionnalités et performances. Conscients
-					des enjeux et des spécificités uniques de chaque corps de
-					métier, nous basons notre approche sur l’écoute et la
-					compréhension de vos besoins, afin de vous proposer les
-					solutions web les plus adaptées.
+					de mettre leur savoir-faire{' '}
+					<span className="bolder">
+						au service des PME et des artisans
+					</span>{' '}
+					autour de chez eux.
+					<br /> Basés à <span className="bolder">
+						Nevers
+					</span> et <span className="bolder">Saint-Étienne</span>,
+					nous offrons des solutions digitales adaptées à vos besoins
+					spécifiques, en alliant design, fonctionnalités et
+					performances. Conscients des enjeux et des spécificités
+					uniques de chaque corps de métier, nous basons notre
+					approche{' '}
+					<span className="bolder">
+						sur l’écoute et la compréhension de vos besoins
+					</span>
+					, afin de vous proposer les solutions web les plus adaptées.
 				</p>
 
 				<div className="presentation__columns">

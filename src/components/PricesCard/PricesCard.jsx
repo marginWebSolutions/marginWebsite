@@ -5,10 +5,16 @@ import PropTypes from 'prop-types';
 import ButtonOrLink from '../ButtonOrLink/ButtonOrLink';
 import './PricesCard.scss';
 
-export default function PricesCard({ title, text, price, features, popular = false }) {
+export default function PricesCard({
+	title,
+	text,
+	price,
+	features,
+	popular = false,
+}) {
 	return (
 		<div className="card">
-			{popular && (<div className="card__popular">Populaire</div>)}
+			{popular && <div className="card__popular">Populaire</div>}
 			<div className="card__content">
 				<div className="card__heading">
 					<h2 className="card__heading--title">{title}</h2>
@@ -29,7 +35,10 @@ export default function PricesCard({ title, text, price, features, popular = fal
 									key={index}
 									className="card__body__list--item"
 								>
-									<FontAwesomeIcon icon={faCheck} />
+									<FontAwesomeIcon
+										icon={faCheck}
+										className="color-touch-svg"
+									/>
 									{feature}
 								</li>
 							))}
