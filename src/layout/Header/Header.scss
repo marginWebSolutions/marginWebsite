@@ -43,7 +43,7 @@
 	}
 
 	&--scrolled {
-		box-shadow: $very-light-shadow;
+		box-shadow: $header-shadow;
 		background: rgba($overlay, 1);
 	}
 }

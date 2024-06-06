@@ -11,6 +11,7 @@
 	text-transform: uppercase;
 	z-index: 1;
 	overflow: hidden;
+	transition: all 0.2s ease-in-out;
 
 	&::before {
 		content: '';
@@ -37,5 +38,10 @@
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+	}
+
+	&:hover {
+		transform: translateY(-3px);
+		box-shadow: $button-shadow;
 	}
 }
