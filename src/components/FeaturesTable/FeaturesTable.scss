@@ -1,25 +1,51 @@
+@import "../../utils/variables.scss";
+
 .features {
 	padding: 80px 0;
 
 	&__table {
 		margin: 0 auto;
-		width: 75%;
+		width: 65vw;
 		text-align: left;
 	}
 
 	&__title {
-		padding: 5px 0 20px 0;
+		padding: 5px 0 40px 0;
 		border: none;
+		font-size: 24px;
+		font-family: $title-font;
 	}
 
 	&__item {
 		padding: 10px;
-		border-top: 1px solid #e0e0e0;
-		border-right: 1px solid #e0e0e0;
+		border-top: 1px solid rgba($text, 0.1);
+		border-right: 1px solid rgba($text, 0.1);
+
+		&--title {
+			font-weight: 500;
+			text-transform: uppercase;
+			border-top: none;
+
+			&--left {
+				border-top: none;
+			}
+		}
+
+		&--right {
+			border-right: none;
+		}
+
+		&--left {
+			padding-left: 20px;
+		}
 	}
 }
 
 td {
-	border-right: 1px solid #e0e0e0;
+	border-right: 1px solid rgba($text, 0.1);
 	text-align: center;
+}
+
+th {
+	width: 30%;
 }
