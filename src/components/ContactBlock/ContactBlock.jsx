@@ -8,8 +8,6 @@ export default function ContactBlock() {
 	return (
 		<Section className="contact">
 			<div className="contact__content">
-				{/* <div className="contact__wrapper--title">
-				</div> */}
 				<h1 className="contact__title">Contact</h1>
 				<div className="contact__container">
 					<div className="contact__infos">
