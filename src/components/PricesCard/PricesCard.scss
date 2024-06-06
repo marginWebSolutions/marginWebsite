@@ -2,8 +2,9 @@
 @import '../../utils/mixins.scss';
 
 .card {
-	box-shadow: $shadow;
+	box-shadow: $shadow-lighter-opacity;
 	border-radius: 10px;
+	background: white;
 	position: relative;
 
 	&__popular {
@@ -38,7 +39,6 @@
 			font-size: 24px;
 			font-weight: 600;
 			text-transform: uppercase;
-
 		}
 
 		&--text {
@@ -46,8 +46,6 @@
 			font-weight: 500;
 			text-transform: uppercase;
 		}
-
-
 	}
 
 	&__body {
@@ -57,6 +55,7 @@
 		flex-direction: column;
 		gap: 20px;
 		height: 100%;
+		border-radius: 0 0 10px 10px;
 
 		&--price {
 			font-family: $title-font;

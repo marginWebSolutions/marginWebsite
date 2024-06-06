@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import './utils/variables.scss';
+@import './utils/mixins.scss';
 
 .App {
 	font-family: $text-font, -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -12,8 +13,25 @@
 	max-width: 100vw;
 	margin: auto;
 	box-sizing: border-box;
-	background: rgba($background, 1);
+	// background: rgba($background, 1);
+	background: url('4842928.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	overflow: hidden;
+	z-index: 0;
+	position: relative;
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba($background, 0.6);
+		z-index: -1;
+		pointer-events: none;
+	}
 
 	h1,
 	h2,
@@ -23,4 +41,15 @@
 	h6 {
 		font-family: $title-font;
 	}
+}
+
+.color-touch {
+	@include gradientColor;
+}
+.color-touch-svg {
+	color: $primary;
+}
+
+.bolder {
+	font-weight: 600;
 }
