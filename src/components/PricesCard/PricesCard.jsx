@@ -5,9 +5,10 @@ import PropTypes from 'prop-types';
 import ButtonOrLink from '../ButtonOrLink/ButtonOrLink';
 import './PricesCard.scss';
 
-export default function PricesCard({ title, text, price, features }) {
+export default function PricesCard({ title, text, price, features, popular = false }) {
 	return (
 		<div className="card">
+			{popular && (<div className="card__popular">Populaire</div>)}
 			<div className="card__content">
 				<div className="card__heading">
 					<h2 className="card__heading--title">{title}</h2>
@@ -45,4 +46,5 @@ PricesCard.propTypes = {
 	text: PropTypes.string.isRequired,
 	price: PropTypes.string.isRequired,
 	features: PropTypes.array.isRequired,
+	popular: PropTypes.bool,
 };

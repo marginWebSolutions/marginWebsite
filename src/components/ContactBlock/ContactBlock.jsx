@@ -8,7 +8,7 @@ export default function ContactBlock() {
 	return (
 		<Section className="contact">
 			<div className="contact__content">
-				<h1 className="contact__title">Contact</h1>
+				<h1 className="contact__title">Prenons contact</h1>
 				<div className="contact__container">
 					<div className="contact__infos">
 						<div className="contact__infos--headings">
@@ -18,7 +18,7 @@ export default function ContactBlock() {
 							<p className="infos__headings--text">
 								Nous sommes impatients de collaborer avec vous
 								et de vous aider à développer une présence en
-								ligne réussie. Contactez-nous dès aujourd’hui
+								ligne réussie. <br/>Contactez-nous dès aujourd’hui
 								pour discuter de votre projet !
 							</p>
 							<div className="infos__content">
@@ -30,9 +30,9 @@ export default function ContactBlock() {
 									<h3 className="infos__item--title">
 										Email
 									</h3>
-									<p className="infos__item--text">
+									<a href='mailto:margin.webdev.com' className="infos__item--text">
 										margin.webdev@gmail.com
-									</p>
+									</a>
 								</div>
 								<div className="infos__item">
 									<FontAwesomeIcon
@@ -40,11 +40,11 @@ export default function ContactBlock() {
 										className="infos__item--icon"
 									/>
 									<h3 className="infos__item--title">
-										Phone
+										Téléphone
 									</h3>
-									<p className="infos__item--text">
-										06 06 06 06 06
-									</p>
+									<a href='tel:+33664148826' className="infos__item--text">
+										06 64 14 88 26
+									</a>
 								</div>
 							</div>
 						</div>

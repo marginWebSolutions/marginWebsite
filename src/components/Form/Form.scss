@@ -7,14 +7,15 @@
 	gap: 40px;
 	padding: 80px;
 	background: white;
-	box-shadow: $shadow;
+	box-shadow: $shadow-lighter-opacity;
+	min-width: 30vw;
 
 	&__headings {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		gap: 5px;
+		line-height: 1.5;
 
 		&--title {
 			font-size: 32px;
@@ -23,8 +24,9 @@
 		}
 
 		&--text {
-			font-weight: 300;
+			font-size: 19px;
 		}
+
 	}
 
 	&__inputs {
@@ -43,6 +45,9 @@
 			outline: none;
 			border-bottom: 1px solid lightgrey;
 			padding: 5px 10px;
+			font-family: $title-font;
+			color: $text;
+			font-weight: 500;
 		}
 
 		textarea {
@@ -54,6 +59,9 @@
 			height: 80px;
 			resize: none;
 			padding: 5px 10px;
+			font-family: $title-font;
+			color: $text;
+			font-weight: 500;
 		}
 	}
 
