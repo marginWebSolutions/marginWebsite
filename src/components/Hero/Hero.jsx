@@ -28,7 +28,7 @@ export default function Hero() {
 							<ButtonOrLink
 								btnClassName={'reverse'}
 								isLink={true}
-								href="/services"
+								href="/services-et-tarifs"
 							>
 								Nos services et tarifs
 							</ButtonOrLink>
