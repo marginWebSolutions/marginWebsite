@@ -1,8 +1,25 @@
 @import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 .card {
 	box-shadow: $shadow;
 	border-radius: 10px;
+	position: relative;
+
+	&__popular {
+		position: absolute;
+		right: 25px;
+		top: -15px;
+		color: rgba(#373737, 1);
+		background: #daa520;
+		border: 2px solid rgba(#373737, 0.7);
+		border-radius: 15px;
+		box-shadow: $light-shadow;
+		padding: 10px;
+		font-family: $title-font;
+		font-weight: 600;
+		font-size: 14px;
+	}
 
 	&__content {
 		display: flex;
@@ -21,6 +38,7 @@
 			font-size: 24px;
 			font-weight: 600;
 			text-transform: uppercase;
+
 		}
 
 		&--text {
@@ -28,6 +46,8 @@
 			font-weight: 500;
 			text-transform: uppercase;
 		}
+
+
 	}
 
 	&__body {

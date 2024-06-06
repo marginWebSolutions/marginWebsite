@@ -25,6 +25,7 @@ export default function Prices() {
 					/>
 					<PricesCard
 						title="Pro"
+						popular={true}
 						text="Création d'un site vitrine moderne"
 						price="De 1500€ à 3000€"
 						features={['React', 'SEO', 'Maintenance']}

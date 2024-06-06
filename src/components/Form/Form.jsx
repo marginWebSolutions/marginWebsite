@@ -31,10 +31,9 @@ export default function Form() {
 	return (
 		<form className="form" onSubmit={handleSubmit}>
 			<div className="form__headings">
-				<h2 className="form__headings--title">Drop us a line</h2>
+				<h2 className="form__headings--title">À vous de jouer</h2>
 				<p className="form__headings--text">
-					Please feel free to contact us if you have any questions or
-					concerns
+					Écrivez-nous pour toutes questions et demandes de devis !
 				</p>
 			</div>
 			<div className="form__inputs">
@@ -44,7 +43,7 @@ export default function Form() {
 					id="name"
 					value={formData.name}
 					handleChange={handleChange}
-					placeholder=""
+					placeholder="Michel Dupont"
 					required
 				/>
 			</div>
@@ -56,7 +55,7 @@ export default function Form() {
 					id="email"
 					value={formData.email}
 					handleChange={handleChange}
-					placeholder=""
+					placeholder="exemple@email.com"
 					required
 				/>
 			</div>
@@ -68,7 +67,7 @@ export default function Form() {
 					id="message"
 					value={formData.message}
 					handleChange={handleChange}
-					placeholder=""
+					placeholder="Veuillez taper votre message ici..."
 					required
 				/>
 			</div>
