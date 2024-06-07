@@ -1,5 +1,6 @@
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ContactDetail from '../ContactDetail/ContactDetail';
 import Form from '../Form/Form';
 import Section from '../Section/Section';
 import './ContactBlock.scss';
@@ -23,36 +24,28 @@ export default function ContactBlock() {
 								votre projet !
 							</p>
 							<div className="infos__content">
-								<div className="infos__item">
-									<FontAwesomeIcon
-										icon={faEnvelope}
-										className="infos__item--icon color-touch-svg"
-									/>
-									<h3 className="infos__item--title">
-										Email
-									</h3>
-									<a
-										href="mailto:margin.webdev.com"
-										className="infos__item--text"
-									>
-										margin.webdev@gmail.com
-									</a>
-								</div>
-								<div className="infos__item">
-									<FontAwesomeIcon
-										icon={faPhone}
-										className="infos__item--icon color-touch-svg"
-									/>
-									<h3 className="infos__item--title">
-										Téléphone
-									</h3>
-									<a
-										href="tel:+33664148826"
-										className="infos__item--text"
-									>
-										06 64 14 88 26
-									</a>
-								</div>
+								<ContactDetail
+									icon={
+										<FontAwesomeIcon
+											icon={faEnvelope}
+											className="infos__item--icon color-touch-svg"
+										/>
+									}
+									title="Email"
+									href="mailto:margin.webdev.com"
+									text="margin.webdev@gmail.com"
+								/>
+								<ContactDetail
+									icon={
+										<FontAwesomeIcon
+											icon={faPhone}
+											className="infos__item--icon color-touch-svg"
+										/>
+									}
+									title="Téléphone"
+									href="tel:+33664148826"
+									text="06 64 14 88 26"
+								/>
 							</div>
 						</div>
 					</div>
