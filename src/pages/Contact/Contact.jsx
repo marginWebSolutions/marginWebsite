@@ -5,7 +5,10 @@ export default function Contact() {
 	return (
 		<>
 			<ContactBlock />
-			<Citation />
+			<Citation
+				quote="Le commencement est beaucoup plus que la moitié de l'objectif."
+				author="~ Aristote ~"
+			/>
 		</>
 	);
 }
