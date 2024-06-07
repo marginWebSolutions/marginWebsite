@@ -5,6 +5,7 @@ import Header from './layout/Header/Header';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import Pricing from './pages/Pricing/Pricing';
+import Realisation from './pages/Realisation/Realisation';
 
 export default function App() {
 	return (
@@ -18,6 +19,10 @@ export default function App() {
 						<Route
 							path="/services-et-tarifs"
 							element={<Pricing />}
+						/>
+						<Route
+							path="/nos-realisations"
+							element={<Realisation />}
 						/>
 						<Route path="/contact" element={<Contact />} />
 					</Routes>
