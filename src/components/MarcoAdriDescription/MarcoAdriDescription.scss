@@ -1,0 +1,76 @@
+@import '../../utils/variables.scss';
+
+.ma-description {
+	&__content {
+		display: flex;
+		text-align: center;
+		gap: 20px;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+
+		&--left {
+			align-items: flex-end;
+		}
+
+		&--right {}
+	}
+
+	&__image {
+		object-fit: cover;
+		width: 100%;
+		height: auto;
+		display: block;
+
+
+		&--left {
+			border-radius: 100% 0 0 100%;
+			position: absolute;
+			right: -50%;
+		}
+
+		&--right {
+			border-radius: 0 100% 100% 0;
+			position: absolute;
+			left: -50%;
+		}
+
+		&__container {
+			width: 500px;
+			height: 500px;
+			overflow: hidden;
+			position: relative;
+
+			&--left {}
+
+			&--right {}
+		}
+
+	}
+
+	&__wrapper {
+		&--left {}
+
+		&--right {}
+	}
+
+	&__title {
+		font-size: 36px;
+
+		&--left {}
+
+		&--right {}
+	}
+
+	&__text {
+		font-size: 20px;
+		line-height: 1.5;
+		padding-top: 20px;
+
+		&--left {}
+
+		&--right {}
+	}
+}

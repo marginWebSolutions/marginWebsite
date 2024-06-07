@@ -33,8 +33,8 @@ export default function Presentation() {
 
 				<div className="presentation__columns">
 					<Column
-						src={'./illustration_Conseil_et_Expertise_en_création_de_sites_Web.png'}
-						alt={'illustration'}
+						src={'./illustration_Conseil_et_Expertise_en_stratégie_Web.png'}
+						alt={"illustration d'un personnage qui dispense des conseils à son client concernant sa stratégie Web"}
 						title={'Conseil et Expertise'}
 						text={
 							'Accompagnement dans le choix des technologies adaptées à vos besoins, expertise sur la faisabilité des fonctionnalités souhaitées et conseils pour l’optimisation de votre présence en ligne.'
@@ -42,7 +42,7 @@ export default function Presentation() {
 					/>
 					<Column
 						src={'./illustration_Développement_de_site_Web.png'}
-						alt={'illustration'}
+						alt={"illustration d'un développeur qui crée un site Internet"}
 						title={'Développement Web'}
 						text={
 							'Création de sites web dynamiques et modernes en utilisant des technologies telles que ReactJS et WordPress afin de créer des sites web performants et évolutifs, pour une expérience utilisateur fluide.'
@@ -50,7 +50,7 @@ export default function Presentation() {
 					/>
 					<Column
 						src={'./illustration_Service_Web_de_Proximité.png'}
-						alt={'illustration'}
+						alt={"illustration d'un service de proximité via un personnage qui tape dans la main de son client"}
 						title={'Service de Proximité'}
 						text={
 							'Nous sommes fiers de soutenir les entreprises locales à Nevers et Saint-Étienne. Que vous soyez une PME ou un artisan, nous sommes là pour vous aider à créer une présence en ligne efficace.'
