@@ -1,0 +1,43 @@
+@import '../../utils/variables.scss';
+
+.testimonial__card {
+	padding: 40px;
+	background: $white;
+	border-radius: 5px;
+	box-shadow: $shadow-lighter-opacity;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 40px;
+	}
+
+	.card__content {
+		&--icon {
+			font-size: 40px;
+		}
+
+		&--text {
+			text-align: center;
+		}
+
+		&--avatar {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+		}
+
+		&__client {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+
+			&--name {
+				font-weight: 600;
+			}
+		}
+	}
+}
