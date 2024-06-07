@@ -14,10 +14,10 @@ export default function Navbar() {
 					itemText="Services et Tarifs"
 					href="/services-et-tarifs"
 				/>
-				{/* <NavbarItem
+				<NavbarItem
 					itemText="Nos Réalisations"
 					href="/nos-realisations"
-				/> */}
+				/>
 				<NavbarItem
 					itemText="Nous Contacter"
 					href="/contact"
