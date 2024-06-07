@@ -16,9 +16,10 @@ export default function Presentation() {
 						au service des PME et des artisans
 					</span>{' '}
 					autour de chez eux.
-					<br /> Basés à <span className="bolder">
-						Nevers
-					</span> et <span className="bolder">Saint-Étienne</span>,
+					<br /> Basés à{' '}
+					<span className="bolder">
+						Nevers et Saint-Étienne
+					</span>,
 					nous offrons des solutions digitales adaptées à vos besoins
 					spécifiques, en alliant design, fonctionnalités et
 					performances. Conscients des enjeux et des spécificités
@@ -32,7 +33,7 @@ export default function Presentation() {
 
 				<div className="presentation__columns">
 					<Column
-						src={'./margin_hero.png'}
+						src={'./illustration_Conseil_et_Expertise_en_création_de_sites_Web.png'}
 						alt={'illustration'}
 						title={'Conseil et Expertise'}
 						text={
@@ -40,7 +41,7 @@ export default function Presentation() {
 						}
 					/>
 					<Column
-						src={'./margin_hero.png'}
+						src={'./illustration_Développement_de_site_Web.png'}
 						alt={'illustration'}
 						title={'Développement Web'}
 						text={
@@ -48,7 +49,7 @@ export default function Presentation() {
 						}
 					/>
 					<Column
-						src={'./margin_hero.png'}
+						src={'./illustration_Service_Web_de_Proximité.png'}
 						alt={'illustration'}
 						title={'Service de Proximité'}
 						text={

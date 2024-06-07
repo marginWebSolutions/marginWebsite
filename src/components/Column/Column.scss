@@ -4,7 +4,7 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
-		gap: 40px;
+		gap: 20px;
 		text-align: center;
 	}
 
@@ -20,5 +20,6 @@
 	&__text {
 		font-size: 20px;
 		line-height: 1.5;
+		padding-top: 20px;
 	}
 }
