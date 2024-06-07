@@ -19,8 +19,6 @@
 	}
 
 	&__container {
-		// background: rgba($primary, 0.1);
-		// padding: 80px;
 		display: flex;
 		justify-content: space-between;
 		gap: 80px;
@@ -55,26 +53,5 @@
 		display: flex;
 		gap: 20px;
 		margin-top: 15px;
-	}
-
-	.infos__item {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 10px;
-		width: 50%;
-
-		&--icon {
-			font-size: 24px;
-		}
-
-		&--title {
-			text-transform: uppercase;
-		}
-
-		&--text {
-			font-size: 16px;
-			color: $text;
-		}
 	}
 }
