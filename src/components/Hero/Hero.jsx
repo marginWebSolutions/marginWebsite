@@ -1,5 +1,5 @@
 import Section from '../../components/Section/Section';
-import ButtonOrLink from '../ButtonOrLink/ButtonOrLink';
+import ButtonDoubled from '../ButtonDoubled/ButtonDoubled';
 import './Hero.scss';
 
 export default function Hero() {
@@ -21,18 +21,12 @@ export default function Hero() {
 							professionnels à destination des PME et des artisans
 							à Nevers et Saint-Etienne
 						</h1>
-						<div className="hero__btn-wrapper">
-							<ButtonOrLink isLink={true} href="/contact">
-								Nous Contacter
-							</ButtonOrLink>
-							<ButtonOrLink
-								btnClassName={'reverse'}
-								isLink={true}
-								href="/services-et-tarifs"
-							>
-								Nos services et tarifs
-							</ButtonOrLink>
-						</div>
+						<ButtonDoubled
+							btnFirst={'Nous Contacter'}
+							hrefFirst={'/contact'}
+							btnSecond={'Nos Services et Tarifs'}
+							hrefSecond={'/services-et-tarifs'}
+						/>
 					</div>
 				</div>
 			</Section>
