@@ -52,19 +52,10 @@
 		font-family: $title-font;
 		font-weight: 400;
 		@include gradientColor;
-		// background: url("../../../public/beth-macdonald-Okv8UzuZPBw-unsplash.jpg"), no-repeat;
-		// background-clip: text;
-		// -webkit-background-clip: text;
-		// -webkit-text-fill-color: transparent;
-		// font-weight: 700;
 	}
 
 	&__title {
 		font-size: 30px;
 		max-width: 70%;
-	}
-	&__btn-wrapper {
-		display: flex;
-		gap: 20px;
 	}
 }

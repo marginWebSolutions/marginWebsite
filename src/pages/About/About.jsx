@@ -7,7 +7,11 @@ export default function Contact() {
 		<>
 			<Us />
 			<Underline />
-			<GoToSection />
+			<GoToSection
+				double
+				title="Vous voulez en savoir plus ?"
+				text="Consultez le détail de nos prestations ou envoyez-nous un message !"
+			/>
 		</>
 	);
 }
