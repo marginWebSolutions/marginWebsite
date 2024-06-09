@@ -5,6 +5,8 @@
 	background: $white;
 	border-radius: 5px;
 	box-shadow: $shadow-lighter-opacity;
+	display: flex;
+	flex: 1;
 
 	&__content {
 		display: flex;

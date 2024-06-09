@@ -2,18 +2,17 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		padding-top: 8vh;
 		gap: 80px;
 
 		&--title {
 			font-size: 48px;
+			align-self: center;
 		}
 
 		&__cards {
 			display: flex;
-			flex-wrap: wrap;
-			gap: 80px;
+			justify-content: space-between;
 		}
 	}
 }
