@@ -10,7 +10,7 @@
 	&__container {
 		display: flex;
 		position: relative;
-
+		transition: opacity 1s ease-in-out;
 
 		&--left {
 			align-items: flex-end;
@@ -42,6 +42,10 @@
 
 		&.hover-modification {
 			opacity: 0;
+		}
+
+		&.fade-in {
+			opacity: 1;
 		}
 	}
 

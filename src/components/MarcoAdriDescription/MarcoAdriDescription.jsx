@@ -8,7 +8,7 @@ export default function MarcoAdriDescription() {
 		<div className="ma-description">
 			<div className="ma-description__content">
 				<div
-					className={`ma-description__container ma-description__container--left ${hoveredElement === 'right' ? 'hover-modification' : ''}`}
+					className={`ma-description__container ma-description__container--left ${hoveredElement === 'right' ? 'hover-modification' : ''} ${hoveredElement === null ? 'fade-in' : ''}`}
 					onMouseEnter={() => setHoveredElement('left')}
 					onMouseLeave={() => setHoveredElement(null)}
 				>
@@ -21,7 +21,7 @@ export default function MarcoAdriDescription() {
 					</div>
 				</div>
 				<div
-					className={`ma-description__container ma-description__container--right ${hoveredElement === 'left' ? 'hover-modification' : ''}`}
+					className={`ma-description__container ma-description__container--right ${hoveredElement === 'left' ? 'hover-modification' : ''} ${hoveredElement === null ? 'fade-in' : ''}`}
 					onMouseEnter={() => setHoveredElement('right')}
 					onMouseLeave={() => setHoveredElement(null)}
 				>
