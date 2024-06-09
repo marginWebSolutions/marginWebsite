@@ -1,10 +1,17 @@
+import { useState } from 'react';
 import './MarcoAdriDescription.scss';
 
 export default function MarcoAdriDescription() {
+	const [hoveredElement, setHoveredElement] = useState(null);
+
 	return (
 		<div className="ma-description">
 			<div className="ma-description__content">
-				<div className="ma-description__container ma-description__container--left">
+				<div
+					className={`ma-description__container ma-description__container--left ${hoveredElement === 'right' ? 'hover-modification' : ''}`}
+					onMouseEnter={() => setHoveredElement('left')}
+					onMouseLeave={() => setHoveredElement(null)}
+				>
 					<div className="ma-description__image__container ma-description__image__container--left">
 						<img className="ma-description__image ma-description__image--left" src="./marcoadri.png" alt="Marc" />
 					</div>
@@ -13,7 +20,11 @@ export default function MarcoAdriDescription() {
 						<p className="ma-description__text ma-description__text--left">Margin, c’est l’histoire de deux amis passionnés par la création et le développement de sites Internet, qui décident de mettre leur savoir-faire au service des PME et des artisans autour de chez eux.</p>
 					</div>
 				</div>
-				<div className="ma-description__container ma-description__container--right">
+				<div
+					className={`ma-description__container ma-description__container--right ${hoveredElement === 'left' ? 'hover-modification' : ''}`}
+					onMouseEnter={() => setHoveredElement('right')}
+					onMouseLeave={() => setHoveredElement(null)}
+				>
 					<div className="ma-description__image__container ma-description__image__container--right">
 						<img className="ma-description__image ma-description__image--right" src="./marcoadri.png" alt="Adrien" />
 					</div>
