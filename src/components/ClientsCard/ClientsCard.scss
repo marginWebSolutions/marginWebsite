@@ -1,6 +1,48 @@
+@import "../../utils/variables.scss";
+
 .clients__card {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 20px;
+
+	&--link {
+		border-radius: 10px;
+		width: 22.5vw;
+		box-shadow: $light-shadow;
+		overflow: hidden;
+		position: relative;
+	}
+
+	&--overlay {
+		background: rgba($background, 0.1);
+		opacity: 0;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			opacity: 1;
+
+		~.clients__card--img {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	&--img {
+		object-fit: cover;
+		width: 22.5vw;
+		height: 100%;
+		border-radius: 10px;
+		transition: transform 0.2s ease-in-out;
+	}
+
+	&--text {
+		font-size: 18px;
+	}
 }

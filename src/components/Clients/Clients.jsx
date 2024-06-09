@@ -12,19 +12,19 @@ export default function Clients() {
 				<div className="clients__content__cards">
 					<ClientsCard
 						href="https://www.google.com"
-						src="https://via.placeholder.com/300x300"
+						src="https://picsum.photos/350/250"
 						alt="logo"
 						text="placeholder"
 					/>
 					<ClientsCard
 						href="https://www.google.com"
-						src="https://via.placeholder.com/300x300"
+						src="https://picsum.photos/350/250"
 						alt="logo"
 						text="placeholder"
 					/>
 					<ClientsCard
 						href="https://www.google.com"
-						src="https://via.placeholder.com/300x300"
+						src="https://picsum.photos/350/250"
 						alt="logo"
 						text="placeholder"
 					/>
