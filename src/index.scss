@@ -1,6 +1,7 @@
 // @import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import './utils/variables.scss';
 @import './utils/mixins.scss';
+@import './utils/keyframes.scss';
 
 .App {
 	font-family: $text-font, -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -52,4 +53,27 @@
 
 .bolder {
 	font-weight: 600;
+}
+
+.fadeIn__title {
+	animation: fadeInAnimation 1.5s ease-in-out both;
+}
+
+.fadeIn__text {
+	animation: fadeInAnimation 1.5s ease-in-out 1s both;
+}
+
+.fadeIn__columns {
+	animation: fadeInAnimation 1.5s ease-in-out 1.5s both;
+
+	&:nth-child(2) {
+		animation-delay: 2s;
+	}
+	&:nth-child(3) {
+		animation-delay: 2.5s;
+	}
+}
+
+.fadeIn__button {
+	animation: fadeInAnimationButton 1.5s ease-in-out 3s both;
 }
