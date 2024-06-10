@@ -3,15 +3,15 @@
 	padding: 160px 0;
 	width: 75%;
 	margin: auto;
-	transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+	// transition: opacity 2s ease-in-out, transform 2s ease-in-out;
 }
 
-.section--hidden {
-	transform: translateY(20px);
-	opacity: 0;
-}
+// .section--hidden {
+// 	transform: translateY(20px);
+// 	opacity: 0;
+// }
 
-.fade-in {
-	opacity: 1;
-	transform: translateY(0);
-}
+// .fade-in {
+// 	opacity: 1;
+// 	transform: translateY(0);
+// }
