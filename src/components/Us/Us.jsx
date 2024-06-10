@@ -4,7 +4,7 @@ import './Us.scss';
 
 export default function Us() {
 	return (
-		<Section className="us">
+		<Section className="us" isHero={true}>
 			<div className="us__content">
 				<h2 className="us__title">Qui sommes-nous ?</h2>
 				<p className="us__text">
@@ -18,7 +18,6 @@ export default function Us() {
 				</p>
 
 				<MarcoAdriDescription />
-
 			</div>
 		</Section>
 	);

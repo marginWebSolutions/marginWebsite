@@ -6,15 +6,19 @@ import './Prices.scss';
 
 export default function Prices() {
 	return (
-		<Section className="prices">
+		<Section className="prices" isHero={true}>
 			<div className="prices__content">
 				<h1 className="prices__title">
 					Choisissez un plan qui vous correspond
 				</h1>
 				<p className="prices__text">
-				Vous souhaitez retravailler le look de votre site Internet vieillissant ? Vous avez besoin de remonter dans le résultat des moteurs de recherche ? Vous voulez créer un site vitrine moderne et optimisé ?<br/><br/>
-Faîtes-nous confiance pour réaliser le site Internet professionnel de vos rêves !
-
+					Vous souhaitez retravailler le look de votre site Internet
+					vieillissant ? Vous avez besoin de remonter dans le résultat
+					des moteurs de recherche ? Vous voulez créer un site vitrine
+					moderne et optimisé ?<br />
+					<br />
+					Faîtes-nous confiance pour réaliser le site Internet
+					professionnel de vos rêves !
 				</p>
 				<div className="prices__plans">
 					<PricesCard

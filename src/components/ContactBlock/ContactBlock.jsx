@@ -7,7 +7,7 @@ import './ContactBlock.scss';
 
 export default function ContactBlock() {
 	return (
-		<Section className="contact">
+		<Section className="contact" isHero={true}>
 			<div className="contact__content">
 				<h1 className="contact__title">Prenons contact</h1>
 				<div className="contact__container">

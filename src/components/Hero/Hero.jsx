@@ -5,7 +5,7 @@ import './Hero.scss';
 export default function Hero() {
 	return (
 		<>
-			<Section className="hero">
+			<Section className="hero" isHero={true}>
 				<div className="hero__container">
 					<div className="hero__content">
 						<div className="hero__logo--container">
