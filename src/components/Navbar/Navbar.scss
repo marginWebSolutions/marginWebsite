@@ -1,13 +1,79 @@
 @import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 .navbar {
+	@include tablet {
+		width: 100%;
+	}
+	@include mini-tablet {
+		width: 100%;
+	}
+	@include mobile {
+		width: 100%;
+	}
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&.open {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: $background;
+			z-index: 10;
+		}
+	}
+
+	&__burger {
+		display: none;
+		position: absolute;
+		top: 2.5vh;
+		right: 1.5rem;
+		cursor: pointer;
+		font-size: 24px;
+
+		@include tablet {
+			display: block;
+		}
+		@include mini-tablet {
+			display: block;
+		}
+		@include mobile {
+			display: block;
+		}
+	}
+
 	&__list {
 		display: flex;
 		gap: 20px;
+		width: 100%;
+
+		@include tablet {
+			display: none;
+		}
+		@include mini-tablet {
+			display: none;
+		}
+		@include mobile {
+			display: none;
+		}
 
 		&--item {
 			text-transform: uppercase;
 			color: $text;
+			cursor: pointer;
+		}
+
+		&.open {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
 		}
 	}
 }
