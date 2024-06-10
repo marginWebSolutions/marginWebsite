@@ -15,6 +15,7 @@
 		font-family: $title-font;
 		font-size: 48px;
 		@include gradientColor;
+		text-align: center;
 	}
 
 	&__text {

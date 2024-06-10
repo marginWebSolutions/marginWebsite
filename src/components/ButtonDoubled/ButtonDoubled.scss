@@ -1,4 +1,10 @@
+@import '../../utils/mixins.scss';
+
 .btn__doubled {
 	display: flex;
 	gap: 20px;
+
+	@include mobile {
+		flex-wrap: wrap;
+	}
 }

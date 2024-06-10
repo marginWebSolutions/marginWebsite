@@ -23,6 +23,16 @@
 		flex-direction: column;
 		justify-content: center;
 		gap: 40px;
+
+		@include tablet {
+			width: 100%;
+		}
+		@include mini-tablet {
+			width: 100%;
+		}
+		@include mobile {
+			width: 100%;
+		}
 	}
 
 	&__logo {
@@ -57,5 +67,15 @@
 	&__title {
 		font-size: 30px;
 		max-width: 70%;
+
+		@include tablet {
+			max-width: 100%;
+		}
+		@include mini-tablet {
+			max-width: 100%;
+		}
+		@include mobile {
+			max-width: 100%;
+		}
 	}
 }
