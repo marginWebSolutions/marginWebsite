@@ -1,4 +1,5 @@
 @import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 .presentation {
 	&__content {
@@ -12,6 +13,7 @@
 	&__title {
 		font-family: $title-font;
 		font-size: 48px;
+		text-align: center;
 	}
 
 	&__text {
@@ -19,11 +21,31 @@
 		line-height: 1.5;
 		text-align: center;
 		width: 65vw;
+
+		@include tablet {
+			width: 100%;
+		}
+		@include mini-tablet {
+			width: 100%;
+		}
+		@include mobile {
+			width: 100%;
+		}
 	}
 	&__columns {
 		max-width: 100%;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 80px;
+
+		@include tablet {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		@include mini-tablet {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		@include mobile {
+			grid-template-columns: repeat(1, 1fr);
+		}
 	}
 }

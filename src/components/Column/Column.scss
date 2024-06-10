@@ -1,4 +1,5 @@
 @import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 .column {
 	&__content {
@@ -11,6 +12,16 @@
 	&__image {
 		object-fit: contain;
 		width: 15vw;
+
+		@include tablet {
+			width: 20vw;
+		}
+		@include mini-tablet {
+			width: 25vw;
+		}
+		@include mobile {
+			width: 30vw;
+		}
 	}
 
 	&__title {

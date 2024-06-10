@@ -14,12 +14,26 @@
 	&__title {
 		font-family: $title-font;
 		font-size: 48px;
+		text-align: center;
 	}
 
 	&__cards {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 80px;
+
+		@include tablet {
+			flex-direction: column;
+			flex-wrap: nowrap;
+		}
+		@include mini-tablet {
+			flex-direction: column;
+			flex-wrap: nowrap;
+		}
+		@include mobile {
+			flex-direction: column;
+			flex-wrap: nowrap;
+		}
 	}
 
 	&__text {
@@ -28,8 +42,14 @@
 		text-align: center;
 		width: 65vw;
 
-		// @include tablet {
-		// 	width: 100%;
-		// }
+		@include tablet {
+			width: 100%;
+		}
+		@include mini-tablet {
+			width: 100%;
+		}
+		@include mobile {
+			width: 100%;
+		}
 	}
 }
