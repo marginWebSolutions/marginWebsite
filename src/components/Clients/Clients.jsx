@@ -4,7 +4,7 @@ import './Clients.scss';
 
 export default function Clients() {
 	return (
-		<Section className="clients">
+		<Section className="clients" isHero={true}>
 			<div className="clients__content">
 				<h1 className="clients__content--title">
 					Ils nous ont fait confiance
