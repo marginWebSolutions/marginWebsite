@@ -2,19 +2,38 @@
 @import '../../utils/mixins.scss';
 
 .hero {
-	background: url('./435shots_so.png') no-repeat;
-	background-size: cover;
 	padding: 0;
 	width: 100vw;
 	height: 100vh;
 	display: flex;
+	position: relative;
+
+	&__mockup {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 8vh;
+		left: 0;
+		z-index: -1;
+
+		&--image {
+			overflow: visible;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			opacity: 0.5;
+			transition: opacity 1s ease-in;
+			&.fade-in {
+				opacity: 1;
+			}
+		}
+	}
 
 	&__container {
 		display: flex;
 		justify-content: start;
 		width: 75vw;
 		margin: auto;
-		// align-items: center;
 	}
 
 	&__content {
@@ -27,9 +46,11 @@
 		@include tablet {
 			width: 100%;
 		}
+
 		@include mini-tablet {
 			width: 100%;
 		}
+
 		@include mobile {
 			width: 100%;
 		}
@@ -71,9 +92,11 @@
 		@include tablet {
 			max-width: 100%;
 		}
+
 		@include mini-tablet {
 			max-width: 100%;
 		}
+
 		@include mobile {
 			max-width: 100%;
 		}
