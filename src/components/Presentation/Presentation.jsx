@@ -15,6 +15,7 @@ export default function Presentation() {
 		columnRef,
 		buttonRef,
 	]);
+
 	return (
 		<Section className="presentation">
 			<div className="presentation__content" ref={titleRef}>

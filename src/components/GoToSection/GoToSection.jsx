@@ -1,19 +1,38 @@
 /* eslint-disable react/no-unescaped-entities */
+import PropTypes from 'prop-types';
+import { useRef } from 'react';
+import useScrollAnimation from '../../utils/hooks/useScrollAnimation';
 import ButtonDoubled from '../ButtonDoubled/ButtonDoubled';
 import ButtonOrLink from '../ButtonOrLink/ButtonOrLink';
 import Section from '../Section/Section';
 import './GoToSection.scss';
 
 export default function GoToSection({
-	title = "Une question ? Un devis ?", 
-	text = "Contactez-nous dès maintenant et discutons ensemble de votre projet",
-	double = false
+	title = 'Une question ? Un devis ?',
+	text = 'Contactez-nous dès maintenant et discutons ensemble de votre projet',
+	double = false,
 }) {
+	const titleRef = useRef(null);
+	const textRef = useRef(null);
+
+	const [titleVisible, textVisible] = useScrollAnimation([titleRef, textRef]);
+
 	return (
 		<Section className="go-to">
-			<div className="go-to__content">
-				<h2 className="go-to__title">{title}</h2>
-				<p className="go-to__text">
+			<div className="go-to__content" ref={titleRef}>
+				<h2
+					className={`go-to__title ${
+						titleVisible ? 'fadeIn__title' : ''
+					}`}
+				>
+					{title}
+				</h2>
+				<p
+					className={`go-to__text ${
+						textVisible ? 'fadeIn__text' : ''
+					}`}
+					ref={textRef}
+				>
 					{text}
 				</p>
 				{double ? (
@@ -32,3 +51,9 @@ export default function GoToSection({
 		</Section>
 	);
 }
+
+GoToSection.propTypes = {
+	title: PropTypes.string,
+	text: PropTypes.string,
+	double: PropTypes.bool,
+};
