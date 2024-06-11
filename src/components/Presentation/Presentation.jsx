@@ -1,77 +1,33 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 import Section from '../../components/Section/Section';
+import useScrollAnimation from '../../utils/hooks/useScrollAnimation';
 import ButtonOrLink from '../ButtonOrLink/ButtonOrLink';
 import Column from '../Column/Column';
 import './Presentation.scss';
 
 export default function Presentation() {
-	const contentRef = useRef(null);
+	const titleRef = useRef(null);
 	const columnRef = useRef(null);
-	const [isVisible, setIsVisible] = useState(false);
-	const [columnsVisible, setColumnsVisible] = useState(false);
-	const [buttonVisible, setButtonVisible] = useState(false);
-	const [lastScrollY, setLastScrollY] = useState(window.scrollY);
+	const buttonRef = useRef(null);
 
-	const checkVisibility = useCallback(() => {
-		const currentScrollY = window.scrollY;
-		const scrollingDown = currentScrollY > lastScrollY;
-
-		if (currentScrollY < 5) {
-			setIsVisible(false);
-			setColumnsVisible(false);
-			setButtonVisible(false);
-		} else if (scrollingDown) {
-			if (contentRef.current) {
-				const rect = contentRef.current.getBoundingClientRect();
-				const isContentVisible =
-					rect.top < window.innerHeight && rect.bottom >= 0;
-				setIsVisible(isContentVisible);
-			}
-
-			if (columnRef.current) {
-				const rect = columnRef.current.getBoundingClientRect();
-				const isColumnsVisible =
-					rect.top < window.innerHeight && rect.bottom >= 0;
-				setColumnsVisible(isColumnsVisible);
-				setButtonVisible(isColumnsVisible);
-			}
-		}
-
-		setLastScrollY(currentScrollY);
-	}, [lastScrollY]);
-
-	useEffect(() => {
-		const handleScroll = () => {
-			checkVisibility();
-		};
-
-		window.addEventListener('scroll', handleScroll);
-		checkVisibility();
-
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
-	}, [
-		columnsVisible,
-		buttonVisible,
-		isVisible,
-		lastScrollY,
-		checkVisibility,
+	const [titleVisible, columnVisible, buttonVisible] = useScrollAnimation([
+		titleRef,
+		columnRef,
+		buttonRef,
 	]);
-
 	return (
 		<Section className="presentation">
-			<div className="presentation__content" ref={contentRef}>
+			<div className="presentation__content" ref={titleRef}>
 				<h2
 					className={`presentation__title ${
-						isVisible ? 'fadeIn__title' : ''
+						titleVisible ? 'fadeIn__title' : ''
 					}`}
 				>
 					En quelques mots
 				</h2>
 				<p
 					className={`presentation__text ${
-						isVisible ? 'fadeIn__text' : ''
+						titleVisible ? 'fadeIn__text' : ''
 					}`}
 				>
 					Margin, c’est l’histoire de deux amis passionnés par la
@@ -106,7 +62,7 @@ export default function Presentation() {
 						text={
 							'Accompagnement dans le choix des technologies adaptées à vos besoins, expertise sur la faisabilité des fonctionnalités souhaitées et conseils pour l’optimisation de votre présence en ligne.'
 						}
-						className={`${columnsVisible ? 'fadeIn__columns' : ''}`}
+						className={`${columnVisible ? 'fadeIn__columns' : ''}`}
 					/>
 					<Column
 						src={'./illustration_Développement_de_site_Web.png'}
@@ -117,7 +73,7 @@ export default function Presentation() {
 						text={
 							'Création de sites web dynamiques et modernes en utilisant des technologies telles que ReactJS et WordPress afin de créer des sites web performants et évolutifs, pour une expérience utilisateur fluide.'
 						}
-						className={`${columnsVisible ? 'fadeIn__columns' : ''}`}
+						className={`${columnVisible ? 'fadeIn__columns' : ''}`}
 					/>
 					<Column
 						src={'./illustration_Service_Web_de_Proximité.png'}
@@ -128,19 +84,20 @@ export default function Presentation() {
 						text={
 							'Nous sommes fiers de soutenir les entreprises locales à Nevers et Saint-Étienne. Que vous soyez une PME ou un artisan, nous sommes là pour vous aider à créer une présence en ligne efficace.'
 						}
-						className={`${columnsVisible ? 'fadeIn__columns' : ''}`}
+						className={`${columnVisible ? 'fadeIn__columns' : ''}`}
 					/>
 				</div>
-
-				<ButtonOrLink
-					btnClassName={`reverse ${
-						buttonVisible ? 'fadeIn__button' : ''
-					}`}
-					isLink={true}
-					href="/services-et-tarifs"
-				>
-					Découvrez nos solutions
-				</ButtonOrLink>
+				<div ref={buttonRef}>
+					<ButtonOrLink
+						btnClassName={`reverse ${
+							buttonVisible ? 'fadeIn__button' : ''
+						}`}
+						isLink={true}
+						href="/services-et-tarifs"
+					>
+						Découvrez nos solutions
+					</ButtonOrLink>
+				</div>
 			</div>
 		</Section>
 	);
