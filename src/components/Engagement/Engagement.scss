@@ -15,6 +15,10 @@
 		font-family: $title-font;
 		font-size: 48px;
 		text-align: center;
+
+		@include mobile {
+			font-size: 40px;
+		}
 	}
 
 	&__cards {
@@ -25,14 +29,10 @@
 		@include tablet {
 			flex-direction: column;
 			flex-wrap: nowrap;
-		}
-		@include mini-tablet {
-			flex-direction: column;
-			flex-wrap: nowrap;
+			width: 85%;
 		}
 		@include mobile {
-			flex-direction: column;
-			flex-wrap: nowrap;
+			width: 95%;
 		}
 	}
 
@@ -43,12 +43,6 @@
 		width: 65vw;
 
 		@include tablet {
-			width: 100%;
-		}
-		@include mini-tablet {
-			width: 100%;
-		}
-		@include mobile {
 			width: 100%;
 		}
 	}

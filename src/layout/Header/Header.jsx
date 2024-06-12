@@ -1,5 +1,7 @@
 import Navbar from '../../components/Navbar/Navbar';
+import NavbarItem from '../../components/NavbarItem/NavbarItem';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.scss';
 
 export default function Header() {
@@ -24,11 +26,24 @@ export default function Header() {
 	return (
 		<header className={`header${scrolled ? ' header--scrolled' : ''}`}>
 			<div className="header__container">
-				<div className="header__logo">
-					<span className="header__logo--ma m">m</span>
-					<span className="header__logo--ma a">a</span>
-					RGIN
-				</div>
+				<Link to="/" reloadDocument={true}>
+					<div className="header__logo">
+						<span className="header__logo--ma m">m</span>
+						<span className="header__logo--ma a">a</span>
+						RGIN
+					</div>
+				</Link>
+				<ul className='header__CTA--small-device'>
+				<NavbarItem
+						itemText="Nous Contacter"
+						href="/contact"
+						className={`btn ${
+							location.pathname === '/contact'
+								? 'btn__default'
+								: 'btn__reverse'
+						}`}
+					/>
+				</ul>
 				<Navbar />
 			</div>
 		</header>

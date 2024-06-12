@@ -1,22 +1,24 @@
 @import './variables.scss';
 
+@mixin tablet {
+	@media (max-width: $large-screen) {
+		@content;
+	}
+}
+
+@mixin mini-tablet {
+	@media (max-width: $medium-screen) {
+		@content;
+	}
+}
+
 @mixin mobile {
 	@media (max-width: $small-screen) {
 		@content;
 	}
 }
 
-@mixin mini-tablet {
-	@media (min-width: $small-screen) and (max-width: $medium-screen) {
-		@content;
-	}
-}
 
-@mixin tablet {
-	@media (min-width: $medium-screen) and (max-width: $large-screen) {
-		@content;
-	}
-}
 
 @mixin gradientColor {
 	background: $gradient;

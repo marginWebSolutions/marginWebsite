@@ -16,6 +16,10 @@
 		font-size: 48px;
 		@include gradientColor;
 		text-align: center;
+
+		@include mobile {
+			font-size: 40px;
+		}
 	}
 
 	&__text {
@@ -23,6 +27,10 @@
 		line-height: 1.5;
 		text-align: center;
 		width: 65vw;
+
+		@include tablet {
+			width: auto;
+		}
 	}
 
 	.btn {

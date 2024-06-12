@@ -2,7 +2,7 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
-		padding-top: 8vh;
+		padding-top: clamp(50px, 8vh, 600px);
 		gap: 80px;
 
 		&--title {

@@ -7,6 +7,10 @@
 		flex-direction: column;
 		gap: 20px;
 		text-align: center;
+		@include mobile {
+			width: 95%;
+			margin: auto;
+		}
 	}
 
 	&__image {
@@ -14,18 +18,22 @@
 		width: 15vw;
 
 		@include tablet {
-			width: 20vw;
+			width: 22vw;
 		}
 		@include mini-tablet {
 			width: 25vw;
 		}
 		@include mobile {
-			width: 30vw;
+			width: 40vw;
 		}
 	}
 
 	&__title {
 		font-size: 36px;
+
+		@include mobile {
+			font-size: 32px;
+		}
 	}
 
 	&__text {
