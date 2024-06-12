@@ -4,7 +4,7 @@
 .navbar__link {
 	font-family: $title-font;
 	color: $text;
-	font-size: 18px;
+	font-size: clamp(14px, 1.2vw, 18px);
 	transition: all 0.2s ease-in-out;
 
 	&:hover {

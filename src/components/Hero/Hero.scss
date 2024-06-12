@@ -14,7 +14,11 @@
 		width: 100%;
 		position: absolute;
 		top: 0;
-		left: 0;
+		right: 0;
+
+		@include tablet {
+			display: none;
+		}
 
 		&--image {
 			height: 100%;
@@ -47,7 +51,12 @@
 		justify-content: start;
 		width: 75vw;
 		margin: auto;
+
+		@include tablet {
+			width: 90vw;
+		}
 	}
+
 
 	&__content {
 		width: 70%;
@@ -61,12 +70,27 @@
 			width: 100%;
 		}
 
-		@include mini-tablet {
-			width: 100%;
+		&>.btn__doubled {
+			justify-content: flex-start;
+		}
+	}
+
+	&__illustration {
+		display: none;
+		position: absolute;
+		top: -100px;
+		right: 100px;
+		height: 200px;
+		width: 200px;
+
+		@include tablet {
+			// display: block;
 		}
 
-		@include mobile {
-			width: 100%;
+		&--image {
+			object-fit: contain;
+			height: 200px;
+			width: 200px;
 		}
 	}
 
@@ -74,8 +98,16 @@
 		font-size: 80px;
 		font-family: $logo-font, sans-serif;
 
+		@include mobile {
+			font-size: 60px;
+		}
+
 		&--ma {
 			font-size: 105px;
+
+			@include mobile {
+				font-size: 80px;
+			}
 
 			&.m {
 				color: $primary;
@@ -89,6 +121,7 @@
 		&--container {
 			display: flex;
 			flex-direction: column;
+			position: relative;
 		}
 	}
 
@@ -97,6 +130,10 @@
 		font-family: $title-font;
 		font-weight: 400;
 		@include gradientColor;
+
+		@include mobile {
+			font-size: 60px;
+		}
 	}
 
 	&__title {
@@ -107,12 +144,8 @@
 			max-width: 100%;
 		}
 
-		@include mini-tablet {
-			max-width: 100%;
-		}
-
 		@include mobile {
-			max-width: 100%;
+			font-size: 22px;
 		}
 	}
 }

@@ -10,7 +10,7 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 80px;
-		padding-top: 8vh;
+		padding-top: clamp(50px, 8vh, 600px);
 	}
 
 	&__title {

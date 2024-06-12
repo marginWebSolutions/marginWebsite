@@ -13,16 +13,30 @@
 
 	&__container {
 		display: flex;
-		height: 8vh;
-		width: 75%;
+		height: clamp(50px, 8vh, 600px);
+		width: 75vw;
 		justify-content: space-between;
 		align-items: center;
 		margin: auto;
+
+		@include tablet {
+			width: 90vw;
+		}
+
+		@include mobile {
+			width: 85vw;
+		}
 	}
 
 	&__logo {
 		font-size: 25px;
 		font-family: $logo-font, sans-serif;
+		color: $text;
+
+		@include mobile {
+			position: absolute;
+			top: 2.5vh;
+		}
 
 		&--ma {
 			font-size: 33px;
@@ -45,5 +59,19 @@
 	&--scrolled {
 		box-shadow: $header-shadow;
 		background: rgba($overlay, 1);
+	}
+
+	&__CTA--small-device {
+		display: none;
+
+		@include tablet {
+			display: block;
+			position: absolute;
+			right: 10vw;
+		}
+
+		@include mobile {
+			right: 16vw;
+		}
 	}
 }
