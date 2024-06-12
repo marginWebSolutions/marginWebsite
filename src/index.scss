@@ -63,17 +63,7 @@
 	animation: fadeInAnimation 1.5s ease-in-out 1s both;
 }
 
-.fadeIn__columns {
-	animation: fadeInAnimation 1.5s ease-in-out 1.5s both;
-
-	&:nth-child(2) {
-		animation-delay: 2s;
-	}
-	&:nth-child(3) {
-		animation-delay: 2.5s;
-	}
-}
-
+.fadeIn__columns,
 .fadeIn__cards {
 	animation: fadeInAnimation 1.5s ease-in-out 1.5s both;
 

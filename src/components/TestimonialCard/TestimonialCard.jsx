@@ -9,9 +9,10 @@ export default function TestimonialCard({
 	avatarAlt,
 	name,
 	job,
+	className,
 }) {
 	return (
-		<div className="testimonial__card">
+		<div className={`testimonial__card ${className}`}>
 			<div className="testimonial__card__content">
 				<FontAwesomeIcon
 					icon={faQuoteRight}
@@ -38,4 +39,5 @@ TestimonialCard.propTypes = {
 	avatarAlt: PropTypes.string,
 	name: PropTypes.string,
 	job: PropTypes.string,
+	className: PropTypes.string,
 };
