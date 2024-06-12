@@ -20,6 +20,10 @@
 		font-size: 36px;
 		padding-top: 40px;
 		@include gradientColor;
+
+		@include mobile {
+			font-size: 32px;
+		}
 	}
 
 	&--text {

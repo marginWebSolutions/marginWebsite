@@ -1,4 +1,5 @@
 @import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 .btn {
 	position: relative;
@@ -6,12 +7,17 @@
 	padding: 10px 15px;
 	border-radius: 5px;
 	background: $gradient;
-	font-size: 18px;
+	font-size: clamp(14px, 1.2vw, 18px);
 	font-family: $text-font;
 	text-transform: uppercase;
 	z-index: 1;
 	overflow: hidden;
 	transition: all 0.2s ease-in-out;
+
+	@include mobile {
+		font-size: 14px;
+		padding: 7px;
+	}
 
 	&::before {
 		content: '';

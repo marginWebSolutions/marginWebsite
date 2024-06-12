@@ -5,12 +5,7 @@
 	@include tablet {
 		width: 100%;
 	}
-	@include mini-tablet {
-		width: 100%;
-	}
-	@include mobile {
-		width: 100%;
-	}
+
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -31,20 +26,20 @@
 	&__burger {
 		display: none;
 		position: absolute;
-		top: 2.5vh;
-		right: 1.5rem;
+		top: 3vh;
+		right: 5vw;
 		cursor: pointer;
 		font-size: 24px;
 
 		@include tablet {
 			display: block;
 		}
-		@include mini-tablet {
-			display: block;
-		}
+
 		@include mobile {
-			display: block;
+			right: 7.5vw;
+			top: 2.5vh;
 		}
+
 	}
 
 	&__list {
@@ -55,12 +50,7 @@
 		@include tablet {
 			display: none;
 		}
-		@include mini-tablet {
-			display: none;
-		}
-		@include mobile {
-			display: none;
-		}
+
 
 		&--item {
 			text-transform: uppercase;
@@ -74,6 +64,12 @@
 			justify-content: center;
 			align-items: center;
 			height: 100vh;
+
+
+			&>.navbar__list--item>.navbar__link.btn {
+				top: 10px;
+			}
 		}
 	}
+
 }
