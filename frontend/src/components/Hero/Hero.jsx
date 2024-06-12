@@ -47,13 +47,6 @@ export default function Hero() {
 				<div className="hero__container">
 					<div className="hero__content">
 						<div className="hero__logo--container">
-							<div className="hero__illustration">
-								<img
-									className="hero__illustration--image"
-									src="./margin_hero.png"
-									alt="illustration Ecrans Responsive"
-								/>
-							</div>
 							<p className="hero__logo">
 								<span className="hero__logo--ma m">m</span>
 								<span className="hero__logo--ma a">a</span>
