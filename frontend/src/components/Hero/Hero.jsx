@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import Section from '../../components/Section/Section';
+import React, { useEffect, useState } from 'react';
 import ButtonDoubled from '../ButtonDoubled/ButtonDoubled';
+import Section from '../Section/Section';
 import './Hero.scss';
 
 export default function Hero() {
 	const images = [
 		{ src: './426shots_so.png', alt: 'Description 1' },
 		{ src: './764shots_so.png', alt: 'Description 2' },
-		{ src: './798shots_so.png', alt: 'Description 3' }
+		{ src: './798shots_so.png', alt: 'Description 3' },
 	];
 
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -17,7 +17,9 @@ export default function Hero() {
 		const interval = setInterval(() => {
 			setFadeIn(false);
 			setTimeout(() => {
-				setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+				setCurrentImageIndex(
+					(prevIndex) => (prevIndex + 1) % images.length
+				);
 				setFadeIn(true);
 			}, 300);
 		}, 8000);
@@ -28,25 +30,27 @@ export default function Hero() {
 	return (
 		<>
 			<Section className="hero" isHero={true}>
-				<div className='hero__mockup'>
+				<div className="hero__mockup">
 					<img
-						className={`hero__mockup--image ${fadeIn ? 'fade-in' : ''}`}
+						className={`hero__mockup--image ${
+							fadeIn ? 'fade-in' : ''
+						}`}
 						src={images[currentImageIndex].src}
 						alt={images[currentImageIndex].alt}
 					/>
 					<img
 						className="hero__mockup--mask"
-						src='./mockupmask.png'
+						src="./mockupmask.png"
 						alt="mask"
 					/>
 				</div>
 				<div className="hero__container">
 					<div className="hero__content">
 						<div className="hero__logo--container">
-							<div className='hero__illustration'>
+							<div className="hero__illustration">
 								<img
 									className="hero__illustration--image"
-									src='./margin_hero.png'
+									src="./margin_hero.png"
 									alt="illustration Ecrans Responsive"
 								/>
 							</div>

@@ -1,8 +1,8 @@
 import { useRef } from 'react';
-import Section from '../../components/Section/Section';
 import useScrollAnimation from '../../utils/hooks/useScrollAnimation';
 import ButtonOrLink from '../ButtonOrLink/ButtonOrLink';
 import Column from '../Column/Column';
+import Section from '../Section/Section';
 import './Presentation.scss';
 
 export default function Presentation() {
