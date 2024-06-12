@@ -65,9 +65,17 @@
 			align-items: center;
 			height: 100vh;
 
+			& > .navbar__list--item > .navbar__link {
+				font-size: 30px;
 
-			&>.navbar__list--item>.navbar__link.btn {
-				top: 10px;
+				@include mobile {
+					font-size: 22px;
+				}
+
+				&.btn {
+					top: 15px;
+					padding: 10px;;
+				}
 			}
 		}
 	}
