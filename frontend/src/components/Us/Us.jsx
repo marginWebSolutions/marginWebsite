@@ -1,5 +1,5 @@
-import Section from '../../components/Section/Section';
 import MarcoAdriDescription from '../MarcoAdriDescription/MarcoAdriDescription';
+import Section from '../Section/Section';
 import './Us.scss';
 
 export default function Us() {
