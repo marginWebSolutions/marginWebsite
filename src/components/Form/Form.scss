@@ -64,16 +64,7 @@
 		}
 	}
 
-	&__confirm,
-	&__error {
+	&__confirm {
 		text-align: center;
-	}
-
-	&__error {
-		color: red;
-	}
-
-	&__recaptcha {
-		align-self: center;
 	}
 }
