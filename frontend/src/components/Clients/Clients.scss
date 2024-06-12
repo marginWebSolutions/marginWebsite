@@ -1,3 +1,5 @@
+@import '../../utils/mixins.scss';
+
 .clients {
 	&__content {
 		display: flex;
@@ -8,6 +10,11 @@
 		&--title {
 			font-size: 48px;
 			align-self: center;
+			text-align: center;
+
+			@include mobile {
+				font-size: 40px;
+			}
 		}
 
 		&__cards {
