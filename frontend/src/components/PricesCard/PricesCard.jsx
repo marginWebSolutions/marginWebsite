@@ -2,8 +2,6 @@
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
-import { useRef } from 'react';
-import useScrollAnimation from '../../utils/hooks/useScrollAnimation';
 import ButtonOrLink from '../ButtonOrLink/ButtonOrLink';
 import './PricesCard.scss';
 
@@ -14,15 +12,8 @@ export default function PricesCard({
 	features,
 	popular = false,
 }) {
-	const cardRef = useRef(null);
-
-	const [cardVisible] = useScrollAnimation([cardRef]);
-
 	return (
-		<div
-			className={`card ${cardVisible ? 'fadeIn__columns' : ''}`}
-			ref={cardRef}
-		>
+		<div className="card">
 			{popular && <div className="card__popular">Populaire</div>}
 			<div className="card__content">
 				<div className="card__heading">
