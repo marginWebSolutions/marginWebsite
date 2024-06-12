@@ -1,4 +1,5 @@
 @import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 .ma-description {
 	&__content {
@@ -13,8 +14,6 @@
 		transition: opacity 1s ease-in-out;
 
 		&--left {
-			align-items: flex-end;
-
 			&:hover {
 				.ma-description__image__container--left {
 					transform: translateX(-50%);
@@ -24,6 +23,10 @@
 					opacity: 1;
 					transform: translateX(50%);
 				}
+			}
+
+			@include tablet {
+				align-items: flex-start;
 			}
 		}
 
@@ -56,15 +59,23 @@
 		display: block;
 
 		&--left {
-			border-radius: 100% 0 0 100%;
+			border-radius: 100%;
 			position: absolute;
 			right: -50%;
+
+			@include tablet {
+				border-radius: 0;
+			}
 		}
 
 		&--right {
-			border-radius: 0 100% 100% 0;
+			border-radius: 100%;
 			position: absolute;
 			left: -50%;
+
+			@include tablet {
+				border-radius: 0;
+			}
 		}
 
 		&__container {

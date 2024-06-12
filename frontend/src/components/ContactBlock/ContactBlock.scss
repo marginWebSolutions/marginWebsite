@@ -16,6 +16,11 @@
 	&__title {
 		font-size: 48px;
 		font-weight: 400;
+		text-align: center;
+
+		@include mobile {
+			font-size: 40px;
+		}
 	}
 
 	&__container {

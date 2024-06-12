@@ -1,4 +1,6 @@
 @import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
+
 
 .prices {
 	&__content {
@@ -14,6 +16,10 @@
 		font-family: $title-font;
 		font-size: 48px;
 		text-align: center;
+
+		@include mobile {
+			font-size: 40px;
+		}
 	}
 
 	&__text {
