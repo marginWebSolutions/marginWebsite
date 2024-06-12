@@ -75,25 +75,6 @@
 		}
 	}
 
-	&__illustration {
-		display: none;
-		position: absolute;
-		top: -100px;
-		right: 100px;
-		height: 200px;
-		width: 200px;
-
-		@include tablet {
-			// display: block;
-		}
-
-		&--image {
-			object-fit: contain;
-			height: 200px;
-			width: 200px;
-		}
-	}
-
 	&__logo {
 		font-size: 80px;
 		font-family: $logo-font, sans-serif;
@@ -121,7 +102,6 @@
 		&--container {
 			display: flex;
 			flex-direction: column;
-			position: relative;
 		}
 	}
 
