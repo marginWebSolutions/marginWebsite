@@ -158,36 +158,42 @@
 		}
 	}
 
-	&__title {
-		font-size: 36px;
+	&__title.names{
+		font-size: 29px;
+		font-family: $logo-font;
+		text-transform: uppercase;
 
 		.margin-m {
 			font-family: $logo-font;
 			color: $primary;
 			font-size: 38px;
+			text-transform: lowercase;
 		}
 
 		.margin-a {
 			font-family: $logo-font;
 			@include gradientColor;
 			font-size: 38px;
+			text-transform: lowercase;
 		}
 
 
-		&--small {
-			font-size: 32px;
+		&--small.names{
+			font-size: 26px;
 			height: 32px;
+			font-family: $logo-font;
+			text-transform: uppercase;
 
 			.margin-m {
-				font-family: $logo-font;
 				color: $primary;
 				font-size: 34px;
+				text-transform: lowercase;
 			}
 
 			.margin-a {
-				font-family: $logo-font;
 				@include gradientColor;
 				font-size: 34px;
+				text-transform: lowercase;
 			}
 		}
 
