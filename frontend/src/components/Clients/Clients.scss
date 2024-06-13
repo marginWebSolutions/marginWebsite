@@ -20,6 +20,10 @@
 		&__cards {
 			display: flex;
 			justify-content: space-between;
+			@include tablet {
+				flex-direction: column;
+				gap: 40px;
+			}
 		}
 	}
 }
