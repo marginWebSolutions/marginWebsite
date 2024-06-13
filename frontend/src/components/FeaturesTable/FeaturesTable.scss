@@ -12,6 +12,16 @@
 		@include tablet {
 			width: 100%;
 		}
+
+		&--titles {
+			display: flex;
+			gap: 10px;
+			margin-bottom: 20px;
+		}
+
+		&--title {
+			padding: 10px 0;
+		}
 	}
 
 	&__title {
@@ -19,6 +29,10 @@
 		border: none;
 		font-size: 24px;
 		font-family: $title-font;
+
+		@include mobile {
+			padding: 5px 0 20px 0;
+		}
 	}
 
 	&__item {
@@ -42,6 +56,16 @@
 
 		&--left {
 			padding-left: 20px;
+
+			@include mobile {
+				padding: 0;
+				align-self: flex-start;
+			}
+		}
+
+		&--mobile {
+			border: 1px solid rgba($text, 0.1);
+			padding: 10px;
 		}
 	}
 }
@@ -53,4 +77,8 @@ td {
 
 th {
 	width: 30%;
+}
+
+.selected {
+	border-bottom: 2px solid $secondary;
 }
