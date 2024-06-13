@@ -141,7 +141,7 @@
 
 			&:nth-child(1) {
 				border-right: 1px solid rgba($text, 0.25);
-				
+
 
 				@include mobile {
 					border-right: none;
@@ -159,38 +159,44 @@
 	}
 
 	&__title {
-		font-size: 36px;
-
-		.margin-m {
+		&.names {
+			font-size: 29px;
 			font-family: $logo-font;
-			color: $primary;
-			font-size: 38px;
-		}
-
-		.margin-a {
-			font-family: $logo-font;
-			@include gradientColor;
-			font-size: 38px;
-		}
-
-
-		&--small {
-			font-size: 32px;
-			height: 32px;
+			text-transform: uppercase;
 
 			.margin-m {
 				font-family: $logo-font;
 				color: $primary;
-				font-size: 34px;
+				font-size: 38px;
+				text-transform: lowercase;
 			}
 
 			.margin-a {
 				font-family: $logo-font;
 				@include gradientColor;
-				font-size: 34px;
+				font-size: 38px;
+				text-transform: lowercase;
 			}
 		}
 
+		&--small.names{
+			font-size: 26px;
+			height: 32px;
+			font-family: $logo-font;
+			text-transform: uppercase;
+
+			.margin-m {
+				color: $primary;
+				font-size: 34px;
+				text-transform: lowercase;
+			}
+
+			.margin-a {
+				@include gradientColor;
+				font-size: 34px;
+				text-transform: lowercase;
+			}
+		}
 	}
 
 	&__text {
@@ -202,8 +208,9 @@
 		&--small {
 			font-size: 20px;
 			padding: 20px;
+
 			@include mobile {
-				padding: 20px 0 ;
+				padding: 20px 0;
 			}
 		}
 	}
