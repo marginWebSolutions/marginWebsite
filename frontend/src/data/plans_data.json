@@ -1,0 +1,21 @@
+[
+	{
+		"name": "Basic",
+		"price": "1500€",
+		"tech": "Wordpress",
+		"pages": "5"
+	},
+	{
+		"name": "Pro",
+		"price": "2500€",
+		"tech": "React",
+		"pages": "7"
+	},
+	{
+		"name": "Ultimate",
+		"price": "4500€",
+		"tech": "React",
+		"pages": "10",
+		"features": "Complexes"
+	}
+]
