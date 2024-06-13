@@ -5,22 +5,12 @@
 	padding: 160px 0;
 	width: 75vw;
 	margin: auto;
-	// transition: opacity 2s ease-in-out, transform 2s ease-in-out;
 
 	@include tablet {
 		width: 90vw;
 	}
 	@include mobile {
 		width: 85vw;
+		padding: 100px 0;
 	}
 }
-
-// .section--hidden {
-// 	transform: translateY(20px);
-// 	opacity: 0;
-// }
-
-// .fade-in {
-// 	opacity: 1;
-// 	transform: translateY(0);
-// }
