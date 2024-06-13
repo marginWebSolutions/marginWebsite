@@ -67,6 +67,7 @@
 		width: 100%;
 		height: auto;
 		display: block;
+		box-shadow: $light-shadow;
 
 		&--left {
 			border-radius: 100%;
@@ -82,7 +83,7 @@
 
 		&__container {
 			width: 500px;
-			height: 500px;
+			height: 600px;
 			overflow: hidden;
 			position: relative;
 			transition: transform 1s ease-in-out;
