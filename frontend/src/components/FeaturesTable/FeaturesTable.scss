@@ -1,4 +1,5 @@
-@import "../../utils/variables.scss";
+@import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 .features {
 	padding: 80px 0;
@@ -7,6 +8,10 @@
 		margin: 0 auto;
 		width: 65vw;
 		text-align: left;
+
+		@include tablet {
+			width: 100%;
+		}
 	}
 
 	&__title {

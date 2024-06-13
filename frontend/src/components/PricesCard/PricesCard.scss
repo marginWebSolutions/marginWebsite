@@ -66,6 +66,10 @@
 		.btn {
 			font-size: 16px;
 			text-align: center;
+
+			@include tablet {
+				font-size: 14px;
+			}
 		}
 
 		&__features {

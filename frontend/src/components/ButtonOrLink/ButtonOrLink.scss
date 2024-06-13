@@ -14,8 +14,8 @@
 	overflow: hidden;
 	transition: all 0.2s ease-in-out;
 
-	@include mobile {
-		padding: 7px;
+	@include tablet {
+		border-radius: 20px;
 	}
 
 	&::before {
@@ -33,6 +33,10 @@
 		-webkit-mask-composite: xor;
 		mask-composite: exclude; // Pour le support des autres navigateurs
 		z-index: -1;
+
+		@include tablet {
+			border-radius: 20px;
+		}
 	}
 
 	&__default {

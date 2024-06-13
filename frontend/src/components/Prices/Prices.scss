@@ -1,7 +1,6 @@
 @import '../../utils/variables.scss';
 @import '../../utils/mixins.scss';
 
-
 .prices {
 	&__content {
 		display: flex;
@@ -29,6 +28,20 @@
 
 	&__plans {
 		display: flex;
-		gap: 80px;
+		gap: 40px;
+
+		@include tablet {
+			gap: 20px;
+		}
+
+		@include mini-tablet {
+			flex-direction: column;
+			gap: 40px;
+			width: 75%;
+		}
+
+		@include mobile {
+			width: 100%;
+		}
 	}
 }
