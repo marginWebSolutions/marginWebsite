@@ -1,10 +1,12 @@
 @import "../../utils/variables.scss";
+@import "../../utils/mixins.scss";
 
 .clients__card {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 20px;
+	
 
 	&--link {
 		border-radius: 10px;
@@ -12,10 +14,17 @@
 		box-shadow: $light-shadow;
 		overflow: hidden;
 		position: relative;
+		@include tablet {
+			width: 85%;
+		}
+		@include mobile {
+			width: 95%;
+		}
 	}
 
 	&--overlay {
 		background: rgba($background, 0.1);
+		border-radius: 10px;
 		opacity: 0;
 		height: 100%;
 		width: 100%;
@@ -40,6 +49,9 @@
 		height: 100%;
 		border-radius: 10px;
 		transition: transform 0.2s ease-in-out;
+		@include tablet {
+			width: 100%;
+		}
 	}
 
 	&--text {
