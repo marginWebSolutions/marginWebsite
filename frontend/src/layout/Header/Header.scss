@@ -68,10 +68,19 @@
 			display: block;
 			position: absolute;
 			right: 10vw;
+
+			.btn {
+				border-radius: 20px;
+
+				&::before {
+					border-radius: 20px;
+				}
+			}
 		}
 
 		@include mobile {
 			right: 16vw;
+			display: none;
 		}
 	}
 }
