@@ -1,5 +1,5 @@
-import Navbar from '../../components/Navbar/Navbar';
-import NavbarItem from '../../components/NavbarItem/NavbarItem';
+import Navbar from './Navbar/Navbar';
+import NavbarItem from './NavbarItem/NavbarItem';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.scss';
