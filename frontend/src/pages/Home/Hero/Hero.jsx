@@ -5,9 +5,9 @@ import './Hero.scss';
 
 export default function Hero() {
 	const images = [
-		{ src: './426shots_so.png', alt: 'Description 1' },
-		{ src: './764shots_so.png', alt: 'Description 2' },
-		{ src: './798shots_so.png', alt: 'Description 3' },
+		{ src: './426shots_so.webp', alt: 'Description 1' },
+		{ src: './764shots_so.webp', alt: 'Description 2' },
+		{ src: './798shots_so.webp', alt: 'Description 3' },
 	];
 
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -37,11 +37,15 @@ export default function Hero() {
 						}`}
 						src={images[currentImageIndex].src}
 						alt={images[currentImageIndex].alt}
+						width={1920}
+						height={1080}
 					/>
 					<img
 						className="hero__mockup--mask"
-						src="./mockupmask.png"
+						src="./mockupmask.webp"
 						alt="mask"
+						width={1920}
+						height={1080}
 					/>
 				</div>
 				<div className="hero__container">

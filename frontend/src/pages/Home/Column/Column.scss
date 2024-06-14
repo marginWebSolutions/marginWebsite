@@ -16,15 +16,19 @@
 	&__image {
 		object-fit: contain;
 		width: 15vw;
+		height: 15vw;
 
 		@include tablet {
 			width: 22vw;
+			height: 22vw;
 		}
 		@include mini-tablet {
 			width: 25vw;
+			height: 25vw;
 		}
 		@include mobile {
 			width: 40vw;
+			height: 40vw;
 		}
 	}
 

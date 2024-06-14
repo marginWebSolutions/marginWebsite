@@ -53,8 +53,11 @@ export default function Presentation() {
 
 				<div className="presentation__columns" ref={columnRef}>
 					<Column
+						srcmobile={
+							'./illustration_Conseil_et_Expertise_en_stratégie_Web_mobile.webp'
+						}
 						src={
-							'./illustration_Conseil_et_Expertise_en_stratégie_Web.png'
+							'./illustration_Conseil_et_Expertise_en_stratégie_Web.webp'
 						}
 						alt={
 							"illustration d'un personnage qui dispense des conseils à son client concernant sa stratégie Web"
@@ -66,7 +69,10 @@ export default function Presentation() {
 						className={`${columnVisible ? 'fadeIn__columns' : ''}`}
 					/>
 					<Column
-						src={'./illustration_Développement_de_site_Web.png'}
+						srcmobile={
+							'./illustration_Développement_de_site_Web_mobile.webp'
+						}
+						src={'./illustration_Développement_de_site_Web.webp'}
 						alt={
 							"illustration d'un développeur qui crée un site Internet"
 						}
@@ -77,7 +83,10 @@ export default function Presentation() {
 						className={`${columnVisible ? 'fadeIn__columns' : ''}`}
 					/>
 					<Column
-						src={'./illustration_Service_Web_de_Proximité.png'}
+						srcmobile={
+							'./illustration_Service_Web_de_Proximité_mobile.webp'
+						}
+						src={'./illustration_Service_Web_de_Proximité.webp'}
 						alt={
 							"illustration d'un service de proximité via un personnage qui tape dans la main de son client"
 						}
