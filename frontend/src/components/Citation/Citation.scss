@@ -1,9 +1,19 @@
 @import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 .citation {
 	padding-top: 0;
 	padding-bottom: 160px;
-	width: 40%;
+	width: 50%;
+
+	@include tablet {
+		width: 70%;
+	}
+
+	@include mobile {
+		padding-bottom: 100px;
+		width: 95%;
+	}
 
 	&__content {
 		display: flex;
@@ -15,10 +25,10 @@
 			font-family: $title-font;
 			font-size: 42px;
 			font-weight: 500;
-		}
 
-		// &--author {
-		// 	// font-weight: 200;
-		// }
+			@include mobile {
+				font-size: 30px;
+			}
+		}
 	}
 }

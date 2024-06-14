@@ -10,12 +10,22 @@
 	box-shadow: $shadow-lighter-opacity;
 	min-width: 30vw;
 
+	@include tablet {
+		max-width: 85%;
+	}
+
+	@include mobile {
+		width: auto;
+		padding: 40px;
+	}
+
 	&__headings {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
 		line-height: 1.5;
+		gap: 10px;
 
 		&--title {
 			font-size: 32px;
@@ -24,7 +34,7 @@
 		}
 
 		&--text {
-			font-size: 19px;
+			font-size: 18px;
 		}
 	}
 
