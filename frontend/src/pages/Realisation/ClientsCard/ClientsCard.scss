@@ -1,12 +1,11 @@
-@import "../../utils/variables.scss";
-@import "../../utils/mixins.scss";
+@import '../../../utils/variables.scss';
+@import '../../../utils/mixins.scss';
 
 .clients__card {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 20px;
-	
 
 	&--link {
 		border-radius: 10px;
@@ -37,7 +36,7 @@
 		&:hover {
 			opacity: 1;
 
-		~.clients__card--img {
+			~ .clients__card--img {
 				transform: scale(1.1);
 			}
 		}

@@ -1,4 +1,4 @@
-import Section from '../../layout/Section/Section';
+import Section from '../../../layout/Section/Section';
 import ClientsCard from '../ClientsCard/ClientsCard';
 import './Clients.scss';
 

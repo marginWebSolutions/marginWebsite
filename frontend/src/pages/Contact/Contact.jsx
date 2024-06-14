@@ -1,5 +1,5 @@
-import Citation from '../../components/Citation/Citation';
-import ContactBlock from '../../components/ContactBlock/ContactBlock';
+import Citation from './Citation/Citation';
+import ContactBlock from './ContactBlock/ContactBlock';
 
 export default function Contact() {
 	return (

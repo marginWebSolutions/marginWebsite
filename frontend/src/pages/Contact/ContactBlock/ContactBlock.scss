@@ -1,5 +1,5 @@
-@import '../../utils/variables.scss';
-@import '../../utils/mixins.scss';
+@import '../../../utils/variables.scss';
+@import '../../../utils/mixins.scss';
 
 .contact {
 	padding-bottom: 160px;
@@ -102,6 +102,13 @@
 			justify-content: center;
 			gap: 40px;
 			margin: auto;
+		}
+	}
+
+	&__form {
+		@include mobile {
+			display: flex;
+			justify-content: center;
 		}
 	}
 }

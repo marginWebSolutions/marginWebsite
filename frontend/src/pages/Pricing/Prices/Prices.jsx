@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import Section from '../../layout/Section/Section';
+import Section from '../../../layout/Section/Section';
 import PricesCard from '../PricesCard/PricesCard';
 import './Prices.scss';
 
