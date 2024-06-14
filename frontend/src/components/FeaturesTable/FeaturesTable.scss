@@ -13,14 +13,14 @@
 			width: 100%;
 		}
 
-		&--titles {
+		&--plan-names {
 			display: flex;
 			gap: 10px;
 			margin-bottom: 20px;
 		}
 
-		&--title {
-			padding: 10px 0;
+		&--plan-name {
+			padding: 7px 0;
 		}
 	}
 
@@ -38,15 +38,18 @@
 	&__item {
 		padding: 10px;
 		border-top: 1px solid rgba($text, 0.1);
-		border-right: 1px solid rgba($text, 0.1);
+		border-left: 1px solid rgba($text, 0.1);
 
 		&--title {
+			border-top: 1px solid rgba($text, 0.1);
+			border-left: 1px solid rgba($text, 0.1);
 			font-weight: 500;
 			text-transform: uppercase;
 			border-top: none;
 
 			&--left {
 				border-top: none;
+				border-left: none;
 			}
 		}
 
@@ -56,6 +59,7 @@
 
 		&--left {
 			padding-left: 20px;
+			border-left: none;
 
 			@include mobile {
 				padding: 0;
@@ -64,14 +68,20 @@
 		}
 
 		&--mobile {
-			border: 1px solid rgba($text, 0.1);
 			padding: 10px;
+			border-top: 1px solid rgba($text, 0.1);
+
+			&--title {
+				border-right: 1px solid rgba($text, 0.1);
+				font-weight: 500;
+			text-transform: uppercase;
+			}
 		}
 	}
 }
 
 td {
-	border-right: 1px solid rgba($text, 0.1);
+
 	text-align: center;
 }
 
@@ -81,4 +91,5 @@ th {
 
 .selected {
 	border-bottom: 2px solid $secondary;
+	font-weight: 700;
 }

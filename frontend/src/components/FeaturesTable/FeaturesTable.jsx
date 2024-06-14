@@ -45,11 +45,11 @@ export default function FeaturesTable() {
 					<tbody>
 						<tr>
 							<td>
-								<div className="features__table--titles">
+								<div className="features__table--plan-names">
 									{PlansData.map((plan) => (
 										<div
 											key={plan.name}
-											className={`features__table--title ${
+											className={`features__table--plan-name ${
 												selectedPlan.name === plan.name
 													? 'selected'
 													: ''
