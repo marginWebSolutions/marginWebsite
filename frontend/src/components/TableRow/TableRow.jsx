@@ -15,7 +15,7 @@ export default function TableRow({ title, children, values, isMobile }) {
 	} else {
 		return (
 			<tr>
-				<th className="features__item--mobile features__item--title">
+				<th className="features__item--mobile features__item--mobile--title">
 					{title}
 				</th>
 				<td className="features__item--mobile">{children}</td>

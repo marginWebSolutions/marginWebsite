@@ -1,4 +1,5 @@
 @import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 .infos__item {
 	display: flex;
@@ -18,5 +19,13 @@
 	&--text {
 		font-size: 16px;
 		color: $text;
+	}
+
+	@include tablet {
+		width: auto;
+	}
+
+	@include mobile {
+		align-items: center;
 	}
 }
