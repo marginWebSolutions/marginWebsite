@@ -1,7 +1,7 @@
 import FeaturesTable from '../../components/FeaturesTable/FeaturesTable';
-import Prices from '../../components/Prices/Prices';
-import Underline from '../../components/Underline/Underline';
 import GoToSection from '../../components/GoToSection/GoToSection';
+import Prices from '../../components/Prices/Prices';
+import Underline from '../../layout/Underline/Underline';
 
 export default function Pricing() {
 	return (

@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import PlansData from '../../data/plans_data.json';
+import Section from '../../layout/Section/Section';
 import useScrollAnimation from '../../utils/hooks/useScrollAnimation';
 import PlanDetails from '../PlanDetails/PlanDetails';
-import Section from '../Section/Section';
 import TableRow from '../TableRow/TableRow';
 import './FeaturesTable.scss';
 

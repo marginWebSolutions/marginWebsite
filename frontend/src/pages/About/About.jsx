@@ -1,6 +1,6 @@
-import Us from '../../components/Us/Us';
 import GoToSection from '../../components/GoToSection/GoToSection';
-import Underline from '../../components/Underline/Underline';
+import Underline from '../../layout/Underline/Underline';
+import Us from './Us/Us';
 
 export default function Contact() {
 	return (

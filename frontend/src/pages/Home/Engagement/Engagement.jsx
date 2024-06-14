@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useRef } from 'react';
-import useScrollAnimation from '../../utils/hooks/useScrollAnimation';
+import Section from '../../../layout/Section/Section';
+import useScrollAnimation from '../../../utils/hooks/useScrollAnimation';
 import EngagementCard from '../EngagementCard/EngagementCard';
-import Section from '../Section/Section';
 import './Engagement.scss';
 
 export default function Engagement() {

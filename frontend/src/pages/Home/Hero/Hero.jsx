@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import ButtonDoubled from '../ButtonDoubled/ButtonDoubled';
-import Section from '../Section/Section';
+import { useEffect, useState } from 'react';
+import ButtonDoubled from '../../../components/ButtonDoubled/ButtonDoubled';
+import Section from '../../../layout/Section/Section';
 import './Hero.scss';
 
 export default function Hero() {

@@ -1,13 +1,12 @@
-@import '../../utils/variables.scss';
-@import '../../utils/mixins.scss';
+@import '../../../utils/variables.scss';
+@import '../../../utils/mixins.scss';
 
-.us {
+.presentation {
 	&__content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		padding-top: clamp(50px, 8vh, 600px);
 		gap: 80px;
 	}
 
@@ -36,5 +35,9 @@
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 80px;
+
+		@include tablet {
+			grid-template-columns: repeat(1, 1fr);
+		}
 	}
 }

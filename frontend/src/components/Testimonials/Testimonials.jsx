@@ -1,6 +1,6 @@
 import { useRef } from 'react';
+import Section from '../../layout/Section/Section';
 import useScrollAnimation from '../../utils/hooks/useScrollAnimation';
-import Section from '../Section/Section';
 import TestimonialCard from '../TestimonialCard/TestimonialCard';
 import './Testimonials.scss';
 

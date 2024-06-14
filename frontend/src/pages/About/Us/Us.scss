@@ -1,13 +1,13 @@
-@import '../../utils/variables.scss';
-@import '../../utils/mixins.scss';
-.engagement {
-	display: flex;
-	justify-content: center;
+@import '../../../utils/variables.scss';
+@import '../../../utils/mixins.scss';
 
+.us {
 	&__content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
+		padding-top: clamp(50px, 8vh, 600px);
 		gap: 80px;
 	}
 
@@ -21,21 +21,6 @@
 		}
 	}
 
-	&__cards {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 80px;
-
-		@include tablet {
-			flex-direction: column;
-			flex-wrap: nowrap;
-			width: 85%;
-		}
-		@include mobile {
-			width: 95%;
-		}
-	}
-
 	&__text {
 		font-size: 24px;
 		line-height: 1.5;
@@ -45,5 +30,11 @@
 		@include tablet {
 			width: 100%;
 		}
+	}
+	&__columns {
+		max-width: 100%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 80px;
 	}
 }
