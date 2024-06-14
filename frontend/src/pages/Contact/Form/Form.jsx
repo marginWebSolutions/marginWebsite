@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import ButtonOrLink from '../ButtonOrLink/ButtonOrLink';
-import Field, { FIELD_TYPES } from '../FormInputs/Field/Field';
+import ButtonOrLink from '../../../components/ButtonOrLink/ButtonOrLink';
+import Field, { FIELD_TYPES } from '../../../components/FormInputs/Field/Field';
 import './Form.scss';
 
 export default function Form() {

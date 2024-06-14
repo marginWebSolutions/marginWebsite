@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useRef } from 'react';
-import Section from '../../layout/Section/Section';
-import useScrollAnimation from '../../utils/hooks/useScrollAnimation';
+import Section from '../../../layout/Section/Section';
+import useScrollAnimation from '../../../utils/hooks/useScrollAnimation';
 import './Citation.scss';
 
 export default function Citation({ quote, author }) {

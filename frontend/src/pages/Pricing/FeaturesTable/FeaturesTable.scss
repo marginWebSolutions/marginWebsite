@@ -1,5 +1,5 @@
-@import '../../utils/variables.scss';
-@import '../../utils/mixins.scss';
+@import '../../../utils/variables.scss';
+@import '../../../utils/mixins.scss';
 
 .features {
 	padding: 80px 0;
@@ -74,14 +74,13 @@
 			&--title {
 				border-right: 1px solid rgba($text, 0.1);
 				font-weight: 500;
-			text-transform: uppercase;
+				text-transform: uppercase;
 			}
 		}
 	}
 }
 
 td {
-
 	text-align: center;
 }
 
