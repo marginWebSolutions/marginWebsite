@@ -23,6 +23,8 @@ export default function TestimonialCard({
 					src={avatarSrc}
 					alt={avatarAlt}
 					className="card__content--avatar"
+					width={100}
+					height={100}
 				/>
 				<div className="card__content__client">
 					<h3 className="card__content__client--name">{name}</h3>

@@ -17,8 +17,10 @@ export default function MarcoAdriDescription() {
 					<div className="ma-description__image__container ma-description__image__container--left">
 						<img
 							className="ma-description__image ma-description__image--left"
-							src="./marcoadri.png"
+							src="./marcoadri.webp"
 							alt="Marc"
+							width={500}
+							height={500}
 						/>
 					</div>
 					<div className="ma-description__wrapper ma-description__wrapper--left">
@@ -43,8 +45,10 @@ export default function MarcoAdriDescription() {
 					<div className="ma-description__image__container ma-description__image__container--right">
 						<img
 							className="ma-description__image ma-description__image--right"
-							src="./marcoadri.png"
+							src="./marcoadri.webp"
 							alt="Adrien"
+							width={500}
+							height={500}
 						/>
 					</div>
 					<div className="ma-description__wrapper ma-description__wrapper--right">
@@ -63,8 +67,10 @@ export default function MarcoAdriDescription() {
 					<div className="ma-description__image__container--small">
 						<img
 							className="ma-description__image--small"
-							src="./marcoadri.png"
+							src="./marcoadri.webp"
 							alt="Marco et Adrien"
+							width={500}
+							height={500}
 						/>
 					</div>
 					<div className="ma-description__wrappers--small">
