@@ -63,7 +63,7 @@
 			align-items: center;
 			height: 100vh;
 
-			& > .navbar__list--item > .navbar__link {
+			&>.navbar__list--item>.navbar__link {
 				font-size: 30px;
 
 				@include mobile {
@@ -73,6 +73,7 @@
 				&.btn {
 					top: 15px;
 					padding: 10px 25px;
+					border-radius: 50px;
 
 					&::before {
 						border-radius: 50px;
