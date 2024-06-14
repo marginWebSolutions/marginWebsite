@@ -1,5 +1,5 @@
-@import '../../utils/variables.scss';
-@import '../../utils/mixins.scss';
+@import '../../../utils/variables.scss';
+@import '../../../utils/mixins.scss';
 
 .ma-description {
 	&__content {
@@ -95,10 +95,8 @@
 
 				@include mobile {
 					width: 100%;
-					;
 				}
 			}
-
 		}
 
 		&--small {
@@ -124,7 +122,6 @@
 		opacity: 0;
 		transition: transform 1s ease-in-out, opacity 0.1s ease-in-out 0.5s;
 
-
 		&--left {
 			position: absolute;
 			right: 0%;
@@ -138,10 +135,8 @@
 		}
 
 		&--small {
-
 			&:nth-child(1) {
 				border-right: 1px solid rgba($text, 0.25);
-
 
 				@include mobile {
 					border-right: none;
@@ -179,7 +174,7 @@
 			}
 		}
 
-		&--small.names{
+		&--small.names {
 			font-size: 26px;
 			height: 32px;
 			font-family: $logo-font;

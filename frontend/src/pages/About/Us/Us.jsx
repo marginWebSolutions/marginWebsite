@@ -1,5 +1,5 @@
+import Section from '../../../layout/Section/Section';
 import MarcoAdriDescription from '../MarcoAdriDescription/MarcoAdriDescription';
-import Section from '../Section/Section';
 import './Us.scss';
 
 export default function Us() {
@@ -16,7 +16,6 @@ export default function Us() {
 					</span>{' '}
 					autour de chez eux.
 				</p>
-
 				<MarcoAdriDescription />
 			</div>
 		</Section>

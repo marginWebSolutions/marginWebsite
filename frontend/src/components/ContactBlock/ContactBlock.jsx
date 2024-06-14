@@ -1,8 +1,8 @@
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Section from '../../layout/Section/Section';
 import ContactDetail from '../ContactDetail/ContactDetail';
 import Form from '../Form/Form';
-import Section from '../Section/Section';
 import './ContactBlock.scss';
 
 export default function ContactBlock() {

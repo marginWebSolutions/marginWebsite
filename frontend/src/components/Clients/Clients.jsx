@@ -1,5 +1,5 @@
+import Section from '../../layout/Section/Section';
 import ClientsCard from '../ClientsCard/ClientsCard';
-import Section from '../Section/Section';
 import './Clients.scss';
 
 export default function Clients() {

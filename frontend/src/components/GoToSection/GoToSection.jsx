@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import PropTypes from 'prop-types';
 import { useRef } from 'react';
+import Section from '../../layout/Section/Section';
 import useScrollAnimation from '../../utils/hooks/useScrollAnimation';
 import ButtonDoubled from '../ButtonDoubled/ButtonDoubled';
 import ButtonOrLink from '../ButtonOrLink/ButtonOrLink';
-import Section from '../Section/Section';
 import './GoToSection.scss';
 
 export default function GoToSection({
