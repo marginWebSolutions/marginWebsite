@@ -5,7 +5,7 @@ export default function Meta() {
     return (
         <>
             <Helmet>
-                <meta name="description" content="La Ferme de la corne dorée est une chèvrerie située aux portes du parc naturel régional du Pilat : Vente de fromages de chèvre artisanaux et équitation Western." />
+                <meta name="description" content="Margin Web Solutions offre des services de création de sites internet personnalisés pour artisans et PME à Nevers et Saint-Étienne. Nous vous aidons à développer votre présence en ligne avec des solutions web sur mesure, optimisées pour le SEO et le design responsive." />
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="https://www.margin-web.com" />
