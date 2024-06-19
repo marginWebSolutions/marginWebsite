@@ -1,5 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import BackToTop from './components/BackToTop/BackToTop';
+import Favicon from './helmet/Favicon';
+import JSONLD from './helmet/JSONLD';
+import Meta from './helmet/Meta';
 import Footer from './layout/Footer/Footer';
 import Header from './layout/Header/Header';
 import About from './pages/About/About';
@@ -7,14 +10,13 @@ import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import Pricing from './pages/Pricing/Pricing';
 import Realisation from './pages/Realisation/Realisation';
-import Meta from './helmet/Meta';
-import JSONLD from './helmet/JSONLD';
 
 export default function App() {
 	return (
 		<BrowserRouter>
 			<div className="App">
 				<div className="overlay"></div>
+				<Favicon />
 				<Meta />
 				<JSONLD />
 				<Header />
