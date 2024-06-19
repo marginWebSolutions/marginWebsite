@@ -42,7 +42,7 @@ export default function Hero() {
 					/>
 					<img
 						className="hero__mockup--mask"
-						src="./mockupmask.webp"
+						src="./margin_web_solutions_mockupmask.webp"
 						alt="mask"
 						width={1920}
 						height={1080}
