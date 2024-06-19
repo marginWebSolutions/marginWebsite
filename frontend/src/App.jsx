@@ -7,12 +7,16 @@ import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import Pricing from './pages/Pricing/Pricing';
 import Realisation from './pages/Realisation/Realisation';
+import Meta from './helmet/Meta';
+import JSONLD from './helmet/JSONLD';
 
 export default function App() {
 	return (
 		<BrowserRouter>
 			<div className="App">
 				<div className="overlay"></div>
+				<Meta />
+				<JSONLD />
 				<Header />
 				<main>
 					<Routes>

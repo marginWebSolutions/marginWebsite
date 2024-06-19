@@ -86,6 +86,10 @@ td {
 
 th {
 	width: 30%;
+
+	@include mobile {
+		width: 70%;
+	}
 }
 
 .selected {
