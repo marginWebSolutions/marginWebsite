@@ -5,9 +5,9 @@ import './Hero.scss';
 
 export default function Hero() {
 	const images = [
-		{ src: './426shots_so.webp', alt: 'Description 1' },
-		{ src: './764shots_so.webp', alt: 'Description 2' },
-		{ src: './798shots_so.webp', alt: 'Description 3' },
+		{ src: './margin_web_solutions_navigation_site_Internet.webp', alt: 'Navigation fluide sur un site Internet' },
+		{ src: './margin_web_solutions_maquettage.webp', alt: "Création de maquette et wireframe d'un site Web" },
+		{ src: './margin_web_solutions_developpement_site_web.webp', alt: 'développement de site web pour PME et Artisans à Nevers et Saint-Etienne' },
 	];
 
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
