@@ -4,7 +4,7 @@ export default function JSONLD () {
   const businessInfo = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Margin Web Solutions",
+    "name": "Marc Villevieille - Margin Web Solutions",
     "image": "./logo_margin_web_solutions.webp",
     "description": "Margin Web Solutions offre des services de création de sites internet personnalisés pour artisans et PME à Nevers et Saint-Étienne. Nous fournissons des solutions web sur mesure, optimisées pour le SEO et le design responsive, afin de développer votre présence en ligne.",
     "address": {
@@ -38,7 +38,7 @@ export default function JSONLD () {
   const secondLocation = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Margin Web Solutions",
+    "name": "Adrien Blanco - Margin Web Solutions",
     "image": "./logo_margin_web_solutions.webp",
     "address": {
       "@type": "PostalAddress",
