@@ -22,8 +22,9 @@ export default function Prices() {
 				<div className="prices__plans">
 					<PricesCard
 						title="à la Carte"
-						text="Prestation de services pour site déjà existant"
+						text="Prestation de services pour votre site existant"
 						price="à partir de 800€*"
+						listTitle='Les services possibles :'
 						features={['Refonte graphique', 'Modification de contenu', 'Animations des éléments de la page', 'Référencement en ligne', "Optimisation des performances", "Audit", "Débogage", "Maintenance technique"]}
 					/>
 					<PricesCard
