@@ -11,6 +11,7 @@ export default function PricesCard({
 	price,
 	features,
 	listTitle = "Ce qui est compris :",
+	btnHref = "#features",
 	popular = false,
 }) {
 	return (
@@ -23,7 +24,7 @@ export default function PricesCard({
 				</div>
 				<div className="card__body">
 					<p className="card__body--price">{price}</p>
-					<ButtonOrLink isLink={true} href="#features">
+					<ButtonOrLink isLink={true} href={btnHref}>
 						Plus d'infos
 					</ButtonOrLink>
 					<div className="card__body__features">
@@ -57,5 +58,6 @@ PricesCard.propTypes = {
 	price: PropTypes.string.isRequired,
 	features: PropTypes.array.isRequired,
 	listTitle: PropTypes.string,
+	btnHref: PropTypes.string,
 	popular: PropTypes.bool,
 };
