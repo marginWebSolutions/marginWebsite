@@ -76,7 +76,7 @@ export default function FeaturesTable() {
 					<thead>
 						<tr>
 							<th className="features__title">
-								Détails des prestations et tarifs
+								Détails des prestations
 							</th>
 						</tr>
 					</thead>
