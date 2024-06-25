@@ -21,23 +21,23 @@ export default function Prices() {
 				</p>
 				<div className="prices__plans">
 					<PricesCard
-						popular={true}
-						title="Essentiel"
-						text="Site vitrine moderne optimisé et référencé"
-						price="à partir de 1500€*"
-						features={["Création d'un design sobre et profesionnel", "Ou mise en place de votre propre design", 'Référencement en ligne', 'Animations simples', "Nombre de pages limité" ]}
-					/>
-					<PricesCard
-						title="Premium"
-						text="Site vitrine perfomant au design travaillé"
-						price="à partir de 4500€*"
-						features={['Direction artistique et design travaillé', 'Contenu administrable', 'Référencement en ligne', 'Animations poussées', "Plus grand nombre de pages"]}
-					/>
-					<PricesCard
 						title="à la Carte"
 						text="Prestation de services pour site déjà existant"
 						price="à partir de 800€*"
 						features={['Refonte graphique', 'Modification de contenu', 'Animations des éléments de la page', 'Référencement en ligne', "Optimisation des performances", "Audit", "Débogage", "Maintenance technique"]}
+					/>
+					<PricesCard
+						popular={true}
+						title="Essentiel"
+						text="Site vitrine moderne optimisé et référencé"
+						price="à partir de 1500€*"
+						features={["Création d'un design sobre et profesionnel", "Ou mise en place de votre propre design", 'Référencement en ligne', 'Animations simples', "Nombre de pages limité"]}
+					/>
+					<PricesCard
+						title="Premium"
+						text="Site vitrine performant au design travaillé"
+						price="à partir de 4500€*"
+						features={['Direction artistique et design travaillé', 'Contenu administrable', 'Référencement en ligne', 'Animations poussées', "Plus grand nombre de pages"]}
 					/>
 				</div>
 			</div>
