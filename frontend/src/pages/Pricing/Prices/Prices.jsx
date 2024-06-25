@@ -42,6 +42,7 @@ export default function Prices() {
 					/>
 				</div>
 			</div>
+			<p className="prices__details">*Tarif indicatif Hors Taxe, évolution selon devis personnalisé</p>
 		</Section>
 	);
 }
