@@ -9,13 +9,29 @@
 		"name": "Pro",
 		"price": "2500€",
 		"tech": "React",
-		"pages": "7"
+		"pages": "7",
+		"additionals": [
+			"Hébergement",
+			"Maintenance technique",
+			"Mise à jour du contenu",
+			"Pages supplémentaires",
+			"Demandes de modifications supplémentaires durant le développement",
+			"Animations poussées",
+			"Contenu administrable"
+		]
 	},
 	{
 		"name": "Ultimate",
 		"price": "4500€",
 		"tech": "React",
 		"pages": "10",
-		"features": "Complexes"
+		"features": "Complexes",
+		"additionals": [
+			"Hébergement",
+			"Maintenance technique",
+			"Mise à jour du contenu",
+			"Pages supplémentaires",
+			"Demandes de modifications supplémentaires durant le développement"
+		]
 	}
 ]
