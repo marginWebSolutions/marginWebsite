@@ -10,6 +10,7 @@ export default function PricesCard({
 	text,
 	price,
 	features,
+	listTitle = "Ce qui est compris :",
 	popular = false,
 }) {
 	return (
@@ -26,8 +27,8 @@ export default function PricesCard({
 						Plus d'infos
 					</ButtonOrLink>
 					<div className="card__body__features">
-						<p className="card__body__features--text">
-							Ce qui est compris
+						<p className="card__body__list--title">
+							{listTitle}
 						</p>
 						<ul className="card__body__list">
 							{features.map((feature, index) => (
@@ -55,5 +56,6 @@ PricesCard.propTypes = {
 	text: PropTypes.string.isRequired,
 	price: PropTypes.string.isRequired,
 	features: PropTypes.array.isRequired,
+	listTitle: PropTypes.string,
 	popular: PropTypes.bool,
 };

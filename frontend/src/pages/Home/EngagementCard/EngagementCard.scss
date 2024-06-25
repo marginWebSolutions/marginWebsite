@@ -18,7 +18,7 @@
 	&--title {
 		font-family: $title-font;
 		font-size: 36px;
-		padding-top: 40px;
+		padding: 40px 20px 0 20px;
 		@include gradientColor;
 
 		@include mobile {

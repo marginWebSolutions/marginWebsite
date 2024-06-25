@@ -77,18 +77,18 @@
 			display: flex;
 			flex-direction: column;
 			gap: 10px;
-
-			&--text {
-				font-family: $title-font;
-				font-size: 12px;
-				font-weight: 500;
-			}
 		}
 
 		&__list {
 			display: flex;
 			flex-direction: column;
 			gap: 10px;
+
+			&--title {
+				font-family: $title-font;
+				font-size: 12px;
+				font-weight: 500;
+			}
 
 			&--item {
 				display: flex;
