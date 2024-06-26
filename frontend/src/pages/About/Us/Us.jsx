@@ -8,13 +8,10 @@ export default function Us() {
 			<div className="us__content">
 				<h1 className="us__title">Qui sommes-nous ?</h1>
 				<p className="us__text">
-					Margin, c’est l’histoire de deux amis passionnés par la
-					création et le développement de sites Internet, qui décident
-					de mettre leur savoir-faire{' '}
-					<span className="bolder">
-						au service des PME et des artisans
-					</span>{' '}
-					autour de chez eux.
+					Marc et Adrien sont deux amis passionnés par le développement de sites Web, la communication et le monde du numérique.
+					C’est à force de discussions autour de leur sujet de prédilection que l’idée germe :
+					"Puisque <span className="bolder">l’union fait la force</span>, nous pourrions être deux fois
+					<span className="bolder"> plus fort pour nos clients !</span>"
 				</p>
 				<MarcoAdriDescription />
 			</div>
