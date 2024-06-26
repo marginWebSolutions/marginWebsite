@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
-import PlansDataDetails from '../../../data/plans_data.json';
+import PlansData from '../../../data/plans_data.json';
 import Section from '../../../layout/Section/Section';
 import useScrollAnimation from '../../../utils/hooks/useScrollAnimation';
-import PlanDetails from '../PlanDetails/PlanDetails';
+import FeaturesTableMobile from '../FeaturesTableMobile/FeaturesTableMobile';
 import './FeaturesTable.scss';
 
 export default function FeaturesTable() {
@@ -37,7 +37,7 @@ export default function FeaturesTable() {
 					<thead>
 						<tr>
 							<th className="features__title">
-								Détails des prestations et tarifs
+								Détails des prestations
 							</th>
 						</tr>
 					</thead>
@@ -68,7 +68,7 @@ export default function FeaturesTable() {
 								</div>
 							</td>
 						</tr>
-						<PlanDetails plan={selectedPlan} />
+						<FeaturesTableMobile plan={selectedPlan} />
 					</tbody>
 				</table>
 			)}
@@ -98,7 +98,7 @@ export default function FeaturesTable() {
 								Premium
 							</td>
 						</tr>
-						{PlansDataDetails.map((detail) => (
+						{PlansData.map((detail) => (
 							<tr key={detail.name}>
 								<th className="features__item features__item--left">
 									{detail.name}
