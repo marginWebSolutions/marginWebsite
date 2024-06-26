@@ -42,7 +42,8 @@ export default function Presentation() {
 					<span className="bolder">Nevers et Saint-Étienne</span>,
 					nous offrons des solutions digitales adaptées à vos besoins
 					spécifiques, en alliant design, fonctionnalités et
-					performances. Conscients des enjeux et des spécificités
+					performances. 
+					<br />Conscients des enjeux et des spécificités
 					uniques de chaque corps de métier, nous basons notre
 					approche{' '}
 					<span className="bolder">
