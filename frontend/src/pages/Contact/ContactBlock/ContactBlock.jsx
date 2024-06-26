@@ -24,7 +24,7 @@ export default function ContactBlock() {
 								votre projet !
 							</p>
 							<div className="infos__content">
-								<ContactDetail
+								{/* <ContactDetail
 									icon={
 										<FontAwesomeIcon
 											icon={faEnvelope}
@@ -34,7 +34,7 @@ export default function ContactBlock() {
 									title="Email"
 									href="mailto:margin.webdev.com"
 									text="margin.webdev@gmail.com"
-								/>
+								/> */}
 								<ContactDetail
 									icon={
 										<FontAwesomeIcon
@@ -42,7 +42,7 @@ export default function ContactBlock() {
 											className="infos__item--icon color-touch-svg"
 										/>
 									}
-									title="Téléphone"
+									// title="Téléphone"
 									href="tel:+33664148826"
 									text="06 64 14 88 26"
 								/>
