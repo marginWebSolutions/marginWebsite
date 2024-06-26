@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import PlansDetailsMobile from '../../../data/plans_data.json';
+import PlansData from '../../../data/plans_data.json';
 
-export default function PlanDetails({ plan }) {
+export default function FeaturesTableMobile({ plan }) {
 	if (plan === 'Essentiel') {
-		return PlansDetailsMobile.map((detail) => (
+		return PlansData.map((detail) => (
 			<tr key={detail.name}>
 				<th className="features__item features__item--left">
 					{detail.name}
@@ -14,7 +14,7 @@ export default function PlanDetails({ plan }) {
 	}
 
 	if (plan === 'Premium') {
-		return PlansDetailsMobile.map((detail) => (
+		return PlansData.map((detail) => (
 			<tr key={detail.name}>
 				<th className="features__item features__item--left">
 					{detail.name}
@@ -25,6 +25,6 @@ export default function PlanDetails({ plan }) {
 	}
 }
 
-PlanDetails.propTypes = {
+FeaturesTableMobile.propTypes = {
 	plan: PropTypes.string,
 };
