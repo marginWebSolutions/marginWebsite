@@ -67,8 +67,7 @@
 			border-left: none;
 
 			@include mobile {
-				padding: 0;
-				align-self: flex-start;
+				padding: 10px 0;
 			}
 		}
 
@@ -90,10 +89,10 @@ td {
 }
 
 th {
-	width: 30%;
+	width: 33%;
 
 	@include mobile {
-		width: 70%;
+		width: 50%;
 	}
 }
 
