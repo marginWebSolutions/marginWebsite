@@ -6,7 +6,7 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
-		gap: 40px;
+		gap: 20px;
 		margin-left: 95px;
 
 		@include tablet {
@@ -20,16 +20,6 @@
 
 	&__title {
 		font-size: 24px;
-	}
-
-	&__plan {
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-	}
-
-	&__subtitle {
-		font-size: 20px;
 	}
 
 	&__list {
