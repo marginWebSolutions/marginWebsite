@@ -1,36 +1,8 @@
 [
 	{
-		"name": "Pro",
-		"Design": "2500€",
-		"tech": "React",
-		"pages": "7",
-		"additionals": [
-			"Hébergement",
-			"Maintenance technique",
-			"Mise à jour du contenu",
-			"Pages supplémentaires",
-			"Demandes de modifications supplémentaires durant le développement",
-			"Animations poussées",
-			"Contenu administrable"
-		]
+		"name": "Essentiel"
 	},
 	{
-		"name": "Ultimate",
-		"price": "4500€",
-		"tech": "React",
-		"pages": "10",
-		"features": "Complexes",
-		"additionals": [
-			"Hébergement",
-			"Maintenance technique",
-			"Mise à jour du contenu",
-			"Pages supplémentaires",
-			"Demandes de modifications supplémentaires durant le développement"
-		]
-	},
-	{
-		"name": "Design",
-		"Essentiel": "Sobre",
-		"Premium": "Travaillé"
-	},
+		"name": "Premium"
+	}
 ]

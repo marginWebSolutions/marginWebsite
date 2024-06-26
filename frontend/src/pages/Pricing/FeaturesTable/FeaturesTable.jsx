@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
-import PlansData from '../../../data/plans_data.json';
+import PlansDataDetails from '../../../data/plans_data.json';
+import PlansData from '../../../data/plans_datas.json';
 import Section from '../../../layout/Section/Section';
 import useScrollAnimation from '../../../utils/hooks/useScrollAnimation';
 import PlanDetails from '../PlanDetails/PlanDetails';
-import TableRow from '../TableRow/TableRow';
 import './FeaturesTable.scss';
+
+console.log(PlansDataDetails);
 
 export default function FeaturesTable() {
 	const contentRef = useRef(null);
@@ -85,63 +87,26 @@ export default function FeaturesTable() {
 							<th className="features__item features__item--title features__item--title--left">
 								Plans
 							</th>
-							{PlansData.map((plan) => (
-								<td
-									key={plan.name}
-									className="features__item features__item--title"
-								>
-									{plan.name}
-								</td>
-							))}
+							<td className="features__item features__item--title">
+								Essentiel
+							</td>
+							<td className="features__item features__item--title">
+								Premium
+							</td>
 						</tr>
-						<TableRow
-							title="Design"
-							values={PlansData.map((plan) => plan.Design)}
-						/>
-						<TableRow
-							title="Direction artistique"
-							values={PlansData.map((plan) => plan.tech)}
-						/>
-						<TableRow
-							title="Animations"
-							values={PlansData.map((plan) => plan.pages)}
-						/>
-						<TableRow
-							title="Nombre de pages"
-							values={PlansData.map((plan) => plan.pages)}
-						/>
-						<TableRow
-							title="Contenu administrable"
-							values={PlansData.map((plan) => plan.pages)}
-						/>
-						<TableRow
-							title="Demandes de changement en cours de développement"
-							values={PlansData.map((plan) => plan.pages)}
-						/>
-						<TableRow
-							title="Intégration du design"
-							values={PlansData.map((plan) => plan.pages)}
-						/>
-						<TableRow
-							title="Référencement"
-							values={PlansData.map((plan) => plan.pages)}
-						/>
-						<TableRow
-							title="Formulaire de contact"
-							values={PlansData.map((plan) => plan.pages)}
-						/>
-						<TableRow
-							title="Liens vers vos médias sociaux"
-							values={PlansData.map((plan) => plan.pages)}
-						/>
-						<TableRow
-							title="Audit"
-							values={PlansData.map((plan) => plan.pages)}
-						/>
-						<TableRow
-							title="Optimisation des performances"
-							values={PlansData.map((plan) => plan.pages)}
-						/>
+						{PlansDataDetails.map((detail) => (
+							<tr key={detail.name}>
+								<th className="features__item features__item--left">
+									{detail.name}
+								</th>
+								<td className="features__item">
+									{detail.Essentiel}
+								</td>
+								<td className="features__item">
+									{detail.Premium}
+								</td>
+							</tr>
+						))}
 					</tbody>
 				</table>
 			)}
