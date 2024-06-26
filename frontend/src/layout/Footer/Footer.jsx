@@ -5,7 +5,7 @@ export default function Footer() {
 		<footer className="footer">
 			<div className="footer__content">
 				{`Copyright © ${new Date().getFullYear()} Margin Web Solutions.
-				All rights reserved.`}
+				Tous droits réservés.`}
 			</div>
 		</footer>
 	);
