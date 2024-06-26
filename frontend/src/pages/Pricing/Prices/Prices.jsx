@@ -27,7 +27,7 @@ export default function Prices() {
 						text="Prestation de services pour votre site existant"
 						price="à partir de 450€*"
 						listTitle='Les services possibles :'
-						features={['Refonte graphique', 'Modification de contenu', 'Animations des éléments de la page', 'Amélioration du référencement en ligne', "Optimisation des performances", "Audit", "Débogage", "Maintenance technique"]}
+						features={['Refonte graphique', 'Modification de contenu', 'Animations des éléments du site', 'Amélioration du référencement en ligne', "Optimisation des performances", "Audit", "Débogage", "Maintenance technique"]}
 					/>
 					<PricesCard
 						popular={true}

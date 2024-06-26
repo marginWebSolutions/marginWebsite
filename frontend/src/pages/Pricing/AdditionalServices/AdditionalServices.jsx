@@ -8,7 +8,7 @@ export default function AdditionalServices() {
 		"Maintenance technique",
 		"Mise à jour du contenu",
 		"Pages supplémentaires",
-		"Demandes de changements en cours de développement",
+		"Demandes de changements supplémentaires",
 		"Animations poussées (pack Essentiel)",
 		"Contenu administrable (pack Essentiel)"
 	]
