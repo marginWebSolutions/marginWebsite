@@ -1,6 +1,12 @@
 import PropTypes from 'prop-types';
 
-export default function TableRow({ title, children, values, isMobile }) {
+export default function TableRow({
+	detail,
+	title,
+	children,
+	values,
+	isMobile,
+}) {
 	if (!isMobile) {
 		return (
 			<tr>
@@ -25,6 +31,7 @@ export default function TableRow({ title, children, values, isMobile }) {
 }
 
 TableRow.propTypes = {
+	detail: PropTypes.object,
 	title: PropTypes.string,
 	children: PropTypes.node,
 	isMobile: PropTypes.bool,
