@@ -127,7 +127,7 @@ export default function Form() {
 					id="message"
 					value={formData.message}
 					handleChange={handleChange}
-					placeholder="Veuillez taper votre message ici..."
+					placeholder="Veuillez saisir votre message ici..."
 					required
 				/>
 			</div>
