@@ -58,8 +58,8 @@ export default function Engagement() {
 					ref={textRef}
 				>
 					Nous comprenons les défis que rencontrent les PME et les
-					artisans. Nos solutions web sont conçues pour élargir votre
-					portée et attirer de nouveaux clients en ligne, vous aidant
+					artisans. Nos solutions web sont conçues pour <span className="bolder">élargir votre
+					portée et attirer de nouveaux clients en ligne</span>, vous aidant
 					à atteindre vos objectifs commerciaux et à maximiser votre
 					retour sur investissement.
 				</p>
