@@ -95,15 +95,51 @@ export default function FeaturesTable() {
 							))}
 						</tr>
 						<TableRow
-							title="Prix"
-							values={PlansData.map((plan) => plan.price)}
+							title="Design"
+							values={PlansData.map((plan) => plan.Design)}
 						/>
 						<TableRow
-							title="Technologies"
+							title="Direction artistique"
 							values={PlansData.map((plan) => plan.tech)}
 						/>
 						<TableRow
-							title="Pages"
+							title="Animations"
+							values={PlansData.map((plan) => plan.pages)}
+						/>
+						<TableRow
+							title="Nombre de pages"
+							values={PlansData.map((plan) => plan.pages)}
+						/>
+						<TableRow
+							title="Contenu administrable"
+							values={PlansData.map((plan) => plan.pages)}
+						/>
+						<TableRow
+							title="Demandes de changement en cours de développement"
+							values={PlansData.map((plan) => plan.pages)}
+						/>
+						<TableRow
+							title="Intégration du design"
+							values={PlansData.map((plan) => plan.pages)}
+						/>
+						<TableRow
+							title="Référencement"
+							values={PlansData.map((plan) => plan.pages)}
+						/>
+						<TableRow
+							title="Formulaire de contact"
+							values={PlansData.map((plan) => plan.pages)}
+						/>
+						<TableRow
+							title="Liens vers vos médias sociaux"
+							values={PlansData.map((plan) => plan.pages)}
+						/>
+						<TableRow
+							title="Audit"
+							values={PlansData.map((plan) => plan.pages)}
+						/>
+						<TableRow
+							title="Optimisation des performances"
 							values={PlansData.map((plan) => plan.pages)}
 						/>
 					</tbody>

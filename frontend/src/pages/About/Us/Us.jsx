@@ -6,7 +6,7 @@ export default function Us() {
 	return (
 		<Section className="us" isHero={true}>
 			<div className="us__content">
-				<h2 className="us__title">Qui sommes-nous ?</h2>
+				<h1 className="us__title">Qui sommes-nous ?</h1>
 				<p className="us__text">
 					Margin, c’est l’histoire de deux amis passionnés par la
 					création et le développement de sites Internet, qui décident

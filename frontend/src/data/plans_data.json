@@ -1,37 +1,62 @@
 [
 	{
-		"name": "Basic",
-		"price": "1500€",
-		"tech": "Wordpress",
-		"pages": "5"
+		"name": "Design",
+		"Essentiel": "sobre",
+		"Premium": "travaillé"
 	},
 	{
-		"name": "Pro",
-		"price": "2500€",
-		"tech": "React",
-		"pages": "7",
-		"additionals": [
-			"Hébergement",
-			"Maintenance technique",
-			"Mise à jour du contenu",
-			"Pages supplémentaires",
-			"Demandes de modifications supplémentaires durant le développement",
-			"Animations poussées",
-			"Contenu administrable"
-		]
+		"name": "Direction artistique",
+		"Essentiel": "polices et couleurs",
+		"Premium": "réalisée par un graphiste"
 	},
 	{
-		"name": "Ultimate",
-		"price": "4500€",
-		"tech": "React",
-		"pages": "10",
-		"features": "Complexes",
-		"additionals": [
-			"Hébergement",
-			"Maintenance technique",
-			"Mise à jour du contenu",
-			"Pages supplémentaires",
-			"Demandes de modifications supplémentaires durant le développement"
-		]
+		"name": "Animations",
+		"Essentiel": "simple",
+		"Premium": "poussées"
+	},
+	{
+		"name": "Nombre de pages incluses",
+		"Essentiel": "3",
+		"Premium": "5"
+	},
+	{
+		"name": "Contenu administrable",
+		"Essentiel": "non",
+		"Premium": "inclus"
+	},
+	{
+		"name": "Demandes de changement en cours de développement",
+		"Essentiel": "jusqu'à 2",
+		"Premium": "jusqu'à 5"
+	},
+	{
+		"name": "Intégration du design",
+		"Essentiel": "inclus",
+		"Premium": "inclus"
+	},
+	{
+		"name": "Référencement local de l'entreprise",
+		"Essentiel": "inclus",
+		"Premium": "inclus"
+	},
+	{
+		"name": "Référencement par mots clés",
+		"Essentiel": "inclus",
+		"Premium": "inclus"
+	},
+	{
+		"name": "Liens vers vos médias sociaux",
+		"Essentiel": "inclus",
+		"Premium": "inclus"
+	},
+	{
+		"name": "Audit",
+		"Essentiel": "inclus",
+		"Premium": "inclus"
+	},
+	{
+		"name": "Optimisation des performances",
+		"Essentiel": "inclus",
+		"Premium": "inclus"
 	}
 ]
