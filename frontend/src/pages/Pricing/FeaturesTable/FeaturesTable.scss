@@ -2,7 +2,11 @@
 @import '../../../utils/mixins.scss';
 
 .features {
-	padding: 80px 0;
+	padding: 160px 0 80px;
+
+	@include mobile {
+		padding-top: 100px;
+	}
 
 	&__table {
 		margin: 0 auto;
