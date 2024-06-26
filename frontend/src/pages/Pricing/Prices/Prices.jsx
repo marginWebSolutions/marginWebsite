@@ -16,8 +16,7 @@ export default function Prices() {
 					des moteurs de recherche ? Vous voulez créer un site vitrine
 					moderne et optimisé ?<br />
 					<br />
-					Faîtes-nous confiance pour réaliser le site Internet
-					professionnel de vos rêves !
+					Réalisons ensemble le site Internet professionnel de vos rêves !
 				</p>
 				<div className="prices__plans">
 					<PricesCard
