@@ -10,7 +10,7 @@ export default function Us() {
 				<p className="us__text">
 					Marc et Adrien sont deux amis passionnés par le développement de sites Web, la communication et le monde du numérique.
 					C’est à force de discussions autour de leur sujet de prédilection que l’idée germe :
-					"Puisque <span className="bolder">l’union fait la force</span>, nous pourrions être deux fois
+					"Puisque <span className="bolder">l’union fait la force</span>, soyons deux fois
 					<span className="bolder"> plus fort pour nos clients !</span>"
 				</p>
 				<MarcoAdriDescription />
