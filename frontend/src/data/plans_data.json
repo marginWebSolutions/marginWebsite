@@ -1,18 +1,18 @@
 [
 	{
 		"name": "Design",
-		"Essentiel": "sobre",
-		"Premium": "travaillé"
+		"Essentiel": "Sobre",
+		"Premium": "Travaillé"
 	},
 	{
 		"name": "Direction artistique",
-		"Essentiel": "polices et couleurs",
-		"Premium": "réalisée par un graphiste"
+		"Essentiel": "Polices et couleurs",
+		"Premium": "Pour tout le site"
 	},
 	{
 		"name": "Animations",
-		"Essentiel": "simple",
-		"Premium": "poussées"
+		"Essentiel": "Simples",
+		"Premium": "Poussées"
 	},
 	{
 		"name": "Nombre de pages incluses",
@@ -21,42 +21,42 @@
 	},
 	{
 		"name": "Contenu administrable",
-		"Essentiel": "non",
-		"Premium": "inclus"
+		"Essentiel": "❌",
+		"Premium": "✔️"
 	},
 	{
-		"name": "Demandes de changement en cours de développement",
-		"Essentiel": "jusqu'à 2",
-		"Premium": "jusqu'à 5"
+		"name": "Demandes de changements en cours de développement",
+		"Essentiel": "Jusqu'à 2",
+		"Premium": "Jusqu'à 5"
 	},
 	{
 		"name": "Intégration du design",
-		"Essentiel": "inclus",
-		"Premium": "inclus"
+		"Essentiel": "✔️",
+		"Premium": "✔️"
 	},
 	{
 		"name": "Référencement local de l'entreprise",
-		"Essentiel": "inclus",
-		"Premium": "inclus"
+		"Essentiel": "✔️",
+		"Premium": "✔️"
 	},
 	{
 		"name": "Référencement par mots clés",
-		"Essentiel": "inclus",
-		"Premium": "inclus"
+		"Essentiel": "✔️",
+		"Premium": "✔️"
 	},
 	{
 		"name": "Liens vers vos médias sociaux",
-		"Essentiel": "inclus",
-		"Premium": "inclus"
+		"Essentiel": "✔️",
+		"Premium": "✔️"
 	},
 	{
 		"name": "Audit",
-		"Essentiel": "inclus",
-		"Premium": "inclus"
+		"Essentiel": "✔️",
+		"Premium": "✔️"
 	},
 	{
 		"name": "Optimisation des performances",
-		"Essentiel": "inclus",
-		"Premium": "inclus"
+		"Essentiel": "✔️",
+		"Premium": "✔️"
 	}
 ]
