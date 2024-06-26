@@ -1,27 +1,30 @@
 import PropTypes from 'prop-types';
-import TableRow from '../TableRow/TableRow';
+import PlansDetailsMobile from '../../../data/plans_data.json';
 
 export default function PlanDetails({ plan }) {
-	return (
-		<>
-			<TableRow title="Prix" isMobile={true}>
-				{plan.price}
-			</TableRow>
-			<TableRow title="Tech" isMobile={true}>
-				{plan.tech}
-			</TableRow>
-			<TableRow title="Page" isMobile={true}>
-				{plan.pages}
-			</TableRow>
-			{plan.features && (
-				<TableRow title="Fonctionnalités" isMobile={true}>
-					{plan.features}
-				</TableRow>
-			)}
-		</>
-	);
+	if (plan === 'Essentiel') {
+		return PlansDetailsMobile.map((detail) => (
+			<tr key={detail.name}>
+				<th className="features__item features__item--left">
+					{detail.name}
+				</th>
+				<td className="features__item">{detail.Essentiel}</td>
+			</tr>
+		));
+	}
+
+	if (plan === 'Premium') {
+		return PlansDetailsMobile.map((detail) => (
+			<tr key={detail.name}>
+				<th className="features__item features__item--left">
+					{detail.name}
+				</th>
+				<td className="features__item">{detail.Premium}</td>
+			</tr>
+		));
+	}
 }
 
 PlanDetails.propTypes = {
-	plan: PropTypes.object,
+	plan: PropTypes.string,
 };

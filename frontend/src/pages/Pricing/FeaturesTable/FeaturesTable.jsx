@@ -1,16 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import PlansDataDetails from '../../../data/plans_data.json';
-import PlansData from '../../../data/plans_datas.json';
 import Section from '../../../layout/Section/Section';
 import useScrollAnimation from '../../../utils/hooks/useScrollAnimation';
 import PlanDetails from '../PlanDetails/PlanDetails';
 import './FeaturesTable.scss';
 
-console.log(PlansDataDetails);
-
 export default function FeaturesTable() {
 	const contentRef = useRef(null);
-	const [selectedPlan, setSelectedPlan] = useState(PlansData[0]);
+	const [selectedPlan, setSelectedPlan] = useState('Essentiel');
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
 	const [contentVisible] = useScrollAnimation([contentRef]);
 
@@ -48,19 +45,26 @@ export default function FeaturesTable() {
 						<tr>
 							<td>
 								<div className="features__table--plan-names">
-									{PlansData.map((plan) => (
-										<div
-											key={plan.name}
-											className={`features__table--plan-name ${
-												selectedPlan.name === plan.name
-													? 'selected'
-													: ''
-											}`}
-											onClick={() => handleClick(plan)}
-										>
-											{plan.name}
-										</div>
-									))}
+									<div
+										className={`features__table--plan-name ${
+											selectedPlan === 'Essentiel'
+												? 'selected'
+												: ''
+										}`}
+										onClick={() => handleClick('Essentiel')}
+									>
+										Essentiel
+									</div>
+									<div
+										className={`features__table--plan-name ${
+											selectedPlan === 'Premium'
+												? 'selected'
+												: ''
+										}`}
+										onClick={() => handleClick('Premium')}
+									>
+										Premium
+									</div>
 								</div>
 							</td>
 						</tr>
