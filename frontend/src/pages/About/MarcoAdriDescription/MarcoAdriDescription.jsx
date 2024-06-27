@@ -4,13 +4,15 @@ import './MarcoAdriDescription.scss';
 export default function MarcoAdriDescription() {
 	const [hoveredElement, setHoveredElement] = useState(null);
 
+	const marcDescription = "Lorem ipsum Dolor ipsum DolorLorem ipsum Dolor ipsum DolorLorem ipsum Dolor ipsum DolorLorem ipsum Dolor ipsum DolorLorem ipsum Dolor";
+	const adriDescription = "Spécialisé dans la communication et la relation client, Adrien a toujours travaillé au contact des professionnels. Passionné par le numérique depuis l'enfance, il se lance dans la création de sites web en 2022.";
+
 	return (
 		<div className="ma-description">
 			<div className="ma-description__content">
 				<div
-					className={`ma-description__container ma-description__container--left ${
-						hoveredElement === 'right' ? 'hover-modification' : ''
-					} ${hoveredElement === null ? 'fade-in' : ''}`}
+					className={`ma-description__container ma-description__container--left ${hoveredElement === 'right' ? 'hover-modification' : ''
+						} ${hoveredElement === null ? 'fade-in' : ''}`}
 					onMouseEnter={() => setHoveredElement('left')}
 					onMouseLeave={() => setHoveredElement(null)}
 				>
@@ -28,17 +30,13 @@ export default function MarcoAdriDescription() {
 							<span className="margin-m">m</span>arc
 						</h2>
 						<p className="ma-description__text ma-description__text--left">
-							Margin, c’est l’histoire de deux amis passionnés par
-							la création et le développement de sites Internet,
-							qui décident de mettre leur savoir-faire au service
-							des PME et des artisans autour de chez eux.
+							{marcDescription}
 						</p>
 					</div>
 				</div>
 				<div
-					className={`ma-description__container ma-description__container--right ${
-						hoveredElement === 'left' ? 'hover-modification' : ''
-					} ${hoveredElement === null ? 'fade-in' : ''}`}
+					className={`ma-description__container ma-description__container--right ${hoveredElement === 'left' ? 'hover-modification' : ''
+						} ${hoveredElement === null ? 'fade-in' : ''}`}
 					onMouseEnter={() => setHoveredElement('right')}
 					onMouseLeave={() => setHoveredElement(null)}
 				>
@@ -56,10 +54,7 @@ export default function MarcoAdriDescription() {
 							<span className="margin-a">a</span>drien
 						</h2>
 						<p className="ma-description__text ma-description__text--right">
-							Margin, c’est l’histoire de deux amis passionnés par
-							la création et le développement de sites Internet,
-							qui décident de mettre leur savoir-faire au service
-							des PME et des artisans autour de chez eux.
+							{adriDescription}
 						</p>
 					</div>
 				</div>
@@ -79,11 +74,7 @@ export default function MarcoAdriDescription() {
 								<span className="margin-m">m</span>arc
 							</h2>
 							<p className="ma-description__text--small">
-								Margin, c’est l’histoire de deux amis passionnés
-								par la création et le développement de sites
-								Internet, qui décident de mettre leur
-								savoir-faire au service des PME et des artisans
-								autour de chez eux.
+								{marcDescription}
 							</p>
 						</div>
 						<div className="ma-description__wrapper--small">
@@ -91,11 +82,7 @@ export default function MarcoAdriDescription() {
 								<span className="margin-a">a</span>drien
 							</h2>
 							<p className="ma-description__text--small">
-								Margin, c’est l’histoire de deux amis passionnés
-								par la création et le développement de sites
-								Internet, qui décident de mettre leur
-								savoir-faire au service des PME et des artisans
-								autour de chez eux.
+								{adriDescription}
 							</p>
 						</div>
 					</div>

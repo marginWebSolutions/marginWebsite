@@ -138,6 +138,12 @@
 		}
 
 		&--small {
+			width: 50%;
+
+			@include mobile {
+				width: auto;
+			}
+
 			&:nth-child(1) {
 				border-right: 1px solid rgba($text, 0.25);
 
