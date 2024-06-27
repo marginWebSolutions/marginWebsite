@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
+import PlanContext from '../../../context/PlanContext';
 import PlansData from '../../../data/plans_data.json';
 import Section from '../../../layout/Section/Section';
 import useScrollAnimation from '../../../utils/hooks/useScrollAnimation';
@@ -7,7 +8,7 @@ import './FeaturesTable.scss';
 
 export default function FeaturesTable() {
 	const contentRef = useRef(null);
-	const [selectedPlan, setSelectedPlan] = useState('Essentiel');
+	const { selectedPlan, setSelectedPlan } = useContext(PlanContext);
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
 	const [contentVisible] = useScrollAnimation([contentRef]);
 
