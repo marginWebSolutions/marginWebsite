@@ -2,7 +2,9 @@
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
+import { useContext } from 'react';
 import ButtonOrLink from '../../../components/ButtonOrLink/ButtonOrLink';
+import PlanContext from '../../../context/PlanContext';
 import './PricesCard.scss';
 
 export default function PricesCard({
@@ -10,11 +12,19 @@ export default function PricesCard({
 	text,
 	price,
 	features,
-	listTitle = "Ce qui est compris :",
-	btnHref = "#features",
+	listTitle = 'Ce qui est compris :',
+	btnHref = '#features',
 	btnTitle = "Plus d'infos",
 	popular = false,
+	plansLink,
 }) {
+	const { selectedPlan, setSelectedPlan } = useContext(PlanContext);
+
+	const handlePlanChange = (newPlan) => {
+		setSelectedPlan(newPlan);
+	};
+	console.log(selectedPlan);
+
 	return (
 		<div className="card">
 			{popular && <div className="card__popular">Populaire</div>}
@@ -25,13 +35,15 @@ export default function PricesCard({
 				</div>
 				<div className="card__body">
 					<p className="card__body--price">{price}</p>
-					<ButtonOrLink isLink={true} href={btnHref}>
+					<ButtonOrLink
+						isLink={true}
+						href={btnHref}
+						onClick={() => handlePlanChange(plansLink)}
+					>
 						{btnTitle}
 					</ButtonOrLink>
 					<div className="card__body__features">
-						<p className="card__body__list--title">
-							{listTitle}
-						</p>
+						<p className="card__body__list--title">{listTitle}</p>
 						<ul className="card__body__list">
 							{features.map((feature, index) => (
 								<li
@@ -62,4 +74,5 @@ PricesCard.propTypes = {
 	btnHref: PropTypes.string,
 	btnTitle: PropTypes.string,
 	popular: PropTypes.bool,
+	plansLink: PropTypes.string,
 };
