@@ -104,6 +104,7 @@
 			width: 500px;
 			box-shadow: $shadow-lighter-opacity;
 			border-radius: 10px;
+			background: $light-gradient;
 
 			@include mobile {
 				width: 100%;
