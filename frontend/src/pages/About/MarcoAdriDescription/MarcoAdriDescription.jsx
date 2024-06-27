@@ -5,7 +5,7 @@ export default function MarcoAdriDescription() {
 	const [hoveredElement, setHoveredElement] = useState(null);
 
 	const marcDescription =
-		"Passionnée par les nouvelles technologies et l'informatique, Marc construis ça vie par la curiosité. Après une expérience dans le support informatique, il se lance dans la création de sites web en 2023.";
+		"Amoureux des nouvelles technologies et de l'informatique, Marc façonne sa vie grace à sa curiosité. Suite à une expérience dans le support informatique, c'est en 2023 qu'il se lance dans le développement de sites Internet.";
 	const adriDescription =
 		"Spécialisé dans la communication et la relation client, Adrien a toujours travaillé au contact des professionnels. Passionné par le numérique depuis l'enfance, il se lance dans la création de sites web en 2022.";
 
