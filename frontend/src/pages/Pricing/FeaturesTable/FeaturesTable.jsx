@@ -1,4 +1,6 @@
 import { useContext, useEffect, useRef, useState } from 'react';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PlanContext from '../../../context/PlanContext';
 import PlansData from '../../../data/plans_data.json';
 import Section from '../../../layout/Section/Section';
@@ -30,9 +32,8 @@ export default function FeaturesTable() {
 		<Section className="features" id="features">
 			{isMobile && (
 				<table
-					className={`features__table ${
-						contentVisible ? 'fadeIn__title' : ''
-					}`}
+					className={`features__table ${contentVisible ? 'fadeIn__title' : ''
+						}`}
 					ref={contentRef}
 				>
 					<thead>
@@ -47,21 +48,19 @@ export default function FeaturesTable() {
 							<td>
 								<div className="features__table--plan-names">
 									<div
-										className={`features__table--plan-name ${
-											selectedPlan === 'Essentiel'
+										className={`features__table--plan-name ${selectedPlan === 'Essentiel'
 												? 'selected'
 												: ''
-										}`}
+											}`}
 										onClick={() => handleClick('Essentiel')}
 									>
 										Essentiel
 									</div>
 									<div
-										className={`features__table--plan-name ${
-											selectedPlan === 'Premium'
+										className={`features__table--plan-name ${selectedPlan === 'Premium'
 												? 'selected'
 												: ''
-										}`}
+											}`}
 										onClick={() => handleClick('Premium')}
 									>
 										Premium
@@ -75,9 +74,8 @@ export default function FeaturesTable() {
 			)}
 			{!isMobile && (
 				<table
-					className={`features__table ${
-						contentVisible ? 'fadeIn__title' : ''
-					}`}
+					className={`features__table ${contentVisible ? 'fadeIn__title' : ''
+						}`}
 					ref={contentRef}
 				>
 					<thead>
@@ -105,10 +103,16 @@ export default function FeaturesTable() {
 									{detail.name}
 								</th>
 								<td className="features__item">
-									{detail.Essentiel}
+									{detail.Essentiel === true ? <FontAwesomeIcon
+										icon={faCheck}
+										className="color-touch-svg"
+									/> : detail.Essentiel}
 								</td>
 								<td className="features__item">
-									{detail.Premium}
+									{detail.Premium === true ? <FontAwesomeIcon
+										icon={faCheck}
+										className="color-touch-svg"
+									/> : detail.Premium}
 								</td>
 							</tr>
 						))}

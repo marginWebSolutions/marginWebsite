@@ -51,6 +51,7 @@
 			font-weight: 500;
 			text-transform: uppercase;
 			border-top: none;
+			@include gradientColor;
 
 			&--left {
 				border-top: none;
