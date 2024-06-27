@@ -23,7 +23,6 @@ export default function PricesCard({
 	const handlePlanChange = (newPlan) => {
 		setSelectedPlan(newPlan);
 	};
-	console.log(selectedPlan);
 
 	return (
 		<div className="card">
