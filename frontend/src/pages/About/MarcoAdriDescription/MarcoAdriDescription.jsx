@@ -4,15 +4,18 @@ import './MarcoAdriDescription.scss';
 export default function MarcoAdriDescription() {
 	const [hoveredElement, setHoveredElement] = useState(null);
 
-	const marcDescription = "Lorem ipsum Dolor ipsum DolorLorem ipsum Dolor ipsum DolorLorem ipsum Dolor ipsum DolorLorem ipsum Dolor ipsum DolorLorem ipsum Dolor";
-	const adriDescription = "Spécialisé dans la communication et la relation client, Adrien a toujours travaillé au contact des professionnels. Passionné par le numérique depuis l'enfance, il se lance dans la création de sites web en 2022.";
+	const marcDescription =
+		"Passionnée par les nouvelles technologies et l'informatique, Marc construis ça vie par la curiosité. Après une expérience dans le support informatique, il se lance dans la création de sites web en 2023.";
+	const adriDescription =
+		"Spécialisé dans la communication et la relation client, Adrien a toujours travaillé au contact des professionnels. Passionné par le numérique depuis l'enfance, il se lance dans la création de sites web en 2022.";
 
 	return (
 		<div className="ma-description">
 			<div className="ma-description__content">
 				<div
-					className={`ma-description__container ma-description__container--left ${hoveredElement === 'right' ? 'hover-modification' : ''
-						} ${hoveredElement === null ? 'fade-in' : ''}`}
+					className={`ma-description__container ma-description__container--left ${
+						hoveredElement === 'right' ? 'hover-modification' : ''
+					} ${hoveredElement === null ? 'fade-in' : ''}`}
 					onMouseEnter={() => setHoveredElement('left')}
 					onMouseLeave={() => setHoveredElement(null)}
 				>
@@ -35,8 +38,9 @@ export default function MarcoAdriDescription() {
 					</div>
 				</div>
 				<div
-					className={`ma-description__container ma-description__container--right ${hoveredElement === 'left' ? 'hover-modification' : ''
-						} ${hoveredElement === null ? 'fade-in' : ''}`}
+					className={`ma-description__container ma-description__container--right ${
+						hoveredElement === 'left' ? 'hover-modification' : ''
+					} ${hoveredElement === null ? 'fade-in' : ''}`}
 					onMouseEnter={() => setHoveredElement('right')}
 					onMouseLeave={() => setHoveredElement(null)}
 				>
