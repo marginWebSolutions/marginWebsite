@@ -30,6 +30,7 @@ export default function Prices() {
 						features={[
 							'Refonte graphique',
 							'Modification de contenu',
+							"Ajout d'une version adaptée mobile et tablette",
 							'Animations des éléments du site',
 							'Amélioration du référencement en ligne',
 							'Optimisation des performances',
