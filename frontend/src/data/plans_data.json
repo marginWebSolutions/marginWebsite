@@ -20,48 +20,48 @@
 		"Premium": "5"
 	},
 	{
-		"name": "Contenu administrable",
-		"Essentiel": "❌",
-		"Premium": "✔️"
-	},
-	{
 		"name": "Demandes de changements en cours de développement",
 		"Essentiel": "Jusqu'à 2",
 		"Premium": "Jusqu'à 5"
 	},
 	{
+		"name": "Contenu administrable",
+		"Essentiel": "Non",
+		"Premium": true
+	},
+	{
 		"name": "Intégration du design",
-		"Essentiel": "✔️",
-		"Premium": "✔️"
+		"Essentiel": true,
+		"Premium": true
 	},
 	{
 		"name": "Versions bureau, tablette et mobile",
-		"Essentiel": "✔️",
-		"Premium": "✔️"
+		"Essentiel": true,
+		"Premium": true
 	},
 	{
 		"name": "Référencement local de l'entreprise",
-		"Essentiel": "✔️",
-		"Premium": "✔️"
+		"Essentiel": true,
+		"Premium": true
 	},
 	{
 		"name": "Référencement par mots clés",
-		"Essentiel": "✔️",
-		"Premium": "✔️"
+		"Essentiel": true,
+		"Premium": true
 	},
 	{
 		"name": "Liens vers vos médias sociaux",
-		"Essentiel": "✔️",
-		"Premium": "✔️"
+		"Essentiel": true,
+		"Premium": true
 	},
 	{
 		"name": "Audit",
-		"Essentiel": "✔️",
-		"Premium": "✔️"
+		"Essentiel": true,
+		"Premium": true
 	},
 	{
 		"name": "Optimisation des performances",
-		"Essentiel": "✔️",
-		"Premium": "✔️"
+		"Essentiel": true,
+		"Premium": true
 	}
 ]
