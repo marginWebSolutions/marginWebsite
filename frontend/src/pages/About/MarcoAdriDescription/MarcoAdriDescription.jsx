@@ -23,7 +23,7 @@ export default function MarcoAdriDescription() {
 						<img
 							className="ma-description__image ma-description__image--left"
 							src="./marcoadri.webp"
-							alt="Marc"
+							alt="Illustration Marc"
 							width={500}
 							height={500}
 						/>
@@ -48,7 +48,7 @@ export default function MarcoAdriDescription() {
 						<img
 							className="ma-description__image ma-description__image--right"
 							src="./marcoadri.webp"
-							alt="Adrien"
+							alt="Illustration Adrien"
 							width={500}
 							height={500}
 						/>
@@ -67,7 +67,7 @@ export default function MarcoAdriDescription() {
 						<img
 							className="ma-description__image--small"
 							src="./marcoadri.webp"
-							alt="Marco et Adrien"
+							alt="Illustration Marc et Adrien"
 							width={500}
 							height={500}
 						/>
