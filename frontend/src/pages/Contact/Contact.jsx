@@ -2,6 +2,9 @@ import Citation from './Citation/Citation';
 import ContactBlock from './ContactBlock/ContactBlock';
 
 export default function Contact() {
+
+	document.title = 'Margin Web Solutions - Nous contacter';
+
 	return (
 		<>
 			<ContactBlock />

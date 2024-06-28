@@ -4,6 +4,9 @@ import Clients from './Clients/Clients';
 import Testimonials from './Testimonials/Testimonials';
 
 export default function Realisation() {
+
+	document.title = 'Margin Web Solutions - Nos réalisations';
+
 	return (
 		<>
 			<Clients />
