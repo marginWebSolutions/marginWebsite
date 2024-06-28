@@ -3,6 +3,9 @@ import Underline from '../../layout/Underline/Underline';
 import Us from './Us/Us';
 
 export default function Contact() {
+
+	document.title = 'Margin Web Solutions - Qui sommes-nous ?';
+
 	return (
 		<>
 			<Us />

@@ -5,6 +5,9 @@ import Hero from './Hero/Hero';
 import Presentation from './Presentation/Presentation';
 
 export default function Home() {
+
+	document.title = 'Margin Web Solutions - Accueil';
+
 	return (
 		<>
 			<Hero />
