@@ -6,6 +6,7 @@
 	flex-direction: column;
 	gap: 40px;
 	padding: 80px;
+	border-radius: 5px;
 	background: white;
 	box-shadow: $shadow-lighter-opacity;
 	min-width: 30vw;
@@ -53,21 +54,19 @@
 			border-right: none;
 			outline: none;
 			border-bottom: 1px solid lightgrey;
-			padding: 5px 10px;
+			padding: 5px;
 			font-family: $title-font;
 			color: $text;
 			font-weight: 500;
 		}
 
 		textarea {
-			border-top: none;
-			border-left: none;
-			border-right: none;
 			outline: none;
-			border-bottom: 1px solid lightgrey;
-			height: 80px;
+			border: 1px solid lightgrey;
+			border-radius: 5px;
+			height: 100px;
 			resize: none;
-			padding: 5px 10px;
+			padding: 5px;
 			font-family: $title-font;
 			color: $text;
 			font-weight: 500;
