@@ -51,17 +51,17 @@ export default function Hero() {
 				<div className="hero__container">
 					<div className="hero__content">
 						<div className="hero__logo--container">
-							<p className="hero__logo">
+							<span className="hero__logo">
 								<span className="hero__logo--ma m">m</span>
 								<span className="hero__logo--ma a">a</span>
 								RGIN
-							</p>
-							<p className="hero__logo--text">Web Solutions</p>
+							</span>
+							<span className="hero__logo--text">Web <span className='hero__logo--text gradient'>Solutions</span></span>
 						</div>
 						<h1 className="hero__title">
 							Création et développement de sites Web
 							professionnels à destination des PME et des artisans
-							à Nevers et Saint-Etienne
+							à Nevers et Saint-Etienne	
 						</h1>
 						<ButtonDoubled
 							btnFirst={'Nous Contacter'}

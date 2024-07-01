@@ -116,7 +116,10 @@
 		font-size: 80px;
 		font-family: $logo-font;
 		font-weight: 400;
-		@include gradientColor;
+
+		&.gradient {
+			@include gradientColor;
+		}
 
 		@include tablet {
 			font-size: clamp(40px, 6.9vh, 80px);
