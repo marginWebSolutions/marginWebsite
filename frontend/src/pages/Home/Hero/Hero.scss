@@ -71,15 +71,19 @@
 
 		& > .btn__doubled {
 			justify-content: flex-start;
+			order: 3;
 		}
 	}
 
 	&__logo {
+		display: block;
+		height: 90px;
 		font-size: 80px;
 		font-family: $logo-font, sans-serif;
 
 		@include tablet {
 			font-size: clamp(40px, 6.9vh, 80px);
+			height: 70px;
 		}
 
 		@include mobile {
@@ -109,10 +113,18 @@
 		&--container {
 			display: flex;
 			flex-direction: column;
+			height: 150px;
+			order: 1;
+
+			@include tablet {
+				height: 115px;
+			}
 		}
 	}
 
 	&__logo--text {
+		display: block;
+		height: 60px;
 		font-size: 80px;
 		font-family: $logo-font;
 		font-weight: 400;
@@ -123,6 +135,7 @@
 
 		@include tablet {
 			font-size: clamp(40px, 6.9vh, 80px);
+			height: 45px;
 		}
 
 		@include mobile {
@@ -133,6 +146,7 @@
 	&__title {
 		font-size: 30px;
 		max-width: 70%;
+		order: 2;
 
 		@include tablet {
 			max-width: 100%;
