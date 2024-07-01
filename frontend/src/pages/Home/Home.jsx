@@ -5,7 +5,6 @@ import Hero from './Hero/Hero';
 import Presentation from './Presentation/Presentation';
 
 export default function Home() {
-
 	document.title = 'Margin Web Solutions - Accueil';
 
 	return (
@@ -13,9 +12,9 @@ export default function Home() {
 			<Hero />
 			<Underline />
 			<Presentation />
-			<Underline />
+			{/* <Underline /> */}
 			<Engagement />
-			<Underline />
+			{/* <Underline /> */}
 			<GoToSection />
 		</>
 	);
