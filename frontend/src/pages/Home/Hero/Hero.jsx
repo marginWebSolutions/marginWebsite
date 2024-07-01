@@ -41,9 +41,8 @@ export default function Hero() {
 			<Section className="hero" isHero={true}>
 				<div className="hero__mockup">
 					<img
-						className={`hero__mockup--image ${
-							fadeIn ? 'fade-in' : ''
-						}`}
+						className={`hero__mockup--image ${fadeIn ? 'fade-in' : ''
+							}`}
 						src={images[currentImageIndex].src}
 						alt={images[currentImageIndex].alt}
 						width={1920}
@@ -56,6 +55,26 @@ export default function Hero() {
 						width={1920}
 						height={1080}
 					/>
+					<img
+						className="hero__pictos--stars"
+						src="./deux étoiles.png"
+						alt="mask"
+					/>
+					{/* <img
+						className="hero__pictos--star"
+						src="./étoile.png"
+						alt="mask"
+					/> */}
+					{/* <img
+						className="hero__pictos--rocket"
+						src="./fusée.png"
+						alt="mask"
+					/>
+					<img
+						className="hero__pictos--heart"
+						src="./coeur.png"
+						alt="mask"
+					/> */}
 				</div>
 				<div className="hero__container">
 					<div className="hero__content">
