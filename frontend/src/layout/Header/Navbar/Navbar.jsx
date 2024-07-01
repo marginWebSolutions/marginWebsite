@@ -45,8 +45,8 @@ export default function Navbar() {
 						href="/contact"
 						className={`btn ${
 							location.pathname === '/contact'
-								? 'btn__default'
-								: 'btn__reverse'
+								? 'btn__reverse'
+								: 'btn__default'
 						}`}
 					/>
 				</ul>

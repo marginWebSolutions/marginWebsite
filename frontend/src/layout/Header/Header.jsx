@@ -1,8 +1,8 @@
-import Navbar from './Navbar/Navbar';
-import NavbarItem from './NavbarItem/NavbarItem';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.scss';
+import Navbar from './Navbar/Navbar';
+import NavbarItem from './NavbarItem/NavbarItem';
 
 export default function Header() {
 	const [scrolled, setScrolled] = useState(false);
@@ -21,7 +21,7 @@ export default function Header() {
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
 		};
-	},);
+	});
 
 	return (
 		<header className={`header${scrolled ? ' header--scrolled' : ''}`}>
@@ -33,14 +33,14 @@ export default function Header() {
 						RGIN
 					</div>
 				</Link>
-				<ul className='header__CTA--small-device'>
-				<NavbarItem
+				<ul className="header__CTA--small-device">
+					<NavbarItem
 						itemText="Nous Contacter"
 						href="/contact"
 						className={`btn ${
 							location.pathname === '/contact'
-								? 'btn__default'
-								: 'btn__reverse'
+								? 'btn__reverse'
+								: 'btn__default'
 						}`}
 					/>
 				</ul>
