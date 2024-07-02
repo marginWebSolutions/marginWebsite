@@ -55,26 +55,6 @@ export default function Hero() {
 						width={1920}
 						height={1080}
 					/>
-					<img
-						className="hero__pictos--stars"
-						src="./deux étoiles.png"
-						alt="mask"
-					/>
-					{/* <img
-						className="hero__pictos--star"
-						src="./étoile.png"
-						alt="mask"
-					/> */}
-					{/* <img
-						className="hero__pictos--rocket"
-						src="./fusée.png"
-						alt="mask"
-					/>
-					<img
-						className="hero__pictos--heart"
-						src="./coeur.png"
-						alt="mask"
-					/> */}
 				</div>
 				<div className="hero__container">
 					<div className="hero__content">
