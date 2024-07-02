@@ -51,6 +51,11 @@ export default function Prices() {
 							'Référencement en ligne',
 							'Animations simples',
 							'Nombre de pages limité',
+							'Direction artistique et design travaillé',
+							'Contenu administrable',
+							'Référencement en ligne',
+							'Animations poussées',
+							'Plus grand nombre de pages',
 						]}
 					/>
 					<PricesCard
@@ -59,6 +64,16 @@ export default function Prices() {
 						text="Site vitrine performant au design travaillé"
 						price="à partir de 4500€*"
 						features={[
+							'Direction artistique et design travaillé',
+							'Contenu administrable',
+							'Référencement en ligne',
+							'Animations poussées',
+							'Plus grand nombre de pages',
+							'Direction artistique et design travaillé',
+							'Contenu administrable',
+							'Référencement en ligne',
+							'Animations poussées',
+							'Plus grand nombre de pages',
 							'Direction artistique et design travaillé',
 							'Contenu administrable',
 							'Référencement en ligne',

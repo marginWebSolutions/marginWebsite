@@ -34,13 +34,6 @@ export default function PricesCard({
 				</div>
 				<div className="card__body">
 					<p className="card__body--price">{price}</p>
-					<ButtonOrLink
-						isLink={true}
-						href={btnHref}
-						onClick={() => handlePlanChange(plansLink)}
-					>
-						{btnTitle}
-					</ButtonOrLink>
 					<div className="card__body__features">
 						<p className="card__body__list--title">{listTitle}</p>
 						<ul className="card__body__list">
@@ -58,6 +51,13 @@ export default function PricesCard({
 							))}
 						</ul>
 					</div>
+					<ButtonOrLink
+						isLink={true}
+						href={btnHref}
+						onClick={() => handlePlanChange(plansLink)}
+					>
+						{btnTitle}
+					</ButtonOrLink>
 				</div>
 			</div>
 		</div>

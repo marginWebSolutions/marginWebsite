@@ -15,7 +15,7 @@
 	&__popular {
 		position: absolute;
 		right: 25px;
-		top: -15px;
+		top: -18px;
 		color: rgba($accent, 1);
 		background: rgba($background, 1);
 		border: 2px solid rgba($accent, 1);
@@ -56,10 +56,10 @@
 
 	&__body {
 		background: rgba($primary, 0.2);
-		padding: 20px 45px 35px 45px;
+		padding: 35px 45px;
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
+		gap: 35px;
 		height: 100%;
 		border-radius: 0 0 10px 10px;
 
@@ -70,6 +70,7 @@
 		}
 
 		.btn {
+			margin-top: auto;
 			font-size: 16px;
 			text-align: center;
 
@@ -81,7 +82,7 @@
 		&__features {
 			display: flex;
 			flex-direction: column;
-			gap: 15px;
+			gap: 20px;
 		}
 
 		&__list {
@@ -93,7 +94,7 @@
 
 			&--title {
 				font-size: 14px;
-				font-weight: 500;
+				font-weight: 700;
 			}
 
 			&--item {
