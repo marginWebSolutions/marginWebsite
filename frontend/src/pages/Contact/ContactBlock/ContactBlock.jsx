@@ -9,7 +9,7 @@ export default function ContactBlock() {
 	return (
 		<Section className="contact" isHero={true}>
 			<div className="contact__content">
-				<h1 className="contact__title">Prenons contact</h1>
+				{/* <h1 className="contact__title">Prenons contact</h1> */}
 				<div className="contact__container">
 					<div className="contact__infos">
 						<div className="contact__infos--headings">
@@ -24,17 +24,16 @@ export default function ContactBlock() {
 								votre projet !
 							</p>
 							<div className="infos__content">
-								{/* <ContactDetail
+								<ContactDetail
 									icon={
 										<FontAwesomeIcon
 											icon={faEnvelope}
 											className="infos__item--icon color-touch-svg"
 										/>
 									}
-									title="Email"
-									href="mailto:margin.webdev.com"
-									text="margin.webdev@gmail.com"
-								/> */}
+									href="mailto:contact@margin-agence-web.com"
+									text="contact@margin-agence-web.com"
+								/>
 								<ContactDetail
 									icon={
 										<FontAwesomeIcon
@@ -42,7 +41,6 @@ export default function ContactBlock() {
 											className="infos__item--icon color-touch-svg"
 										/>
 									}
-									// title="Téléphone"
 									href="tel:+33664148826"
 									text="06 64 14 88 26"
 								/>
