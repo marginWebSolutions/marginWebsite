@@ -34,8 +34,8 @@
 
 	&__cards {
 		display: flex;
-		flex-wrap: wrap;
-		gap: 80px;
+		justify-content: center;
+		gap: 40px;
 		width: 75vw;
 
 		@include tablet {
