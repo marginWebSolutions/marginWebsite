@@ -5,7 +5,7 @@
 	position: relative;
 	cursor: pointer;
 	padding: 10px 15px;
-	border-radius: 5px;
+	border-radius: 10px;
 	background: $gradient;
 	font-size: clamp(14px, 2vw, 18px);
 	font-family: $text-font;
@@ -25,7 +25,7 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		border-radius: 5px; // Mêmes dimensions que .btn
+		border-radius: 10px; // Mêmes dimensions que .btn
 		padding: 2px; // Espacement pour la bordure de 2px
 		background: $gradient;
 		-webkit-mask: linear-gradient(#fff 0 0) content-box,
