@@ -6,6 +6,11 @@
 	border-radius: 10px;
 	background: white;
 	position: relative;
+	width: 31%;
+
+	@include tablet {
+		width: auto;
+	}
 
 	&__popular {
 		position: absolute;

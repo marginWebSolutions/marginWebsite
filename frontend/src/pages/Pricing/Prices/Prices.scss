@@ -28,6 +28,7 @@
 
 	&__plans {
 		display: flex;
+		justify-content: center;
 		gap: 40px;
 
 		@include tablet {

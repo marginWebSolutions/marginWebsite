@@ -11,15 +11,22 @@
 		justify-content: start;
 		align-items: center;
 		text-align: center;
-		gap: 30px;
-		flex: 1;
+		width: 31%;
+
+		@include tablet {
+			width: auto;
+		}
 	}
 
 	&--title {
 		font-family: $title-font;
-		font-size: 36px;
-		padding: 40px 20px 0 20px;
+		font-size: clamp(26px, 1.875vw, 36px);
+		padding: 40px;
 		@include gradientColor;
+
+		@include tablet {
+			padding: 20px;
+		}
 
 		@include mobile {
 			font-size: 32px;
@@ -29,8 +36,11 @@
 	&--text {
 		font-size: 20px;
 		line-height: 1.5;
-		background: rgba($primary, 0.04);
+		background: rgba($primary, 0.05);
 		padding: 40px;
 		height: 100%;
+		@include tablet {
+			padding: 20px;
+		}
 	}
 }
