@@ -26,7 +26,7 @@ export default function Prices() {
 						title="à la Carte"
 						text="Prestation de services pour votre site existant"
 						price="à partir de 450€*"
-						listTitle="Les services possibles :"
+						listTitle="Les services disponibles :"
 						features={[
 							'Refonte graphique',
 							'Modification de contenu',

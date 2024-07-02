@@ -11,9 +11,9 @@
 		position: absolute;
 		right: 25px;
 		top: -15px;
-		color: rgba(#373737, 1);
-		background: #daa520;
-		border: 2px solid rgba(#373737, 0.7);
+		color: rgba($accent, 1);
+		background: rgba($background, 1);
+		border: 2px solid rgba($accent, 1);
 		border-radius: 20px;
 		box-shadow: $light-shadow;
 		padding: 10px;
@@ -76,26 +76,29 @@
 		&__features {
 			display: flex;
 			flex-direction: column;
-			gap: 10px;
+			gap: 15px;
 		}
 
 		&__list {
 			display: flex;
 			flex-direction: column;
 			gap: 10px;
+			font-weight: 500;
+			font-size: 14px;
 
 			&--title {
-				font-family: $title-font;
-				font-size: 12px;
+				font-size: 14px;
 				font-weight: 500;
 			}
 
 			&--item {
 				display: flex;
 				gap: 10px;
-				font-size: 12px;
-				font-weight: 400;
 			}
 		}
+	}
+
+	&:nth-child(1) .card__body {
+		background: rgba($accent, 0.1);
 	}
 }
