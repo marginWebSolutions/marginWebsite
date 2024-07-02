@@ -81,7 +81,7 @@ export default function Hero() {
 						<h1 className="hero__title">
 							Création et développement de sites Web
 							professionnels à destination des PME et des artisans
-							à Nevers et Saint-Etienne
+							à Saint-Etienne et Nevers
 						</h1>
 						<div className="hero__logo--container">
 							<span className="hero__logo">

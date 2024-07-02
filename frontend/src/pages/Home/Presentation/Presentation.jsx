@@ -39,13 +39,13 @@ export default function Presentation() {
 					</span>{' '}
 					autour de chez eux.
 					<br /> Basés à{' '}
-					<span className="bolder">Nevers et Saint-Étienne</span>,
+					<span className="bolder">Saint-Étienne et Nevers</span>,
 					nous offrons des solutions digitales adaptées à vos besoins
 					spécifiques, en alliant design, fonctionnalités et
-					performances. 
-					<br />Conscients des enjeux et des spécificités
-					uniques de chaque corps de métier, nous basons notre
-					approche{' '}
+					performances.
+					<br />
+					Conscients des enjeux et des spécificités uniques de chaque
+					corps de métier, nous basons notre approche{' '}
 					<span className="bolder">
 						sur l’écoute et la compréhension de vos besoins
 					</span>
@@ -93,7 +93,7 @@ export default function Presentation() {
 						}
 						title={'Service de Proximité'}
 						text={
-							'Nous sommes fiers de soutenir les entreprises locales à Nevers et Saint-Étienne. Que vous soyez une PME ou un artisan, nous sommes là pour vous aider à créer une présence en ligne efficace.'
+							'Nous sommes fiers de soutenir les entreprises locales à Saint-Étienne et Nevers. Que vous soyez une PME ou un artisan, nous sommes là pour vous aider à créer une présence en ligne efficace.'
 						}
 						className={`${columnVisible ? 'fadeIn__columns' : ''}`}
 					/>
