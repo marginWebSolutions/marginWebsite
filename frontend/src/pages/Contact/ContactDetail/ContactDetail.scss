@@ -17,9 +17,13 @@
 	}
 
 	&--text {
-		font-size: 19px;
+		font-size: 24px;
 		color: $text;
 		text-align: start;
+		font-weight: 500;
+		@include tablet {
+			font-size: 20px;
+		}
 	}
 
 	@include tablet {
