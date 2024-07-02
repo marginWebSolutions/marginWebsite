@@ -6,17 +6,16 @@
 	flex-direction: column;
 	gap: 40px;
 	padding: 40px;
-	border-radius: 5px;
+	border-radius: 10px;
 	background: white;
 	box-shadow: $shadow-lighter-opacity;
 	min-width: 30vw;
 
 	@include tablet {
-		max-width: 85%;
+		width: 100%;
 	}
 
 	@include mobile {
-		width: auto;
 		padding: 30px;
 	}
 

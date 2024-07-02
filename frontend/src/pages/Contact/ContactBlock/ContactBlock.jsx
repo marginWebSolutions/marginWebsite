@@ -13,9 +13,9 @@ export default function ContactBlock() {
 				<div className="contact__container">
 					<div className="contact__infos">
 						<div className="contact__infos--headings">
-							<h2 className="infos__headings--title">
+							<h1 className="infos__headings--title">
 								Faites le premier pas !
-							</h2>
+							</h1>
 							<p className="infos__headings--text">
 								Nous sommes impatients de collaborer avec vous
 								et de vous aider à développer une présence en
