@@ -14,7 +14,7 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 80px;
-		padding-top: clamp(50px, 8vh, 600px);
+		// padding-top: clamp(50px, 8vh, 600px);
 	}
 
 	&__title {
@@ -29,8 +29,9 @@
 
 	&__container {
 		display: flex;
-		justify-content: space-between;
-		gap: 80px;
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
 		width: 75%;
 
 		@include tablet {
@@ -46,7 +47,7 @@
 	&__infos {
 		display: flex;
 		align-items: center;
-		width: 40%;
+		width: 30%;
 
 		&--headings {
 			display: flex;
@@ -89,18 +90,20 @@
 
 	.infos__content {
 		display: flex;
+		flex-direction: column;
 		gap: 20px;
 		margin-top: 15px;
 
 		@include tablet {
 			justify-content: center;
-			gap: 120px;
+			margin: auto;
+			gap: 20px;
 		}
 
 		@include mobile {
 			flex-direction: column;
 			justify-content: center;
-			gap: 40px;
+			gap: 20px;
 			margin: auto;
 		}
 	}
