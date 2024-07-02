@@ -1,0 +1,70 @@
+[
+	{
+		"name": "default",
+		"btnHref": "/contact",
+		"btnTitle": "Demander un devis",
+		"title": "à la Carte",
+		"text": "Prestation de services pour votre site existant",
+		"price": "à partir de 450€*",
+		"listTitle": "Les services disponibles :",
+		"features": [
+			"Refonte graphique",
+			"Modification de contenu",
+			"Ajout d'une version adaptée mobile et tablette",
+			"Animations des éléments du site",
+			"Amélioration du référencement en ligne",
+			"Optimisation des performances",
+			"Audit",
+			"Débogage",
+			"Maintenance technique"
+		]
+	},
+	{
+		"name": "Essentiel",
+		"btnHref": "#features",
+		"btnTitle": "Plus d'infos",
+		"plansLink": "Essentiel",
+		"popular": true,
+		"title": "Essentiel",
+		"text": "Site vitrine moderne optimisé et référencé",
+		"price": "à partir de 1500€*",
+		"features": [
+			"Création d'un design sobre et professionnel",
+			"Ou mise en place de votre propre design",
+			"Référencement en ligne",
+			"Animations simples",
+			"Nombre de pages limité",
+			"Direction artistique et design travaillé",
+			"Contenu administrable",
+			"Référencement en ligne",
+			"Animations poussées",
+			"Plus grand nombre de pages"
+		]
+	},
+	{
+		"name": "Premium",
+		"btnHref": "#features",
+		"btnTitle": "Plus d'infos",
+		"plansLink": "Premium",
+		"title": "Premium",
+		"text": "Site vitrine performant au design travaillé",
+		"price": "à partir de 4500€*",
+		"features": [
+			"Direction artistique et design travaillé",
+			"Contenu administrable",
+			"Référencement en ligne",
+			"Animations poussées",
+			"Plus grand nombre de pages",
+			"Direction artistique et design travaillé",
+			"Contenu administrable",
+			"Référencement en ligne",
+			"Animations poussées",
+			"Plus grand nombre de pages",
+			"Direction artistique et design travaillé",
+			"Contenu administrable",
+			"Référencement en ligne",
+			"Animations poussées",
+			"Plus grand nombre de pages"
+		]
+	}
+]
