@@ -5,7 +5,7 @@
 	font-family: $title-font;
 	color: $text;
 	font-size: clamp(12px, 1.2vw, 18px);
-	transition: all 0.2s ease-in-out;
+	transition: all 0.3s ease-in-out;
 
 	&:hover {
 		color: $secondary;
@@ -22,13 +22,12 @@
 		&__default {
 			position: relative;
 			transition: all 0.3s ease-in-out;
-			border: 2px solid transparent;
+			border: 1px solid transparent;
 			background-clip: padding-box;
 
 			&:hover {
-				box-shadow: none;
 				color: $background;
-				border: 2px solid rgba($text, 1);
+				border: 1px solid rgba($primary, 1);
 			}
 		}
 
@@ -38,6 +37,10 @@
 			color: $secondary;
 			-webkit-text-fill-color: $secondary;
 			-moz-text-fill-color: $secondary;
+
+			&:hover {
+				box-shadow: none;
+			}
 		}
 	}
 }
