@@ -1,11 +1,10 @@
 import { useRef } from 'react';
 import Section from '../../../layout/Section/Section';
-import useScrollAnimation from '../../../utils/hooks/useScrollAnimation';
+import useAnimation from '../../../utils/hooks/useAnimation';
 import './AdditionalServices.scss';
 
 export default function AdditionalServices() {
 	const contentRef = useRef(null);
-	const [contentVisible] = useScrollAnimation([contentRef]);
 
 	const additionalServices = [
 		'Hébergement',
@@ -21,7 +20,7 @@ export default function AdditionalServices() {
 		<Section className="additionalServices">
 			<div
 				className={`additionalServices__content ${
-					contentVisible ? 'fadeIn__title' : ''
+					useAnimation(contentRef, 'fadeIn__title') || ''
 				}`}
 				ref={contentRef}
 			>

@@ -1,10 +1,11 @@
-import { useContext, useEffect, useRef, useState } from 'react';
+/* eslint-disable react-hooks/rules-of-hooks */
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useContext, useEffect, useRef, useState } from 'react';
 import PlanContext from '../../../context/PlanContext';
 import PlansData from '../../../data/plans_data.json';
 import Section from '../../../layout/Section/Section';
-import useScrollAnimation from '../../../utils/hooks/useScrollAnimation';
+import useAnimation from '../../../utils/hooks/useAnimation';
 import FeaturesTableMobile from '../FeaturesTableMobile/FeaturesTableMobile';
 import './FeaturesTable.scss';
 
@@ -12,7 +13,6 @@ export default function FeaturesTable() {
 	const contentRef = useRef(null);
 	const { selectedPlan, setSelectedPlan } = useContext(PlanContext);
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
-	const [contentVisible] = useScrollAnimation([contentRef]);
 
 	useEffect(() => {
 		const handleResize = () => {
@@ -32,8 +32,9 @@ export default function FeaturesTable() {
 		<Section className="features" id="features">
 			{isMobile && (
 				<table
-					className={`features__table ${contentVisible ? 'fadeIn__title' : ''
-						}`}
+					className={`features__table ${
+						useAnimation(contentRef, 'fadeIn__title') || ''
+					}`}
 					ref={contentRef}
 				>
 					<thead>
@@ -48,19 +49,21 @@ export default function FeaturesTable() {
 							<td>
 								<div className="features__table--plan-names">
 									<div
-										className={`features__table--plan-name ${selectedPlan === 'Essentiel'
+										className={`features__table--plan-name ${
+											selectedPlan === 'Essentiel'
 												? 'selected'
 												: ''
-											}`}
+										}`}
 										onClick={() => handleClick('Essentiel')}
 									>
 										Essentiel
 									</div>
 									<div
-										className={`features__table--plan-name ${selectedPlan === 'Premium'
+										className={`features__table--plan-name ${
+											selectedPlan === 'Premium'
 												? 'selected'
 												: ''
-											}`}
+										}`}
 										onClick={() => handleClick('Premium')}
 									>
 										Premium
@@ -74,8 +77,9 @@ export default function FeaturesTable() {
 			)}
 			{!isMobile && (
 				<table
-					className={`features__table ${contentVisible ? 'fadeIn__title' : ''
-						}`}
+					className={`features__table ${
+						useAnimation(contentRef, 'fadeIn__title') || ''
+					}`}
 					ref={contentRef}
 				>
 					<thead>
@@ -87,7 +91,8 @@ export default function FeaturesTable() {
 					</thead>
 					<tbody>
 						<tr>
-							<th className="features__item features__item--title features__item--title--left">
+							<th className="features__item features__item--title features__item--title--left visually-hidden">
+								Solutions
 							</th>
 							<td className="features__item features__item--title">
 								Essentiel
@@ -102,16 +107,24 @@ export default function FeaturesTable() {
 									{detail.name}
 								</th>
 								<td className="features__item">
-									{detail.Essentiel === true ? <FontAwesomeIcon
-										icon={faCheck}
-										className="color-touch-svg"
-									/> : detail.Essentiel}
+									{detail.Essentiel === true ? (
+										<FontAwesomeIcon
+											icon={faCheck}
+											className="color-touch-svg"
+										/>
+									) : (
+										detail.Essentiel
+									)}
 								</td>
 								<td className="features__item">
-									{detail.Premium === true ? <FontAwesomeIcon
-										icon={faCheck}
-										className="color-touch-svg"
-									/> : detail.Premium}
+									{detail.Premium === true ? (
+										<FontAwesomeIcon
+											icon={faCheck}
+											className="color-touch-svg"
+										/>
+									) : (
+										detail.Premium
+									)}
 								</td>
 							</tr>
 						))}

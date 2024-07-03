@@ -1,18 +1,17 @@
 import PropTypes from 'prop-types';
 import { useRef } from 'react';
 import Section from '../../../layout/Section/Section';
-import useScrollAnimation from '../../../utils/hooks/useScrollAnimation';
+import useAnimation from '../../../utils/hooks/useAnimation';
 import './Citation.scss';
 
 export default function Citation({ quote, author }) {
 	const contentRef = useRef(null);
 
-	const [contentVisible] = useScrollAnimation([contentRef]);
 	return (
 		<Section className="citation">
 			<div
 				className={`citation__content ${
-					contentVisible ? 'fadeIn__text' : ''
+					useAnimation(contentRef, 'fadeIn__title') || ''
 				}`}
 				ref={contentRef}
 			>
