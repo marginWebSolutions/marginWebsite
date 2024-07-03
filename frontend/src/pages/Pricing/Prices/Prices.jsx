@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useContext, useEffect, useState } from 'react';
-import ButtonOrLink from '../../../components/ButtonOrLink/ButtonOrLink';
 import PlanContext from '../../../context/PlanContext';
 import PricesCardData from '../../../data/prices_card_data.json';
 import Section from '../../../layout/Section/Section';
@@ -53,7 +52,7 @@ export default function Prices() {
 									}`}
 									onClick={() => handleClick('default')}
 								>
-									À la Carte
+									Essentiel
 								</div>
 								<div
 									className={`prices__toggle--item ${
@@ -63,7 +62,7 @@ export default function Prices() {
 									}`}
 									onClick={() => handleClick('Essentiel')}
 								>
-									Essentiel
+									Premium
 								</div>
 								<div
 									className={`prices__toggle--item ${
@@ -73,7 +72,7 @@ export default function Prices() {
 									}`}
 									onClick={() => handleClick('Premium')}
 								>
-									Premium
+									À la Carte
 								</div>
 							</div>
 							<div className="prices__plans__cards">
@@ -101,15 +100,6 @@ export default function Prices() {
 					)}
 				</div>
 			</div>
-			{!isMobile && (
-				<ButtonOrLink
-					isLink={true}
-					to="/contact"
-					btnClassName="reverse test"
-				>
-					Demander un devis !
-				</ButtonOrLink>
-			)}
 			<p className="prices__details">
 				*Tarif indicatif Hors Taxe, évolution selon devis personnalisé
 			</p>
