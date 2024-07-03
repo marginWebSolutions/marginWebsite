@@ -10,10 +10,10 @@ export default function Pricing() {
 	return (
 		<>
 			<Prices />
-			<Underline />
+			{/* <Underline /> */}
 			<FeaturesTable />
 			<AdditionalServices />
-			<Underline />
+			{/* <Underline /> */}
 			<GoToSection />
 		</>
 	);

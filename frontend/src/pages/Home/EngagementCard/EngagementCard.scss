@@ -4,7 +4,8 @@
 .engagement__card {
 	&--item {
 		border-radius: 10px;
-		box-shadow: $shadow-lighter-opacity;
+		// box-shadow: $shadow-lighter-opacity;
+		box-shadow: $card-shadow;
 		background: $white;
 		display: flex;
 		flex-direction: column;
@@ -37,7 +38,7 @@
 		font-size: 20px;
 		line-height: 1.5;
 		border-radius: 0 0 10px 10px;
-		background: rgba($secondary, 0.1);
+		background: rgba($secondary, 0.2);
 		padding: 20px 30px 20px 30px;
 		height: 100%;
 		@include tablet {
