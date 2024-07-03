@@ -9,6 +9,7 @@ import './Prices.scss';
 
 export default function Prices() {
 	const { selectedCard, setSelectedCard } = useContext(PlanContext);
+	const { setSelectedPlan } = useContext(PlanContext);
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
 
 	useEffect(() => {
@@ -21,8 +22,9 @@ export default function Prices() {
 		return () => window.removeEventListener('resize', handleResize);
 	}, []);
 
-	const handleClick = (card) => {
+	const handleClick = (card, plan) => {
 		setSelectedCard(card);
+		setSelectedPlan(plan);
 	};
 
 	return (
@@ -46,23 +48,15 @@ export default function Prices() {
 							<div className="prices__toggle">
 								<div
 									className={`prices__toggle--item ${
-										selectedCard === 'default'
-											? 'selected'
-											: ''
-									}`}
-									onClick={() => handleClick('default')}
-								>
-									Essentiel
-								</div>
-								<div
-									className={`prices__toggle--item ${
 										selectedCard === 'Essentiel'
 											? 'selected'
 											: ''
 									}`}
-									onClick={() => handleClick('Essentiel')}
+									onClick={() =>
+										handleClick('Essentiel', 'Essentiel')
+									}
 								>
-									Premium
+									Essentiel
 								</div>
 								<div
 									className={`prices__toggle--item ${
@@ -70,7 +64,21 @@ export default function Prices() {
 											? 'selected'
 											: ''
 									}`}
-									onClick={() => handleClick('Premium')}
+									onClick={() =>
+										handleClick('Premium', 'Premium')
+									}
+								>
+									Premium
+								</div>
+								<div
+									className={`prices__toggle--item ${
+										selectedCard === 'default'
+											? 'selected'
+											: ''
+									}`}
+									onClick={() =>
+										handleClick('default', 'Essentiel')
+									}
 								>
 									À la Carte
 								</div>

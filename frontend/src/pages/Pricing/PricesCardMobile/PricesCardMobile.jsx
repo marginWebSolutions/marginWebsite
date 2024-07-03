@@ -4,26 +4,8 @@ import PricesCardData from '../../../data/prices_card_data.json';
 import PricesCard from '../PricesCard/PricesCard';
 
 export default function PricesCardMobile({ card }) {
-	if (card === 'default') {
-		const defaultCard = PricesCardData[0];
-		return (
-			<PricesCard
-				key={defaultCard.name}
-				title={defaultCard.title}
-				text={defaultCard.text}
-				price={defaultCard.price}
-				features={defaultCard.features}
-				listTitle={defaultCard.listTitle}
-				btnHref={defaultCard.btnHref}
-				btnTitle={defaultCard.btnTitle}
-				popular={defaultCard.popular}
-				plansLink={defaultCard.plansLink}
-			/>
-		);
-	}
-
 	if (card === 'Essentiel') {
-		const EssentielCard = PricesCardData[1];
+		const EssentielCard = PricesCardData[0];
 		return (
 			<PricesCard
 				key={EssentielCard.name}
@@ -42,7 +24,7 @@ export default function PricesCardMobile({ card }) {
 	}
 
 	if (card === 'Premium') {
-		const PremiumCard = PricesCardData[2];
+		const PremiumCard = PricesCardData[1];
 		return (
 			<PricesCard
 				key={PremiumCard.name}
@@ -56,6 +38,24 @@ export default function PricesCardMobile({ card }) {
 				popular={PremiumCard.popular}
 				plansLink={PremiumCard.plansLink}
 				className="card__body--secondary"
+			/>
+		);
+	}
+
+	if (card === 'default') {
+		const defaultCard = PricesCardData[2];
+		return (
+			<PricesCard
+				key={defaultCard.name}
+				title={defaultCard.title}
+				text={defaultCard.text}
+				price={defaultCard.price}
+				features={defaultCard.features}
+				listTitle={defaultCard.listTitle}
+				btnHref={defaultCard.btnHref}
+				btnTitle={defaultCard.btnTitle}
+				popular={defaultCard.popular}
+				plansLink={defaultCard.plansLink}
 			/>
 		);
 	}
