@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useCallback, useEffect, useState } from 'react';
 
-const useScrollAnimation = (refs) => {
+const useScrollAnimation = (refs, visibilityThreshold = 0.1) => {
 	const [visibilityStates, setVisibilityStates] = useState(
 		refs.map(() => false)
 	);
@@ -10,7 +10,8 @@ const useScrollAnimation = (refs) => {
 		const newVisibilityStates = refs.map((ref) => {
 			if (!ref.current) return false;
 			const rect = ref.current.getBoundingClientRect();
-			return rect.top < window.innerHeight;
+			const isVisible = rect.top < window.innerHeight;
+			return isVisible;
 		});
 
 		const statesChanged = newVisibilityStates.some(
@@ -20,11 +21,15 @@ const useScrollAnimation = (refs) => {
 		if (statesChanged) {
 			setVisibilityStates(newVisibilityStates);
 		}
-	}, [visibilityStates, refs]);
+	}, [visibilityStates, refs, visibilityThreshold]);
 
 	useEffect(() => {
+		let animationFrameId = null;
+
 		const handleScroll = () => {
-			checkVisibility();
+			cancelAnimationFrame(animationFrameId);
+			animationFrameId = requestAnimationFrame(checkVisibility);
+			// checkVisibility();
 		};
 
 		window.addEventListener('scroll', handleScroll);
@@ -32,6 +37,7 @@ const useScrollAnimation = (refs) => {
 
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
+			cancelAnimationFrame(animationFrameId);
 		};
 	}, [checkVisibility]);
 
