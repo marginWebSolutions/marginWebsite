@@ -88,7 +88,6 @@ export default function FeaturesTable() {
 					<tbody>
 						<tr>
 							<th className="features__item features__item--title features__item--title--left">
-								Plans
 							</th>
 							<td className="features__item features__item--title">
 								Essentiel
