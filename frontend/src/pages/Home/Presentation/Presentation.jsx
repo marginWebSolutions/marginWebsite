@@ -109,12 +109,14 @@ export default function Presentation() {
 						ref={thirdColumnRef}
 					/>
 				</div>
-				<div ref={buttonRef}>
+				<div
+					ref={buttonRef}
+					className={`${
+						useAnimation(buttonRef, 'fadeIn__button') || ''
+					}`}
+				>
 					<ButtonOrLink
-						btnClassName={`reverse ${useAnimation(
-							buttonRef,
-							'fadeIn__button' || ''
-						)}`}
+						btnClassName="reverse"
 						isLink={true}
 						href="/services-et-tarifs"
 					>
