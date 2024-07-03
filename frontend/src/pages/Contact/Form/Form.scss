@@ -8,7 +8,7 @@
 	padding: 40px;
 	border-radius: 10px;
 	background: white;
-	box-shadow: $shadow-lighter-opacity;
+	box-shadow: $card-shadow;
 	min-width: 30vw;
 
 	@include tablet {
