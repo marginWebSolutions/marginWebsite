@@ -21,7 +21,7 @@
 	&--title {
 		font-family: $title-font;
 		font-size: clamp(26px, 1.875vw, 36px);
-		padding: 40px;
+		padding: 30px;
 		@include gradientColor;
 
 		@include tablet {
@@ -36,8 +36,9 @@
 	&--text {
 		font-size: 20px;
 		line-height: 1.5;
-		background: rgba($primary, 0.05);
-		padding: 40px;
+		border-radius: 0 0 10px 10px;
+		background: rgba($secondary, 0.1);
+		padding: 20px 30px 20px 30px;
 		height: 100%;
 		@include tablet {
 			padding: 20px;
