@@ -73,9 +73,14 @@
 			margin-top: auto;
 			font-size: 16px;
 			text-align: center;
+			display: none;
 
 			@include tablet {
 				font-size: 14px;
+			}
+
+			@include mobile {
+				display: block;
 			}
 		}
 
