@@ -18,7 +18,7 @@ export default function PricesCard({
 	popular = false,
 	plansLink,
 }) {
-	const { selectedPlan, setSelectedPlan } = useContext(PlanContext);
+	const { setSelectedPlan } = useContext(PlanContext);
 
 	const handlePlanChange = (newPlan) => {
 		setSelectedPlan(newPlan);

@@ -83,7 +83,7 @@ export default function PricesCard({ card }) {
 							{EssentielCard.text}
 						</p>
 					</div>
-					<div className="card__body">
+					<div className="card__body card__body--secondary">
 						<p className="card__body--price">
 							{EssentielCard.price}
 						</p>
@@ -139,7 +139,7 @@ export default function PricesCard({ card }) {
 							{PremiumCard.text}
 						</p>
 					</div>
-					<div className="card__body">
+					<div className="card__body card__body--secondary">
 						<p className="card__body--price">{PremiumCard.price}</p>
 						<div className="card__body__features">
 							<p className="card__body__list--title">
