@@ -52,7 +52,7 @@ export default function Prices() {
 									}`}
 									onClick={() => handleClick('default')}
 								>
-									Carte
+									À la Carte
 								</div>
 								<div
 									className={`prices__toggle--item ${
