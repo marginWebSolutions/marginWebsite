@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useContext, useEffect, useState } from 'react';
+import ButtonOrLink from '../../../components/ButtonOrLink/ButtonOrLink';
 import PlanContext from '../../../context/PlanContext';
+import PricesCardData from '../../../data/prices_card_data.json';
 import Section from '../../../layout/Section/Section';
 import PricesCard from '../PricesCard/PricesCard';
 import PricesCardMobile from '../PricesCardMobile/PricesCardMobile';
@@ -74,78 +76,40 @@ export default function Prices() {
 									Premium
 								</div>
 							</div>
-							<div className="prices__plans">
+							<div className="prices__plans__cards">
 								<PricesCardMobile card={selectedCard} />
 							</div>
 						</>
 					)}
 					{!isMobile && (
 						<>
-							<PricesCard
-								btnHref="/contact"
-								btnTitle="Demander un devis"
-								title="à la Carte"
-								text="Prestation de services pour votre site existant"
-								price="à partir de 450€*"
-								listTitle="Les services disponibles :"
-								features={[
-									'Refonte graphique',
-									'Modification de contenu',
-									"Ajout d'une version adaptée mobile et tablette",
-									'Animations des éléments du site',
-									'Amélioration du référencement en ligne',
-									'Optimisation des performances',
-									'Audit',
-									'Débogage',
-									'Maintenance technique',
-								]}
-							/>
-							<PricesCard
-								plansLink={'Essentiel'}
-								popular={true}
-								title="Essentiel"
-								text="Site vitrine moderne optimisé et référencé"
-								price="à partir de 1500€*"
-								features={[
-									"Création d'un design sobre et profesionnel",
-									'Ou mise en place de votre propre design',
-									'Référencement en ligne',
-									'Animations simples',
-									'Nombre de pages limité',
-									'Direction artistique et design travaillé',
-									'Contenu administrable',
-									'Référencement en ligne',
-									'Animations poussées',
-									'Plus grand nombre de pages',
-								]}
-							/>
-							<PricesCard
-								plansLink={'Premium'}
-								title="Premium"
-								text="Site vitrine performant au design travaillé"
-								price="à partir de 4500€*"
-								features={[
-									'Direction artistique et design travaillé',
-									'Contenu administrable',
-									'Référencement en ligne',
-									'Animations poussées',
-									'Plus grand nombre de pages',
-									'Direction artistique et design travaillé',
-									'Contenu administrable',
-									'Référencement en ligne',
-									'Animations poussées',
-									'Plus grand nombre de pages',
-									'Direction artistique et design travaillé',
-									'Contenu administrable',
-									'Référencement en ligne',
-									'Animations poussées',
-									'Plus grand nombre de pages',
-								]}
-							/>
+							{PricesCardData.map((card) => (
+								<PricesCard
+									key={card.name}
+									title={card.title}
+									text={card.text}
+									price={card.price}
+									features={card.features}
+									listTitle={card.listTitle}
+									btnHref={card.btnHref}
+									btnTitle={card.btnTitle}
+									popular={card.popular}
+									plansLink={card.plansLink}
+								/>
+							))}
 						</>
 					)}
 				</div>
 			</div>
+			{!isMobile && (
+				<ButtonOrLink
+					isLink={true}
+					to="/contact"
+					btnClassName="reverse test"
+				>
+					Demander un devis !
+				</ButtonOrLink>
+			)}
 			<p className="prices__details">
 				*Tarif indicatif Hors Taxe, évolution selon devis personnalisé
 			</p>

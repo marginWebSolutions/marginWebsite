@@ -17,6 +17,7 @@ export default function PricesCard({
 	btnTitle = "Plus d'infos",
 	popular = false,
 	plansLink,
+	className,
 }) {
 	const { setSelectedPlan } = useContext(PlanContext);
 
@@ -32,7 +33,7 @@ export default function PricesCard({
 					<h2 className="card__heading--title">{title}</h2>
 					<p className="card__heading--text">{text}</p>
 				</div>
-				<div className="card__body">
+				<div className={`card__body ${className}`}>
 					<p className="card__body--price">{price}</p>
 					<div className="card__body__features">
 						<p className="card__body__list--title">{listTitle}</p>
@@ -74,4 +75,5 @@ PricesCard.propTypes = {
 	btnTitle: PropTypes.string,
 	popular: PropTypes.bool,
 	plansLink: PropTypes.string,
+	className: PropTypes.string,
 };

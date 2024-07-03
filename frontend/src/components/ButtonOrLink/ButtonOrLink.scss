@@ -16,7 +16,7 @@
 	transition: all 0.3s ease-in-out;
 
 	@include tablet {
-		border-radius: 20px;
+		border-radius: 50px;
 	}
 
 	&::before {
@@ -36,7 +36,7 @@
 		z-index: -1;
 
 		@include tablet {
-			border-radius: 20px;
+			border-radius: 50px;
 		}
 	}
 
