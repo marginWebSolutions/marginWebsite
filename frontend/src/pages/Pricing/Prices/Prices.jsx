@@ -9,7 +9,6 @@ import './Prices.scss';
 export default function Prices() {
 	const { selectedCard, setSelectedCard } = useContext(PlanContext);
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
-	console.log(selectedCard);
 
 	useEffect(() => {
 		const handleResize = () => {
