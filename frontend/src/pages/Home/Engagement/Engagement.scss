@@ -4,7 +4,7 @@
 .engagement {
 	display: flex;
 	justify-content: center;
-	background: rgba($secondary, 0.1);
+	background: rgba($secondary, 0.2);
 	width: 100%;
 
 	&__content {
@@ -26,6 +26,7 @@
 		font-family: $title-font;
 		font-size: 48px;
 		text-align: center;
+		// color: rgba($background, 1);
 
 		@include mobile {
 			font-size: 40px;
@@ -53,6 +54,7 @@
 		line-height: 1.5;
 		text-align: center;
 		width: 65vw;
+		// color: rgba($background, 1);
 
 		@include tablet {
 			width: 100%;
