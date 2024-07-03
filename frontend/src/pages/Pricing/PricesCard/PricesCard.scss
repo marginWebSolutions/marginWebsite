@@ -18,8 +18,9 @@
 		right: 25px;
 		top: -18px;
 		color: rgba($text, 0.8);
-		background: rgba($accent, 1);
-		border: 2px solid rgba($accent, 1);
+		// background: rgba($accent, 1);
+		background: linear-gradient(rgba($accent, 1), rgba($accent, 0.8 ));
+		border: 2px solid rgba($accent, 0);
 		border-radius: 20px;
 		box-shadow: $light-shadow;
 		padding: 10px;
