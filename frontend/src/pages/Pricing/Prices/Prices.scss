@@ -38,7 +38,7 @@
 		@include mini-tablet {
 			flex-direction: column;
 			gap: 40px;
-			width: 75%;
+			// width: 75%;
 		}
 
 		@include mobile {
@@ -67,7 +67,7 @@
 	&__details {
 		font-size: 14px;
 		position: relative;
-		top: 40px;
+		top: 140px;
 		font-weight: 500;
 
 		@include mobile {
