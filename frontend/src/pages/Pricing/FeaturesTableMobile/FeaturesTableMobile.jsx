@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import PlansData from '../../../data/plans_data.json';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function FeaturesTableMobile({ plan }) {
 	if (plan === 'Essentiel') {
@@ -8,7 +10,12 @@ export default function FeaturesTableMobile({ plan }) {
 				<th className="features__item features__item--left">
 					{detail.name}
 				</th>
-				<td className="features__item">{detail.Essentiel}</td>
+				<td className="features__item">
+					{detail.Essentiel === true ? <FontAwesomeIcon
+						icon={faCheck}
+						className="color-touch-svg"
+					/> : detail.Essentiel}
+				</td>
 			</tr>
 		));
 	}
@@ -19,7 +26,12 @@ export default function FeaturesTableMobile({ plan }) {
 				<th className="features__item features__item--left">
 					{detail.name}
 				</th>
-				<td className="features__item">{detail.Premium}</td>
+				<td className="features__item">
+				{detail.Premium === true ? <FontAwesomeIcon
+						icon={faCheck}
+						className="color-touch-svg"
+					/> : detail.Premium}
+				</td>
 			</tr>
 		));
 	}
