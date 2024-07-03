@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 import { useRef } from 'react';
 import Section from '../../layout/Section/Section';
-import useScrollAnimation from '../../utils/hooks/useScrollAnimation';
+import useAnimation from '../../utils/hooks/useAnimation';
 import ButtonDoubled from '../ButtonDoubled/ButtonDoubled';
 import ButtonOrLink from '../ButtonOrLink/ButtonOrLink';
 import './GoToSection.scss';
@@ -15,21 +15,20 @@ export default function GoToSection({
 	const titleRef = useRef(null);
 	const textRef = useRef(null);
 
-	const [titleVisible, textVisible] = useScrollAnimation([titleRef, textRef]);
-
 	return (
 		<Section className="go-to">
-			<div className="go-to__content" ref={titleRef}>
+			<div className="go-to__content">
 				<h2
 					className={`go-to__title ${
-						titleVisible ? 'fadeIn__title' : ''
+						useAnimation(titleRef, 'fadeIn__title') || ''
 					}`}
+					ref={titleRef}
 				>
 					{title}
 				</h2>
 				<p
 					className={`go-to__text ${
-						textVisible ? 'fadeIn__text' : ''
+						useAnimation(textRef, 'fadeIn__text') || ''
 					}`}
 					ref={textRef}
 				>

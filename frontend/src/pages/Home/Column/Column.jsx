@@ -1,16 +1,10 @@
 import PropTypes from 'prop-types';
+import React from 'react';
 import './Column.scss';
 
-export default function Column({
-	srcmobile,
-	src,
-	alt,
-	title,
-	text,
-	className,
-}) {
-	return (
-		<div className={`column ${className}`}>
+const Column = React.forwardRef(
+	({ srcmobile, src, alt, title, text, className }, ref) => (
+		<div className={`column ${className}`} ref={ref}>
 			<div className="column__content">
 				<div className="column__image--container">
 					<img
@@ -28,8 +22,10 @@ export default function Column({
 				<p className="column__text">{text}</p>
 			</div>
 		</div>
-	);
-}
+	)
+);
+
+Column.displayName = 'Column';
 
 Column.propTypes = {
 	srcmobile: PropTypes.string,
@@ -39,3 +35,5 @@ Column.propTypes = {
 	text: PropTypes.string,
 	className: PropTypes.string,
 };
+
+export default Column;
