@@ -118,7 +118,7 @@ export default function Presentation() {
 					<ButtonOrLink
 						btnClassName="reverse"
 						isLink={true}
-						href="/services-et-tarifs"
+						to="/services-et-tarifs"
 					>
 						Découvrez nos solutions
 					</ButtonOrLink>

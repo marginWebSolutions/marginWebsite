@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Essentiel",
-		"btnHref": "#features",
+		"btnHref": "/contact",
 		"btnTitle": "Demander un devis",
 		"plansLink": "Essentiel",
 		"popular": true,
@@ -19,7 +19,7 @@
 	},
 	{
 		"name": "Premium",
-		"btnHref": "#features",
+		"btnHref": "/contact",
 		"btnTitle": "Demander un devis",
 		"plansLink": "Premium",
 		"title": "Premium",
