@@ -8,7 +8,6 @@ import PlanContext from '../../../context/PlanContext';
 import PricesCardData from '../../../data/prices_card_data.json';
 
 export default function PricesCard({ card }) {
-	console.log(card);
 	const { setSelectedPlan } = useContext(PlanContext);
 
 	const handlePlanChange = (newPlan) => {
