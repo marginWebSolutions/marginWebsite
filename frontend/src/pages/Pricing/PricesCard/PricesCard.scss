@@ -107,4 +107,8 @@
 	&:nth-child(1) .card__body {
 		background: rgba($accent, 0.1);
 	}
+
+	&:nth-child(1) .card__body--secondary {
+		background: rgba($primary, 0.2);
+	}
 }
