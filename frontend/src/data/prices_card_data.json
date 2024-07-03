@@ -1,5 +1,40 @@
 [
 	{
+		"name": "Essentiel",
+		"btnHref": "#features",
+		"btnTitle": "Demander un devis",
+		"plansLink": "Essentiel",
+		"popular": true,
+		"title": "Essentiel",
+		"text": "Site vitrine moderne optimisé et référencé",
+		"price": "à partir de 1500€*",
+		"listTitle": "Ce qui est compris :",
+		"features": [
+			"Création d'un design sobre et professionnel",
+			"Ou mise en place de votre propre design",
+			"Référencement en ligne",
+			"Animations simples",
+			"Nombre de pages limité"
+		]
+	},
+	{
+		"name": "Premium",
+		"btnHref": "#features",
+		"btnTitle": "Demander un devis",
+		"plansLink": "Premium",
+		"title": "Premium",
+		"text": "Site vitrine performant au design travaillé",
+		"price": "à partir de 4500€*",
+		"listTitle": "Ce qui est compris :",
+		"features": [
+			"Direction artistique et design travaillé",
+			"Contenu administrable",
+			"Référencement en ligne",
+			"Animations poussées",
+			"Plus grand nombre de pages"
+		]
+	},
+	{
 		"name": "default",
 		"btnHref": "/contact",
 		"btnTitle": "Demander un devis",
@@ -17,56 +52,6 @@
 			"Audit",
 			"Débogage",
 			"Maintenance technique"
-		]
-	},
-	{
-		"name": "Essentiel",
-		"btnHref": "#features",
-		"btnTitle": "Plus d'infos",
-		"plansLink": "Essentiel",
-		"popular": true,
-		"title": "Essentiel",
-		"text": "Site vitrine moderne optimisé et référencé",
-		"price": "à partir de 1500€*",
-		"listTitle": "Ce qui est compris :",
-		"features": [
-			"Création d'un design sobre et professionnel",
-			"Ou mise en place de votre propre design",
-			"Référencement en ligne",
-			"Animations simples",
-			"Nombre de pages limité",
-			"Direction artistique et design travaillé",
-			"Contenu administrable",
-			"Référencement en ligne",
-			"Animations poussées",
-			"Plus grand nombre de pages"
-		]
-	},
-	{
-		"name": "Premium",
-		"btnHref": "#features",
-		"btnTitle": "Plus d'infos",
-		"plansLink": "Premium",
-		"title": "Premium",
-		"text": "Site vitrine performant au design travaillé",
-		"price": "à partir de 4500€*",
-		"listTitle": "Ce qui est compris :",
-		"features": [
-			"Direction artistique et design travaillé",
-			"Contenu administrable",
-			"Référencement en ligne",
-			"Animations poussées",
-			"Plus grand nombre de pages",
-			"Direction artistique et design travaillé",
-			"Contenu administrable",
-			"Référencement en ligne",
-			"Animations poussées",
-			"Plus grand nombre de pages",
-			"Direction artistique et design travaillé",
-			"Contenu administrable",
-			"Référencement en ligne",
-			"Animations poussées",
-			"Plus grand nombre de pages"
 		]
 	}
 ]
