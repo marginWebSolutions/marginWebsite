@@ -2,6 +2,8 @@
 
 .additionalServices {
 	padding: 0 0 160px 0;
+	background: rgba($primary, 0.2);
+	width: 100%;
 
 	@include mobile {
 		padding-bottom: 100px;
@@ -12,15 +14,16 @@
 		flex-direction: column;
 		gap: 40px;
 		margin: 0 auto;
-		width: 65vw;
+		width: 75vw;
 
 		@include tablet {
 			margin-left: 0;
-			width: 100%;
+			width: 95vw;
 		}
 
 		@include mobile {
 			margin-left: 0;
+			width: 85vw;
 		}
 	}
 

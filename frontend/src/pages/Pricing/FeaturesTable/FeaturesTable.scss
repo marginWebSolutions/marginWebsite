@@ -3,6 +3,8 @@
 
 .features {
 	padding: 160px 0 80px;
+	background: rgba($primary, 0.2);
+	width: 100%;
 
 	@include mobile {
 		padding-top: 100px;
@@ -10,32 +12,39 @@
 
 	&__table {
 		margin: 0 auto;
-		width: 65vw;
+		width: 75vw;
 		text-align: left;
 
 		@include tablet {
-			width: 100%;
+			width: 95vw;
 		}
 
 		&--plan-names {
 			display: flex;
 			gap: 10px;
 			margin-bottom: 20px;
+			padding-left: 10px;
 		}
 
 		&--plan-name {
 			padding: 7px 0;
+
+			&.selected {
+				border-bottom: 2px solid $secondary;
+				font-weight: 700;
+				@include gradientColor;
+			}
 		}
 	}
 
 	&__title {
-		padding: 5px 0 40px 0;
+		padding: 0 0 40px 20px;
 		border: none;
 		font-size: 24px;
 		font-family: $title-font;
 
 		@include mobile {
-			padding: 5px 0 20px 0;
+			padding: 0 0 20px 0;
 		}
 	}
 
@@ -44,6 +53,7 @@
 		border-top: 1px solid rgba($text, 0.1);
 		border-left: 1px solid rgba($text, 0.1);
 		vertical-align: middle;
+		font-weight: 500;
 
 		&--title {
 			border-top: 1px solid rgba($text, 0.1);
@@ -68,7 +78,7 @@
 			border-left: none;
 
 			@include mobile {
-				padding: 10px 0;
+				padding: 10px;
 			}
 		}
 
@@ -95,9 +105,4 @@ th {
 	@include mobile {
 		width: 50%;
 	}
-}
-
-.selected {
-	border-bottom: 2px solid $secondary;
-	font-weight: 700;
 }

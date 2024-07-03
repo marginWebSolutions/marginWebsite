@@ -29,7 +29,7 @@ export default function Prices() {
 		<Section className="prices" isHero={true}>
 			<div className="prices__content">
 				<h1 className="prices__title">
-					Choisissez un plan qui vous correspond
+					Choisissez la solution qui vous correspond
 				</h1>
 				<p className="prices__text">
 					Vous souhaitez retravailler le look de votre site Internet
