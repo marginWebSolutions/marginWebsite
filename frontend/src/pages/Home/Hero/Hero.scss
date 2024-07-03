@@ -68,7 +68,7 @@
 			width: 100%;
 		}
 
-		&>.btn__doubled {
+		& > .btn__doubled {
 			justify-content: flex-start;
 			order: 3;
 		}
@@ -137,7 +137,7 @@
 		}
 
 		@include mobile {
-			font-size: 60px;
+			font-size: 52px;
 		}
 	}
 

@@ -28,6 +28,7 @@
 		"title": "Essentiel",
 		"text": "Site vitrine moderne optimisé et référencé",
 		"price": "à partir de 1500€*",
+		"listTitle": "Ce qui est compris :",
 		"features": [
 			"Création d'un design sobre et professionnel",
 			"Ou mise en place de votre propre design",
@@ -49,6 +50,7 @@
 		"title": "Premium",
 		"text": "Site vitrine performant au design travaillé",
 		"price": "à partir de 4500€*",
+		"listTitle": "Ce qui est compris :",
 		"features": [
 			"Direction artistique et design travaillé",
 			"Contenu administrable",
