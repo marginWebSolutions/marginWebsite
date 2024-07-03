@@ -1,35 +1,34 @@
 import { useRef } from 'react';
 import ButtonOrLink from '../../../components/ButtonOrLink/ButtonOrLink';
 import Section from '../../../layout/Section/Section';
-import useScrollAnimation from '../../../utils/hooks/useScrollAnimation';
+import useAnimation from '../../../utils/hooks/useAnimation';
 import Column from '../Column/Column';
 import './Presentation.scss';
 
 export default function Presentation() {
 	const titleRef = useRef(null);
-	const columnRef = useRef(null);
+	const textRef = useRef(null);
+	const firstColumnRef = useRef(null);
+	const secondColumnRef = useRef(null);
+	const thirdColumnRef = useRef(null);
 	const buttonRef = useRef(null);
-
-	const [titleVisible, columnVisible, buttonVisible] = useScrollAnimation([
-		titleRef,
-		columnRef,
-		buttonRef,
-	]);
 
 	return (
 		<Section className="presentation">
-			<div className="presentation__content" ref={titleRef}>
+			<div className="presentation__content">
 				<h2
 					className={`presentation__title ${
-						titleVisible ? 'fadeIn__title' : ''
+						useAnimation(titleRef, 'fadeIn__title') || ''
 					}`}
+					ref={titleRef}
 				>
 					En quelques mots
 				</h2>
 				<p
 					className={`presentation__text ${
-						titleVisible ? 'fadeIn__text' : ''
+						useAnimation(textRef, 'fadeIn__text') || ''
 					}`}
+					ref={textRef}
 				>
 					Margin, c’est l’histoire de deux amis passionnés par la
 					création et le développement de sites Internet, qui décident
@@ -52,7 +51,7 @@ export default function Presentation() {
 					, afin de vous proposer les solutions web les plus adaptées.
 				</p>
 
-				<div className="presentation__columns" ref={columnRef}>
+				<div className="presentation__columns">
 					<Column
 						srcmobile={
 							'./illustration_Conseil_et_Expertise_en_stratégie_Web_mobile.webp'
@@ -67,7 +66,11 @@ export default function Presentation() {
 						text={
 							'Accompagnement dans le choix des technologies adaptées à vos besoins, expertise sur la faisabilité des fonctionnalités souhaitées et conseils pour l’optimisation de votre présence en ligne.'
 						}
-						className={`${columnVisible ? 'fadeIn__columns' : ''}`}
+						className={`${
+							useAnimation(firstColumnRef, 'fadeIn__columns') ||
+							''
+						}`}
+						ref={firstColumnRef}
 					/>
 					<Column
 						srcmobile={
@@ -81,7 +84,11 @@ export default function Presentation() {
 						text={
 							'Création de sites web dynamiques et modernes en utilisant des technologies telles que ReactJS et WordPress afin de créer des sites web performants et évolutifs, pour une expérience utilisateur fluide.'
 						}
-						className={`${columnVisible ? 'fadeIn__columns' : ''}`}
+						className={`${
+							useAnimation(secondColumnRef, 'fadeIn__columns') ||
+							''
+						}`}
+						ref={secondColumnRef}
 					/>
 					<Column
 						srcmobile={
@@ -95,14 +102,19 @@ export default function Presentation() {
 						text={
 							'Nous sommes fiers de soutenir les entreprises locales à Saint-Étienne et Nevers. Que vous soyez une PME ou un artisan, nous sommes là pour vous aider à créer une présence en ligne efficace.'
 						}
-						className={`${columnVisible ? 'fadeIn__columns' : ''}`}
+						className={`${
+							useAnimation(thirdColumnRef, 'fadeIn__columns') ||
+							''
+						}`}
+						ref={thirdColumnRef}
 					/>
 				</div>
 				<div ref={buttonRef}>
 					<ButtonOrLink
-						btnClassName={`reverse ${
-							buttonVisible ? 'fadeIn__button' : ''
-						}`}
+						btnClassName={`reverse ${useAnimation(
+							buttonRef,
+							'fadeIn__button' || ''
+						)}`}
 						isLink={true}
 						href="/services-et-tarifs"
 					>
