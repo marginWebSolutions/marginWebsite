@@ -54,10 +54,10 @@
 		font-weight: 500;
 
 		&--item {
-			padding: 7px 0;
+			padding: 7px 0; 
+			cursor: pointer;
 
 			&.selected {
-				// border-bottom: 2px solid $secondary;
 				@include gradientColor;
 				font-weight: 700;
 			}

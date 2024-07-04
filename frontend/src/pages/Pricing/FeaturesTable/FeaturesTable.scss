@@ -29,9 +29,9 @@
 
 		&--plan-name {
 			padding: 7px 0;
+			cursor: pointer;
 
 			&.selected {
-				// border-bottom: 2px solid $secondary;
 				font-weight: 700;
 				@include gradientColor;
 			}
