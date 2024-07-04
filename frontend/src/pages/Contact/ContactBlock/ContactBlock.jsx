@@ -30,8 +30,8 @@ export default function ContactBlock() {
 											className="infos__item--icon color-touch-svg"
 										/>
 									}
-									href="mailto:contact@margin-agence-web.com"
-									text="contact@margin-agence-web.com"
+									href="mailto:contact@margin-web.com"
+									text="contact@margin-web.com"
 								/>
 								<ContactDetail
 									icon={
