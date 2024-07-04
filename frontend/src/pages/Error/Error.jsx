@@ -3,7 +3,7 @@ import GoToSection from "../../components/GoToSection/GoToSection";
 import Section from "../../layout/Section/Section";
 
 export default function Error() {
-    document.title = "Margin Web Solutions - La page n'existe pas"
+    document.title = "Cette page n'existe pas - Margin Web Solutions - Création de sites Internet à Saint-Etienne et Nevers"
 
     return (
             <div className="error">

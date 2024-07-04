@@ -4,7 +4,7 @@ import Us from './Us/Us';
 
 export default function Contact() {
 
-	document.title = 'Margin Web Solutions - Qui sommes-nous ?';
+	document.title = 'Qui sommes-nous ? - Margin Web Solutions - Création de sites Internet à Saint-Etienne et Nevers';
 
 	return (
 		<>

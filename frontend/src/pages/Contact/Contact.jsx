@@ -3,7 +3,7 @@ import ContactBlock from './ContactBlock/ContactBlock';
 
 export default function Contact() {
 
-	document.title = 'Margin Web Solutions - Nous contacter';
+	document.title = 'Nous contacter - Margin Web Solutions - Création de sites Internet à Saint-Etienne et Nevers';
 
 	return (
 		<>
