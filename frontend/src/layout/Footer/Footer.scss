@@ -7,6 +7,8 @@
 
 	&__content {
 		display: flex;
+		flex-direction: column;
+		gap: 10px;
 		height: 8vh;
 		width: 75%;
 		justify-content: center;
@@ -21,5 +23,11 @@
 			width: 100%;
 			font-size: 11px;
 		}
+	}
+
+	&__link {
+		text-decoration: underline solid $text;
+		text-underline-offset: 5px;
+		color: $text;
 	}
 }
