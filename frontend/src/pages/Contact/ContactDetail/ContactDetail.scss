@@ -12,17 +12,17 @@
 		align-self: center;
 	}
 
-	&--title {
-		text-transform: uppercase;
-	}
+	// &--title {
+	// 	text-transform: uppercase;
+	// }
 
 	&--text {
 		font-size: 24px;
 		color: $text;
 		text-align: start;
 		font-weight: 500;
-		@include tablet {
-			font-size: 20px;
+		@include mobile {
+			font-size: clamp(18px, 5vw, 22px);
 		}
 	}
 
