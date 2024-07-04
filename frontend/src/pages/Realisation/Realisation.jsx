@@ -5,7 +5,7 @@ import Testimonials from './Testimonials/Testimonials';
 
 export default function Realisation() {
 
-	document.title = 'Margin Web Solutions - Nos réalisations';
+	document.title = 'Nos réalisations - Margin Web Solutions - Création de sites Internet à Saint-Etienne et Nevers';
 
 	return (
 		<>

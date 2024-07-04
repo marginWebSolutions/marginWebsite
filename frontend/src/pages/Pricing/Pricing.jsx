@@ -4,7 +4,7 @@ import FeaturesTable from './FeaturesTable/FeaturesTable';
 import Prices from './Prices/Prices';
 
 export default function Pricing() {
-	document.title = 'Margin Web Solutions - Services et tarifs';
+	document.title = 'Services et tarifs - Margin Web Solutions - Création de sites Internet à Saint-Etienne et Nevers';
 
 	return (
 		<>

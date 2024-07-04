@@ -5,7 +5,7 @@ import Hero from './Hero/Hero';
 import Presentation from './Presentation/Presentation';
 
 export default function Home() {
-	document.title = 'Margin Web Solutions - Accueil';
+	document.title = 'Accueil - Margin Web Solutions - Création de sites Internet à Saint-Etienne et Nevers';
 
 	return (
 		<>

@@ -9,6 +9,9 @@
 		justify-content: center;
 		gap: 80px;
 
+		.btn-container {
+			display: flex;
+		}
 	}
 
 	&__title {

@@ -10,6 +10,7 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import Pricing from './pages/Pricing/Pricing';
+import Error from './pages/Error/Error';
 
 export default function App() {
 	return (
@@ -34,6 +35,7 @@ export default function App() {
 							element={<Realisation />}
 						/> */}
 							<Route path="/contact" element={<Contact />} />
+							<Route path="*" element={<Error />} />
 						</Routes>
 					</main>
 					<Footer />
