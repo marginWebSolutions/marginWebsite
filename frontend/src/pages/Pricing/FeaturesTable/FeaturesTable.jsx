@@ -39,14 +39,14 @@ export default function FeaturesTable() {
 				>
 					<thead>
 						<tr>
-							<th className="features__title">
+							<th colSpan={2} className="features__title">
 								Détails des prestations
 							</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>
+							<td colSpan={2}>
 								<div className="features__table--plan-names">
 									<div
 										className={`features__table--plan-name ${
@@ -58,6 +58,9 @@ export default function FeaturesTable() {
 									>
 										Essentiel
 									</div>
+									<span className="features__table--plan-pipe">
+										|
+									</span>
 									<div
 										className={`features__table--plan-name ${
 											selectedPlan === 'Premium'
@@ -84,7 +87,7 @@ export default function FeaturesTable() {
 				>
 					<thead>
 						<tr>
-							<th className="features__title">
+							<th className="features__title" colSpan={3}>
 								Détails des prestations
 							</th>
 						</tr>

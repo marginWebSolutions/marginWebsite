@@ -58,6 +58,7 @@ export default function Prices() {
 								>
 									Essentiel
 								</div>
+								<span className="prices__toggle--pipe">|</span>
 								<div
 									className={`prices__toggle--item ${
 										selectedCard === 'Premium'
@@ -70,6 +71,7 @@ export default function Prices() {
 								>
 									Premium
 								</div>
+								<span className="prices__toggle--pipe">|</span>
 								<div
 									className={`prices__toggle--item ${
 										selectedCard === 'default'
@@ -80,7 +82,7 @@ export default function Prices() {
 										handleClick('default', 'Essentiel')
 									}
 								>
-									À la Carte
+									À la carte
 								</div>
 							</div>
 							<div className="prices__plans__cards">

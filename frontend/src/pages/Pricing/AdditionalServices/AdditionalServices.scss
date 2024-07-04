@@ -17,25 +17,34 @@
 		width: 75vw;
 
 		@include tablet {
-			margin-left: 0;
 			width: 95vw;
 		}
 
 		@include mobile {
-			margin-left: 0;
 			width: 85vw;
 		}
 	}
 
 	&__title {
 		font-size: 24px;
+		display: flex;
 	}
 
 	&__list {
-		padding-left: 40px;
-		list-style-type: disc;
+		padding-left: 20px;
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
+		gap: 25px;
+
+		&--item {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+		}
+
+		&--icon {
+			width: 25px;
+			height: 25px;
+		}
 	}
 }
