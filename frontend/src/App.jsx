@@ -8,9 +8,10 @@ import Footer from './layout/Footer/Footer';
 import Header from './layout/Header/Header';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
-import Home from './pages/Home/Home';
-import Pricing from './pages/Pricing/Pricing';
 import Error from './pages/Error/Error';
+import Home from './pages/Home/Home';
+import MentionsLegales from './pages/MentionsLegales/MentionsLegales';
+import Pricing from './pages/Pricing/Pricing';
 
 export default function App() {
 	return (
@@ -36,6 +37,10 @@ export default function App() {
 						/> */}
 							<Route path="/contact" element={<Contact />} />
 							<Route path="*" element={<Error />} />
+							<Route
+								path="/mentions-legales"
+								element={<MentionsLegales />}
+							/>
 						</Routes>
 					</main>
 					<Footer />
