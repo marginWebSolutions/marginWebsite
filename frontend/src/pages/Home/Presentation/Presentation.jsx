@@ -111,7 +111,7 @@ export default function Presentation() {
 				</div>
 				<div
 					ref={buttonRef}
-					className={`${
+					className={`btn-container ${
 						useAnimation(buttonRef, 'fadeIn__button') || ''
 					}`}
 				>
