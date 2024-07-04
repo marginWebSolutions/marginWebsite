@@ -1,18 +1,12 @@
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
+import React from 'react';
 import './TestimonialCard.scss';
 
-export default function TestimonialCard({
-	text,
-	avatarSrc,
-	avatarAlt,
-	name,
-	job,
-	className,
-}) {
-	return (
-		<div className={`testimonial__card ${className}`}>
+const TestimonialCard = React.forwardRef(
+	({ text, avatarSrc, avatarAlt, name, job, className }, ref) => (
+		<div className={`testimonial__card ${className}`} ref={ref}>
 			<div className="testimonial__card__content">
 				<FontAwesomeIcon
 					icon={faQuoteRight}
@@ -34,8 +28,10 @@ export default function TestimonialCard({
 				</div>
 			</div>
 		</div>
-	);
-}
+	)
+);
+
+TestimonialCard.displayName = 'TestimonialCard';
 
 TestimonialCard.propTypes = {
 	text: PropTypes.string,
@@ -45,3 +41,5 @@ TestimonialCard.propTypes = {
 	job: PropTypes.string,
 	className: PropTypes.string,
 };
+
+export default TestimonialCard;

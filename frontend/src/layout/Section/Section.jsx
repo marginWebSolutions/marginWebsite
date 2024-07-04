@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import './Section.scss';
 
 export default function Section({
@@ -9,11 +9,10 @@ export default function Section({
 	...props
 }) {
 	const sectionRef = useRef(null);
-	const [isVisible, setIsVisible] = useState(false);
 
 	const sectionClasses = `section ${className} ${
 		!isHero ? 'section--hidden' : ''
-	} ${!isHero && isVisible ? 'fade-in' : ''}`;
+	}`;
 	return (
 		<section ref={sectionRef} className={sectionClasses} {...props}>
 			{children}

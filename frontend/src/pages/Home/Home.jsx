@@ -12,9 +12,7 @@ export default function Home() {
 			<Hero />
 			<Underline />
 			<Presentation />
-			{/* <Underline /> */}
 			<Engagement />
-			{/* <Underline /> */}
 			<GoToSection />
 		</>
 	);
