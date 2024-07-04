@@ -1,3 +1,13 @@
+import {
+	faFileCirclePlus,
+	faFileCode,
+	faFilePen,
+	faPencil,
+	faRocket,
+	faScrewdriverWrench,
+	faServer,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRef } from 'react';
 import Section from '../../../layout/Section/Section';
 import useAnimation from '../../../utils/hooks/useAnimation';
@@ -7,13 +17,34 @@ export default function AdditionalServices() {
 	const contentRef = useRef(null);
 
 	const additionalServices = [
-		'Hébergement',
-		'Maintenance technique',
-		'Mise à jour du contenu',
-		'Pages supplémentaires',
-		'Demandes de changements supplémentaires',
-		'Animations poussées (pack Essentiel)',
-		'Contenu administrable (pack Essentiel)',
+		{
+			icon: faServer,
+			service: 'Hébergement',
+		},
+		{
+			icon: faScrewdriverWrench,
+			service: 'Maintenance technique',
+		},
+		{
+			icon: faFilePen,
+			service: 'Mise à jour du contenu',
+		},
+		{
+			icon: faFileCirclePlus,
+			service: 'Pages supplémentaires',
+		},
+		{
+			icon: faFileCode,
+			service: 'Demandes de changements supplémentaires',
+		},
+		{
+			icon: faRocket,
+			service: 'Animations poussées (pack Essentiel)',
+		},
+		{
+			icon: faPencil,
+			service: 'Contenu administrable (pack Essentiel)',
+		},
 	];
 
 	return (
@@ -33,7 +64,11 @@ export default function AdditionalServices() {
 							key={idx}
 							className="additionalServices__list--item"
 						>
-							{additional}
+							<FontAwesomeIcon
+								icon={additional.icon}
+								className="color-touch-svg additionalServices__list--icon"
+							/>
+							{additional.service}
 						</li>
 					))}
 				</ul>

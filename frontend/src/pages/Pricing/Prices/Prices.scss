@@ -62,12 +62,16 @@
 				font-weight: 700;
 			}
 		}
+
+		&--pipe {
+			padding: 7px 0;
+		}
 	}
 
 	&__details {
 		font-size: 14px;
 		position: relative;
-		top: 40px;
+		top: 140px;
 		font-weight: 500;
 
 		@include mobile {

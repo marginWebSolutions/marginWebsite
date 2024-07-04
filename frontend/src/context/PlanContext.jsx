@@ -5,7 +5,7 @@ const PlanContext = createContext();
 
 export const PlanProvider = ({ children }) => {
 	const [selectedPlan, setSelectedPlan] = useState('Essentiel');
-	const [selectedCard, setSelectedCard] = useState('default');
+	const [selectedCard, setSelectedCard] = useState('Essentiel');
 
 	return (
 		<PlanContext.Provider

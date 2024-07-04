@@ -21,9 +21,10 @@
 
 		&--plan-names {
 			display: flex;
+			justify-content: center;
 			gap: 10px;
-			margin-bottom: 20px;
-			padding-left: 10px;
+			margin-bottom: 40px;
+			font-size: 20px;
 		}
 
 		&--plan-name {
@@ -35,16 +36,22 @@
 				@include gradientColor;
 			}
 		}
+
+		&--plan-pipe {
+			padding: 7px 0;
+		}
 	}
 
 	&__title {
-		padding: 0 0 40px 20px;
 		border: none;
-		font-size: 24px;
+		font-size: 48px;
 		font-family: $title-font;
+		padding-bottom: 80px;
+		text-align: center;
+		font-weight: 500;
 
 		@include mobile {
-			padding: 0 0 20px 0;
+			font-size: 40px;
 		}
 	}
 
