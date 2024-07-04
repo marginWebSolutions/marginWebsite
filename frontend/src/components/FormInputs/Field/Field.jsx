@@ -28,6 +28,7 @@ export default function Field({
 					onChange={handleChange}
 					placeholder={placeholder}
 					required={required}
+					autoComplete="true"
 				/>
 			);
 			break;
@@ -41,6 +42,7 @@ export default function Field({
 					onChange={handleChange}
 					placeholder={placeholder}
 					required={required}
+					autoComplete="true"
 				/>
 			);
 			break;
