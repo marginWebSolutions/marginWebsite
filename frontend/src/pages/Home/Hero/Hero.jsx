@@ -41,8 +41,9 @@ export default function Hero() {
 			<Section className="hero" isHero={true}>
 				<div className="hero__mockup">
 					<img
-						className={`hero__mockup--image ${fadeIn ? 'fade-in' : ''
-							}`}
+						className={`hero__mockup--image ${
+							fadeIn ? 'fade-in' : ''
+						}`}
 						src={images[currentImageIndex].src}
 						alt={images[currentImageIndex].alt}
 						width={1920}
@@ -76,7 +77,6 @@ export default function Hero() {
 								</span>
 							</span>
 						</div>
-
 						<ButtonDoubled
 							btnFirst={'Nous Contacter'}
 							hrefFirst={'/contact'}
