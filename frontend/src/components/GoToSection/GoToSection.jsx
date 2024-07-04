@@ -11,6 +11,8 @@ export default function GoToSection({
 	title = 'Une question ? Un devis ?',
 	text = 'Contactez-nous dès maintenant et discutons ensemble de votre projet',
 	double = false,
+	singleBtnText = "C'est par ici !",
+	singleBtnHref = "/Contact",
 }) {
 	const titleRef = useRef(null);
 	const textRef = useRef(null);
@@ -42,8 +44,8 @@ export default function GoToSection({
 						hrefSecond={'/contact'}
 					/>
 				) : (
-					<ButtonOrLink isLink={true} href="/contact">
-						C'est par ici !
+					<ButtonOrLink isLink={true} href={singleBtnHref}>
+						{singleBtnText}
 					</ButtonOrLink>
 				)}
 			</div>
@@ -55,4 +57,6 @@ GoToSection.propTypes = {
 	title: PropTypes.string,
 	text: PropTypes.string,
 	double: PropTypes.bool,
+	singleBtnText: PropTypes.string,
+	singleBtnHref: PropTypes.string,
 };
