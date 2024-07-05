@@ -8,10 +8,12 @@ export default function Form() {
 		name: '',
 		email: '',
 		message: '',
+		captcha: '',
 	});
 	const [isSubmitted, setIsSubmitted] = useState(false);
 	const [errorMessage, setErrorMessage] = useState('');
 
+	console.log(formData);
 	const handleChange = (e) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
 	};
@@ -135,8 +137,8 @@ export default function Form() {
 				Je ne suis pas un robot
 			</label>
 			<div
-				className="form__recaptcha"
-				data-sitekey="KEY HERE"
+				className="form__recaptcha g-recaptcha"
+				data-sitekey="6LdgBAkqAAAAAEl6nbZuZFdznhAPcNGXtNZbaiqa"
 				id="g-recaptcha-response"
 			></div>
 			<div

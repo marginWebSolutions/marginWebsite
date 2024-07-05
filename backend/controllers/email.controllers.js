@@ -18,7 +18,7 @@ exports.forwardEmail = (req, res) => {
 		theme: 'cerberus',
 		product: {
 			name: 'Margin Web Solutions',
-			link: 'https://margin-dev.com',
+			link: 'https://margin-web.com',
 			copyright: `Copyright © ${new Date().getFullYear()} Margin Web Solutions. All rights reserved.`,
 		},
 	});
