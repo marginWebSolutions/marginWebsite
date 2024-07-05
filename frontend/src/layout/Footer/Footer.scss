@@ -21,7 +21,7 @@
 
 		@include mobile {
 			width: 100%;
-			font-size: 11px;
+			font-size: clamp(11px, 3vw, 14px);
 		}
 	}
 
