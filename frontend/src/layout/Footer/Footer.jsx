@@ -7,7 +7,7 @@ export default function Footer() {
 				{`Copyright © ${new Date().getFullYear()} Margin Web Solutions.
 				Tous droits réservés.`}
 				<a href="/mentions-legales" className="footer__link">
-					Mentions Légales
+					Mentions légales
 				</a>
 			</div>
 		</footer>

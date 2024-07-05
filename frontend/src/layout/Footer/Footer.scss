@@ -26,8 +26,8 @@
 	}
 
 	&__link {
-		text-decoration: underline solid $text;
+		text-decoration: underline solid rgba($text, 0.3);
 		text-underline-offset: 5px;
-		color: $text;
+		color: rgba($text, 0.5);
 	}
 }
