@@ -11,7 +11,8 @@ exports.validateCaptchaResponse = (req, res) => {
 	}
 
 	// Secret Key
-	const secretKey = process.env.CAPTCHA_SECRET_KEY;
+	const secretKey = process.env.SECRET_KEY;
+	console.log(secretKey);
 	// Verify URL
 	const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${req.body.captcha}&remoteip=${req.ip}`;
 
