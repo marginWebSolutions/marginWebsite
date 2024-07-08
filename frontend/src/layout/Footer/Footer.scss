@@ -19,9 +19,14 @@
 		font-weight: 500;
 		font-family: $title-font;
 
+		@include tablet {
+			height: clamp(80px, 8vh, 100px);
+		}
+
 		@include mobile {
 			width: 100%;
 			font-size: clamp(11px, 3vw, 14px);
+			height: 8vh;
 		}
 	}
 
