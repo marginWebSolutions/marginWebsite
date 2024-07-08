@@ -132,9 +132,6 @@ export default function Form() {
 					required
 				/>
 			</div>
-			<label htmlFor="g-recaptcha-response" className="visually-hidden">
-				Je ne suis pas un robot
-			</label>
 			<div
 				className="form__recaptcha g-recaptcha"
 				data-sitekey="6LdgBAkqAAAAAEl6nbZuZFdznhAPcNGXtNZbaiqa"
