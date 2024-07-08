@@ -13,7 +13,6 @@ export default function Form() {
 	const [isSubmitted, setIsSubmitted] = useState(false);
 	const [errorMessage, setErrorMessage] = useState('');
 
-	console.log(formData);
 	const handleChange = (e) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
 	};
