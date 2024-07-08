@@ -1,3 +1,4 @@
+import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import BackToTop from './components/BackToTop/BackToTop';
 import { PlanProvider } from './context/PlanContext';
@@ -15,38 +16,42 @@ import Pricing from './pages/Pricing/Pricing';
 
 export default function App() {
 	return (
-		<PlanProvider>
-			<BrowserRouter>
-				<div className="App">
-					<div className="overlay"></div>
-					<Favicon />
-					<Meta />
-					<JSONLD />
-					<Header />
-					<main>
-						<Routes>
-							<Route path="/" element={<Home />} />
-							<Route path="/a-propos" element={<About />} />
-							<Route
-								path="/services-et-tarifs"
-								element={<Pricing />}
-							/>
-							{/* <Route
+		<>
+			<HelmetProvider>
+				<Favicon />
+				<Meta />
+				<JSONLD />
+			</HelmetProvider>
+			<PlanProvider>
+				<BrowserRouter>
+					<div className="App">
+						<div className="overlay"></div>
+						<Header />
+						<main>
+							<Routes>
+								<Route path="/" element={<Home />} />
+								<Route path="/a-propos" element={<About />} />
+								<Route
+									path="/services-et-tarifs"
+									element={<Pricing />}
+								/>
+								{/* <Route
 							path="/nos-realisations"
 							element={<Realisation />}
 						/> */}
-							<Route path="/contact" element={<Contact />} />
-							<Route path="*" element={<Error />} />
-							<Route
-								path="/mentions-legales"
-								element={<MentionsLegales />}
-							/>
-						</Routes>
-					</main>
-					<Footer />
-					<BackToTop />
-				</div>
-			</BrowserRouter>
-		</PlanProvider>
+								<Route path="/contact" element={<Contact />} />
+								<Route path="*" element={<Error />} />
+								<Route
+									path="/mentions-legales"
+									element={<MentionsLegales />}
+								/>
+							</Routes>
+						</main>
+						<Footer />
+						<BackToTop />
+					</div>
+				</BrowserRouter>
+			</PlanProvider>
+		</>
 	);
 }
