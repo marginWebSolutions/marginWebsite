@@ -19,6 +19,18 @@ export default function Hero() {
 		},
 	];
 
+	const buttons = [
+		{
+			content: 'Nous Contacter',
+			href: '/contact',
+		},
+		{
+			content: 'Nos Services et Tarifs',
+			href: '/services-et-tarifs',
+			btnClassName: 'reverse',
+		},
+	];
+
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 	const [fadeIn, setFadeIn] = useState(true);
 
@@ -78,10 +90,11 @@ export default function Hero() {
 							</span>
 						</div>
 						<ButtonDoubled
-							btnFirst={'Nous Contacter'}
-							hrefFirst={'/contact'}
-							btnSecond={'Nos Services et Tarifs'}
-							hrefSecond={'/services-et-tarifs'}
+							buttons={buttons}
+							// btnFirst={'Nous Contacter'}
+							// hrefFirst={'/contact'}
+							// btnSecond={'Nos Services et Tarifs'}
+							// hrefSecond={'/services-et-tarifs'}
 						/>
 					</div>
 				</div>
