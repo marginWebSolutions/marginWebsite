@@ -12,10 +12,22 @@ export default function GoToSection({
 	text = 'Contactez-nous dès maintenant et discutons ensemble de votre projet',
 	double = false,
 	singleBtnText = "C'est par ici !",
-	singleBtnHref = "/Contact",
+	singleBtnHref = '/Contact',
 }) {
 	const titleRef = useRef(null);
 	const textRef = useRef(null);
+
+	const buttons = [
+		{
+			content: 'Tout savoir sur nos services',
+			href: '/services-et-tarifs',
+		},
+		{
+			content: 'Nous envoyer un message',
+			href: '/contact',
+			btnClassName: 'reverse',
+		},
+	];
 
 	return (
 		<Section className="go-to">
@@ -37,14 +49,13 @@ export default function GoToSection({
 					{text}
 				</p>
 				{double ? (
-					<ButtonDoubled
-						btnFirst={'Tout savoir sur nos services'}
-						hrefFirst={'/services-et-tarifs'}
-						btnSecond={'Nous envoyer un message'}
-						hrefSecond={'/contact'}
-					/>
+					<ButtonDoubled buttons={buttons} />
 				) : (
-					<ButtonOrLink isLink={true} href={singleBtnHref}>
+					<ButtonOrLink
+						isLink={true}
+						href={singleBtnHref}
+						reloadDocument={true}
+					>
 						{singleBtnText}
 					</ButtonOrLink>
 				)}

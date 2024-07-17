@@ -56,6 +56,7 @@ export default function PricesCard({
 						isLink={true}
 						href={btnHref}
 						onClick={() => handlePlanChange(plansLink)}
+						reloadDocument={true}
 					>
 						{btnTitle}
 					</ButtonOrLink>
