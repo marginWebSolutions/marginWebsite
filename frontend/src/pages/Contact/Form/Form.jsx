@@ -54,7 +54,7 @@ export default function Form() {
 			return;
 		}
 
-		fetch('http://localhost:3000/api/contact', {
+		fetch('https://margin-backend-6743fb62a4a4.herokuapp.com/contact', {
 			method: 'POST',
 			headers: {
 				Accept: 'application/json, text/plain, */*',
