@@ -33,14 +33,17 @@ export default function Form() {
 			newFormData.captcha = captchaElement.value;
 		}
 
-		const response = await fetch('http://localhost:3000/api/captcha', {
-			method: 'POST',
-			headers: {
-				Accept: 'application/json, text/plain, */*',
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify(newFormData),
-		});
+		const response = await fetch(
+			'https://margin-backend-6743fb62a4a4.herokuapp.com/api/captcha',
+			{
+				method: 'POST',
+				headers: {
+					Accept: 'application/json, text/plain, */*',
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(newFormData),
+			}
+		);
 
 		const data = await response.json();
 		return data.success;
@@ -54,7 +57,7 @@ export default function Form() {
 			return;
 		}
 
-		fetch('https://margin-backend-6743fb62a4a4.herokuapp.com/contact', {
+		fetch('https://margin-backend-6743fb62a4a4.herokuapp.com/api/contact', {
 			method: 'POST',
 			headers: {
 				Accept: 'application/json, text/plain, */*',
