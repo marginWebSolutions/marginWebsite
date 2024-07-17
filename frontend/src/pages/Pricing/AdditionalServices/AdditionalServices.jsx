@@ -1,74 +1,48 @@
-import {
-	faFileCirclePlus,
-	faFileCode,
-	faFilePen,
-	faPencil,
-	faRocket,
-	faScrewdriverWrench,
-	faServer,
-} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
 import { useRef } from 'react';
 import Section from '../../../layout/Section/Section';
 import useAnimation from '../../../utils/hooks/useAnimation';
 import './AdditionalServices.scss';
 
-export default function AdditionalServices() {
+export default function AdditionalServices({
+	services, // Array of services with icon and service name
+	sectionClassName = '', // Custom class for the section
+	listClassName = '', // Custom class for the list
+	listItemClassName = '', // Custom class for list items
+	animationClass = '', // Custom animation class or function
+	IconComponent = FontAwesomeIcon, // Custom icon component
+}) {
 	const contentRef = useRef(null);
 
-	const additionalServices = [
-		{
-			icon: faServer,
-			service: 'Hébergement',
-		},
-		{
-			icon: faScrewdriverWrench,
-			service: 'Maintenance technique',
-		},
-		{
-			icon: faFilePen,
-			service: 'Mise à jour du contenu',
-		},
-		{
-			icon: faFileCirclePlus,
-			service: 'Pages supplémentaires',
-		},
-		{
-			icon: faFileCode,
-			service: 'Demandes de changements supplémentaires',
-		},
-		{
-			icon: faRocket,
-			service: 'Animations poussées (pack Essentiel)',
-		},
-		{
-			icon: faPencil,
-			service: 'Contenu administrable (pack Essentiel)',
-		},
-	];
+	const animation =
+		typeof animationClass === 'function'
+			? animationClass(contentRef)
+			: animationClass;
 
 	return (
-		<Section className="additionalServices">
+		<Section className={`additionalServices ${sectionClassName}`}>
 			<div
-				className={`additionalServices__content ${
-					useAnimation(contentRef, 'fadeIn__title') || ''
-				}`}
+				className={`additionalServices__content ${useAnimation(
+					contentRef,
+					animation
+				)}`}
 				ref={contentRef}
 			>
 				<h3 className="additionalServices__title">
 					Services additionnels
 				</h3>
-				<ul className="additionalServices__list">
-					{additionalServices.map((additional, idx) => (
+				<ul className={`additionalServices__list ${listClassName}`}>
+					{services.map((service, idx) => (
 						<li
 							key={idx}
-							className="additionalServices__list--item"
+							className={`additionalServices__list--item ${listItemClassName}`}
 						>
-							<FontAwesomeIcon
-								icon={additional.icon}
+							<IconComponent
+								icon={service.icon}
 								className="color-touch-svg additionalServices__list--icon"
 							/>
-							{additional.service}
+							{service.service}
 						</li>
 					))}
 				</ul>
@@ -76,3 +50,17 @@ export default function AdditionalServices() {
 		</Section>
 	);
 }
+
+AdditionalServices.propTypes = {
+	services: PropTypes.arrayOf(
+		PropTypes.shape({
+			icon: PropTypes.object.isRequired,
+			service: PropTypes.string.isRequired,
+		})
+	).isRequired,
+	sectionClassName: PropTypes.string,
+	listClassName: PropTypes.string,
+	listItemClassName: PropTypes.string,
+	animationClass: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+	IconComponent: PropTypes.elementType,
+};
