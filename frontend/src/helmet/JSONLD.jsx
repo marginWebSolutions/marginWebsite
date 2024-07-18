@@ -35,7 +35,7 @@ export default function JSONLD() {
 		areaServed: [
 			'Saint-Etienne, Loire, Auvergne-Rhône-Alpes, Nevers, Nièvre, Bourgogne-Franche-Comté',
 		],
-		url: 'https://www.margin-web.com',
+		url: 'https://margin-web.com',
 	};
 
 	const secondLocation = {
@@ -72,7 +72,7 @@ export default function JSONLD() {
 		areaServed: [
 			'Saint-Etienne, Loire, Auvergne-Rhône-Alpes, Nevers, Nièvre, Bourgogne-Franche-Comté',
 		],
-		url: 'https://www.margin-web.com',
+		url: 'https://margin-web.com',
 	};
 
 	return (
