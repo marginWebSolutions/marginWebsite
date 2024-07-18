@@ -6,7 +6,7 @@ import NavbarItem from './NavbarItem/NavbarItem';
 
 export default function Header() {
 	const [scrolled, setScrolled] = useState(false);
-	const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
+	const [isTablet, setIsTablet] = useState(window.innerWidth < 1024);
 
 	const handleScroll = () => {
 		const offset = window.scrollY;
@@ -17,31 +17,32 @@ export default function Header() {
 		}
 	};
 
-	const updateMobileState = () => {
-		setIsMobile(window.innerWidth < 640);
+	const updateTabletState = () => {
+		setIsTablet(window.innerWidth < 1024);
 	};
 
 	useEffect(() => {
 		window.addEventListener('scroll', handleScroll);
-		window.addEventListener('resize', updateMobileState);
+		window.addEventListener('resize', updateTabletState);
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
-			window.removeEventListener('resize', updateMobileState);
+			window.removeEventListener('resize', updateTabletState);
 		};
 	}, []);
+
+	const isLogoVisible = () => {
+		if (location.pathname !== '/') {
+			return 'visible';
+		}
+		return isTablet ? (scrolled ? 'visible' : 'hidden') : 'visible';
+	};
 
 	return (
 		<header className={`header ${scrolled ? ' header--scrolled' : ''}`}>
 			<div className="header__container">
 				<Link to="/" reloadDocument={true}>
 					<div
-						className={`header__logo ${
-							isMobile
-								? scrolled
-									? 'visible'
-									: 'hidden'
-								: 'visible'
-						}`}
+						className={`header__logo ${isLogoVisible()}`}
 					>
 						<span className="header__logo--ma m">m</span>
 						<span className="header__logo--ma a">a</span>

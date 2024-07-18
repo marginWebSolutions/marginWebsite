@@ -12,7 +12,7 @@ export default function Meta() {
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta
 					name="twitter:site"
-					content="https://www.margin-web.com"
+					content="https://margin-web.com"
 				/>
 				<meta
 					name="twitter:title"
@@ -24,7 +24,7 @@ export default function Meta() {
 				/>
 				<meta
 					name="twitter:image"
-					content="./logo_margin_web_solutions.webp"
+					content="https://margin-web.com/logo_margin_web_solutions.webp"
 				/>
 
 				<meta
@@ -32,14 +32,14 @@ export default function Meta() {
 					content="Margin Web Solutions - Création de Sites Internet à Saint-Etienne et Nevers"
 				/>
 				<meta property="og:type" content="website" />
-				<meta property="og:url" content="https://www.margin-web.com" />
+				<meta property="og:url" content="https://margin-web.com" />
 				<meta
 					property="og:description"
 					content="Margin Web Solutions offre des services de création de sites internet personnalisés pour artisans et PME à Saint-Etienne et Nevers. Nous vous aidons à développer votre présence en ligne avec des solutions web sur mesure, optimisées pour le SEO et le design responsive."
 				/>
 				<meta
 					property="og:image"
-					content="./logo_margin_web_solutions.webp"
+					content="https://margin-web.com/logo_margin_web_solutions.webp"
 				/>
 				<meta property="og:site_name" content="Margin Web Solutions" />
 			</Helmet>

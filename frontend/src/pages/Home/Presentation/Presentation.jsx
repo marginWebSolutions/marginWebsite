@@ -74,24 +74,6 @@ export default function Presentation() {
 					/>
 					<Column
 						srcmobile={
-							'./illustration_Développement_de_site_Web_mobile.webp'
-						}
-						src={'./illustration_Développement_de_site_Web.webp'}
-						alt={
-							"illustration d'un développeur qui crée un site Internet"
-						}
-						title={'Développement Web'}
-						text={
-							'Création de sites web dynamiques et modernes en utilisant des technologies telles que ReactJS et WordPress afin de créer des sites web performants et évolutifs, pour une expérience utilisateur fluide.'
-						}
-						className={`${
-							useAnimation(secondColumnRef, 'fadeIn__columns') ||
-							''
-						}`}
-						ref={secondColumnRef}
-					/>
-					<Column
-						srcmobile={
 							'./illustration_Service_Web_de_Proximité_mobile.webp'
 						}
 						src={'./illustration_Service_Web_de_Proximité.webp'}
@@ -107,6 +89,24 @@ export default function Presentation() {
 							''
 						}`}
 						ref={thirdColumnRef}
+					/>
+					<Column
+						srcmobile={
+							'./illustration_Développement_de_site_Web_mobile.webp'
+						}
+						src={'./illustration_Développement_de_site_Web.webp'}
+						alt={
+							"illustration d'un développeur qui crée un site Internet"
+						}
+						title={'Développement Web'}
+						text={
+							'Création de sites web dynamiques et modernes en utilisant des technologies telles que ReactJS et WordPress afin de créer des sites web performants et évolutifs, pour une expérience utilisateur fluide.'
+						}
+						className={`${
+							useAnimation(secondColumnRef, 'fadeIn__columns') ||
+							''
+						}`}
+						ref={secondColumnRef}
 					/>
 				</div>
 				<div
