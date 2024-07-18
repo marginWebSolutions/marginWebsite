@@ -32,10 +32,12 @@
 		font-size: 25px;
 		font-family: $logo-font, sans-serif;
 		color: $text;
+		animation: fadeInLogo 1.5s ease;
 
 		@include mobile {
 			position: absolute;
 			top: 2.5vh;
+			transition: all 0.5s ease;
 		}
 
 		&--ma {
@@ -54,6 +56,10 @@
 			display: flex;
 			flex-direction: column;
 		}
+	}
+
+	.hidden {
+		display: none;
 	}
 
 	&--scrolled {

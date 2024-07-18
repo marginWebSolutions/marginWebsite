@@ -119,6 +119,7 @@ export default function Presentation() {
 						btnClassName="reverse"
 						isLink={true}
 						to="/services-et-tarifs"
+						reloadDocument={true}
 					>
 						Découvrez nos solutions
 					</ButtonOrLink>

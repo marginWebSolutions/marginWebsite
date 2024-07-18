@@ -2,31 +2,32 @@ import PropTypes from 'prop-types';
 import ButtonOrLink from '../ButtonOrLink/ButtonOrLink';
 import './ButtonDoubled.scss';
 
-export default function ButtonDoubled({
-	btnFirst,
-	hrefFirst,
-	btnSecond,
-	hrefSecond,
-}) {
+const ButtonDoubled = ({ buttons }) => {
 	return (
 		<div className="btn__doubled">
-			<ButtonOrLink isLink={true} href={hrefFirst}>
-				{btnFirst}
-			</ButtonOrLink>
-			<ButtonOrLink
-				isLink={true}
-				href={hrefSecond}
-				btnClassName="reverse"
-			>
-				{btnSecond}
-			</ButtonOrLink>
+			{buttons.map(({ content, href, btnClassName }, index) => (
+				<ButtonOrLink
+					key={index}
+					isLink={!!href}
+					href={href}
+					btnClassName={btnClassName}
+					reloadDocument={true}
+				>
+					{content}
+				</ButtonOrLink>
+			))}
 		</div>
 	);
-}
+};
 
 ButtonDoubled.propTypes = {
-	btnFirst: PropTypes.string,
-	hrefFirst: PropTypes.string,
-	btnSecond: PropTypes.string,
-	hrefSecond: PropTypes.string,
+	buttons: PropTypes.arrayOf(
+		PropTypes.shape({
+			content: PropTypes.string.isRequired,
+			href: PropTypes.string,
+			btnClassName: PropTypes.string,
+		})
+	).isRequired,
 };
+
+export default ButtonDoubled;

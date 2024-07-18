@@ -48,7 +48,11 @@ export default function App() {
 							</Routes>
 						</main>
 						<Footer />
-						<BackToTop />
+						<BackToTop
+							scrollOffset={850}
+							title="Retour en haut de la page"
+							behavior="smooth"
+						/>
 					</div>
 				</BrowserRouter>
 			</PlanProvider>
