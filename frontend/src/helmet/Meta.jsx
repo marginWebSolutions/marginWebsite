@@ -21,7 +21,7 @@ export default function Meta() {
 				/>
 				<meta
 					name="twitter:image"
-					content="https://margin-web.com/margin_web_solutions_preview_socials.png"
+					content="./margin_web_solutions_preview_socials.png"
 				/>
 
 				<meta
@@ -36,7 +36,7 @@ export default function Meta() {
 				/>
 				<meta
 					property="og:image"
-					content="https://margin-web.com/margin_web_solutions_preview_socials.png"
+					content="./margin_web_solutions_preview_socials.png"
 				/>
 				<meta property="og:site_name" content="Margin Web Solutions" />
 			</Helmet>
